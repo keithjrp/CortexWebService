@@ -1,0 +1,1100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CortexDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Deals" Relationship="Self.Companies_Deals_FK1" FromRole="Companies" ToRole="Deals" />
+    <NavigationProperty Name="Deals1" Relationship="Self.Companies_Deals_FK2" FromRole="Companies" ToRole="Deals" />
+    <NavigationProperty Name="Deals2" Relationship="Self.Companies_Deals_FK3" FromRole="Companies" ToRole="Deals" />
+    <NavigationProperty Name="CompanyAssociations" Relationship="CortexDataModel.Companies_CompanyAssociations_FK1" FromRole="Company" ToRole="CompanyAssociation" />
+    <NavigationProperty Name="CompanyAssociations1" Relationship="CortexDataModel.Companies_CompanyAssociations_FK2" FromRole="Company" ToRole="CompanyAssociation" />
+    <Property Name="SecurityID" Type="Int32" />
+    <NavigationProperty Name="Security" Relationship="CortexDataModel.FK_Companies_ToSecurities" FromRole="Company" ToRole="Security" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="Int32" Nullable="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CurrencyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Securities" Relationship="Self.Currencies_Securities_FK1" FromRole="Currencies" ToRole="Securities" />
+    <NavigationProperty Name="Deals" Relationship="Self.FK_Deals_Currencies" FromRole="Currencies" ToRole="Deals" />
+  </EntityType>
+  <EntityType Name="Deal">
+    <Key>
+      <PropertyRef Name="DealID" />
+    </Key>
+    <Property Name="DealID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SecurityGroupID" Type="Int32" />
+    <Property Name="CompanyID1" Type="Int32" />
+    <Property Name="CompanyID2" Type="Int32" />
+    <Property Name="CompanyID3" Type="Int32" />
+    <Property Name="InvestmentThesis" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MergerAgreementEventID" Type="Int32" />
+    <Property Name="DropDeadEventID" Type="Int32" />
+    <Property Name="TargetShareholderMeetingEventID" Type="Int32" />
+    <Property Name="AcquirerShareholderMeetingEventID" Type="Int32" />
+    <Property Name="TargetPrice" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="Recommendation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DealCurrencyID" Type="Int32" />
+    <Property Name="CurrencyID" Type="Int32" />
+    <Property Name="DocumentGroupID" Type="Int32" />
+    <NavigationProperty Name="Company" Relationship="Self.Companies_Deals_FK1" FromRole="Deals" ToRole="Companies" />
+    <NavigationProperty Name="Company1" Relationship="Self.Companies_Deals_FK2" FromRole="Deals" ToRole="Companies" />
+    <NavigationProperty Name="Company2" Relationship="Self.Companies_Deals_FK3" FromRole="Deals" ToRole="Companies" />
+    <NavigationProperty Name="Currency" Relationship="Self.FK_Deals_Currencies" FromRole="Deals" ToRole="Currencies" />
+    <NavigationProperty Name="Event" Relationship="Self.Events_Deals_FK1" FromRole="Deals" ToRole="Events" />
+    <NavigationProperty Name="Event1" Relationship="Self.Events_Deals_FK2" FromRole="Deals" ToRole="Events" />
+    <NavigationProperty Name="Event2" Relationship="Self.Events_Deals_FK3" FromRole="Deals" ToRole="Events" />
+    <NavigationProperty Name="Event3" Relationship="Self.Events_Deals_FK4" FromRole="Deals" ToRole="Events" />
+    <NavigationProperty Name="Deals1" Relationship="Self.FK_Deals_Deals" FromRole="Deals" ToRole="Deals1" />
+    <NavigationProperty Name="Deal1" Relationship="Self.FK_Deals_Deals" FromRole="Deals1" ToRole="Deals" />
+    <NavigationProperty Name="DocumentGroup" Relationship="Self.FK_Deals_DocumentGroups" FromRole="Deals" ToRole="DocumentGroups" />
+    <NavigationProperty Name="SecurityGroup" Relationship="Self.SecurityGroups_Deals_FK1" FromRole="Deals" ToRole="SecurityGroups" />
+    <Property Name="TargetPriceValuation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CurrentValuation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Catalyst" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="KeyRisks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ValuationMethodology" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Background" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DownsidePrice" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="DownsidePriceValuation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Comps" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DealTypeID" Type="Int32" />
+    <Property Name="ExpirationDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="DealType" Relationship="CortexDataModel.FK_Deals_DealTypes" FromRole="Deal" ToRole="DealType" />
+    <NavigationProperty Name="DealType1" Relationship="CortexDataModel.FK_Deals_ToDealTypes" FromRole="Deal" ToRole="DealType" />
+    <Property Name="DealStatusID" Type="Int32" />
+    <Property Name="CategoryID" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="CortexDataModel.FK_Deals_Categories" FromRole="Deal" ToRole="Category" />
+    <NavigationProperty Name="DealStatus" Relationship="CortexDataModel.FK_Deals_DealStatuses" FromRole="Deal" ToRole="DealStatus" />
+    <NavigationProperty Name="MapDealAnalysts" Relationship="CortexDataModel.FK_MapDealAnalyst_Deals" FromRole="Deal" ToRole="MapDealAnalyst" />
+    <NavigationProperty Name="Events" Relationship="CortexDataModel.Deals_Events_FK" FromRole="Deal" ToRole="Event" />
+    <NavigationProperty Name="Documents" Relationship="CortexDataModel.FK_Documents_Deals" FromRole="Deal" ToRole="Document" />
+  </EntityType>
+  <EntityType Name="DocumentGroup">
+    <Key>
+      <PropertyRef Name="DocumentGroupID" />
+    </Key>
+    <Property Name="DocumentGroupID" Type="Int32" Nullable="false" />
+    <Property Name="DocumentID1" Type="Int32" Nullable="false" />
+    <Property Name="DocumentID2" Type="Int32" />
+    <Property Name="DocumentID3" Type="Int32" />
+    <NavigationProperty Name="Deals" Relationship="Self.FK_Deals_DocumentGroups" FromRole="DocumentGroups" ToRole="Deals" />
+    <NavigationProperty Name="Document" Relationship="Self.Documents_DocumentGroups_FK1" FromRole="DocumentGroups" ToRole="Documents" />
+    <NavigationProperty Name="Document1" Relationship="Self.Documents_DocumentGroups_FK2" FromRole="DocumentGroups" ToRole="Documents" />
+    <NavigationProperty Name="Document2" Relationship="Self.Documents_DocumentGroups_FK3" FromRole="DocumentGroups" ToRole="Documents" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="DocumentID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="URI" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DocumentGroups" Relationship="Self.Documents_DocumentGroups_FK1" FromRole="Documents" ToRole="DocumentGroups" />
+    <NavigationProperty Name="DocumentGroups1" Relationship="Self.Documents_DocumentGroups_FK2" FromRole="Documents" ToRole="DocumentGroups" />
+    <NavigationProperty Name="DocumentGroups2" Relationship="Self.Documents_DocumentGroups_FK3" FromRole="Documents" ToRole="DocumentGroups" />
+    <Property Name="DealId" Type="Int32" />
+    <NavigationProperty Name="Deal" Relationship="CortexDataModel.FK_Documents_Deals" FromRole="Document" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EventDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EventTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Deals" Relationship="Self.Events_Deals_FK1" FromRole="Events" ToRole="Deals" />
+    <NavigationProperty Name="Deals1" Relationship="Self.Events_Deals_FK2" FromRole="Events" ToRole="Deals" />
+    <NavigationProperty Name="Deals2" Relationship="Self.Events_Deals_FK3" FromRole="Events" ToRole="Deals" />
+    <NavigationProperty Name="Deals3" Relationship="Self.Events_Deals_FK4" FromRole="Events" ToRole="Deals" />
+    <Property Name="DealID" Type="Int32" />
+    <NavigationProperty Name="Deal" Relationship="CortexDataModel.Deals_Events_FK" FromRole="Event" ToRole="Deal" />
+    <NavigationProperty Name="EventType" Relationship="CortexDataModel.FK_Events_EventTypes" FromRole="Event" ToRole="EventType" />
+  </EntityType>
+  <EntityType Name="EventType">
+    <Key>
+      <PropertyRef Name="EventTypeID" />
+    </Key>
+    <Property Name="EventTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Events" Relationship="CortexDataModel.FK_Events_EventTypes" FromRole="EventType" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Security">
+    <Key>
+      <PropertyRef Name="SecurityID" />
+    </Key>
+    <Property Name="SecurityID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityTypeID" Type="Int32" Nullable="false" />
+    <Property Name="CurrencyID" Type="Int32" />
+    <NavigationProperty Name="Currency" Relationship="Self.Currencies_Securities_FK1" FromRole="Securities" ToRole="Currencies" />
+    <NavigationProperty Name="SecurityGroups" Relationship="Self.Securities_SecurityGroups_FK1" FromRole="Securities" ToRole="SecurityGroups" />
+    <NavigationProperty Name="SecurityGroups1" Relationship="Self.Securities_SecurityGroups_FK2" FromRole="Securities" ToRole="SecurityGroups" />
+    <NavigationProperty Name="SecurityGroups2" Relationship="Self.Securities_SecurityGroups_FK3" FromRole="Securities" ToRole="SecurityGroups" />
+    <NavigationProperty Name="SecurityGroups3" Relationship="Self.Securities_SecurityGroups_FK4" FromRole="Securities" ToRole="SecurityGroups" />
+    <NavigationProperty Name="SecurityGroups4" Relationship="Self.Securities_SecurityGroups_FK5" FromRole="Securities" ToRole="SecurityGroups" />
+    <NavigationProperty Name="SecurityType" Relationship="Self.SecurityTypes_Securities_FK1" FromRole="Securities" ToRole="SecurityTypes" />
+    <Property Name="Cusip" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Isin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sedol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ticker" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Companies" Relationship="CortexDataModel.FK_Companies_ToSecurities" FromRole="Security" ToRole="Company" />
+    <NavigationProperty Name="Prices" Relationship="CortexDataModel.FK_Prices_ToSecurities" FromRole="Security" ToRole="Price" />
+  </EntityType>
+  <EntityType Name="SecurityGroup">
+    <Key>
+      <PropertyRef Name="SecurityGroupID" />
+    </Key>
+    <Property Name="SecurityGroupID" Type="Int32" Nullable="false" />
+    <Property Name="SecurityID1" Type="Int32" Nullable="false" />
+    <Property Name="SecurityID2" Type="Int32" />
+    <Property Name="SecurityID3" Type="Int32" />
+    <Property Name="SecurityID4" Type="Int32" />
+    <Property Name="SecurityID5" Type="Int32" />
+    <NavigationProperty Name="Deals" Relationship="Self.SecurityGroups_Deals_FK1" FromRole="SecurityGroups" ToRole="Deals" />
+    <NavigationProperty Name="Security" Relationship="Self.Securities_SecurityGroups_FK1" FromRole="SecurityGroups" ToRole="Securities" />
+    <NavigationProperty Name="Security1" Relationship="Self.Securities_SecurityGroups_FK2" FromRole="SecurityGroups" ToRole="Securities" />
+    <NavigationProperty Name="Security2" Relationship="Self.Securities_SecurityGroups_FK3" FromRole="SecurityGroups" ToRole="Securities" />
+    <NavigationProperty Name="Security3" Relationship="Self.Securities_SecurityGroups_FK4" FromRole="SecurityGroups" ToRole="Securities" />
+    <NavigationProperty Name="Security4" Relationship="Self.Securities_SecurityGroups_FK5" FromRole="SecurityGroups" ToRole="Securities" />
+  </EntityType>
+  <EntityType Name="SecurityType">
+    <Key>
+      <PropertyRef Name="SecurityTypeID" />
+    </Key>
+    <Property Name="SecurityTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Securities" Relationship="Self.SecurityTypes_Securities_FK1" FromRole="SecurityTypes" ToRole="Securities" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="Companies_Deals_FK1">
+    <End Role="Companies" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK2">
+    <End Role="Companies" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK3">
+    <End Role="Companies" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Currencies_Securities_FK1">
+    <End Role="Currencies" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="Securities" Type="Self.Security" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currencies">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="Securities">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_Currencies">
+    <End Role="Currencies" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currencies">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK1">
+    <End Role="Events" Type="Self.Event" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="MergerAgreementEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK2">
+    <End Role="Events" Type="Self.Event" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="DropDeadEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK3">
+    <End Role="Events" Type="Self.Event" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="TargetShareholderMeetingEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK4">
+    <End Role="Events" Type="Self.Event" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="AcquirerShareholderMeetingEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_Deals">
+    <End Role="Deals" Type="Self.Deal" Multiplicity="1" />
+    <End Role="Deals1" Type="Self.Deal" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Deals">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="Deals1">
+        <PropertyRef Name="DealID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_DocumentGroups">
+    <End Role="DocumentGroups" Type="Self.DocumentGroup" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentGroups">
+        <PropertyRef Name="DocumentGroupID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="DocumentGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SecurityGroups_Deals_FK1">
+    <End Role="SecurityGroups" Type="Self.SecurityGroup" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecurityGroups">
+        <PropertyRef Name="SecurityGroupID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="SecurityGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Documents_DocumentGroups_FK1">
+    <End Role="Documents" Type="Self.Document" Multiplicity="1" />
+    <End Role="DocumentGroups" Type="Self.DocumentGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="DocumentGroups">
+        <PropertyRef Name="DocumentID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Documents_DocumentGroups_FK2">
+    <End Role="Documents" Type="Self.Document" Multiplicity="0..1" />
+    <End Role="DocumentGroups" Type="Self.DocumentGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="DocumentGroups">
+        <PropertyRef Name="DocumentID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Documents_DocumentGroups_FK3">
+    <End Role="Documents" Type="Self.Document" Multiplicity="0..1" />
+    <End Role="DocumentGroups" Type="Self.DocumentGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="DocumentGroups">
+        <PropertyRef Name="DocumentID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK1">
+    <End Role="Securities" Type="Self.Security" Multiplicity="1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK2">
+    <End Role="Securities" Type="Self.Security" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK3">
+    <End Role="Securities" Type="Self.Security" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK4">
+    <End Role="Securities" Type="Self.Security" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK5">
+    <End Role="Securities" Type="Self.Security" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID5" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SecurityTypes_Securities_FK1">
+    <End Role="SecurityTypes" Type="Self.SecurityType" Multiplicity="1" />
+    <End Role="Securities" Type="Self.Security" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecurityTypes">
+        <PropertyRef Name="SecurityTypeID" />
+      </Principal>
+      <Dependent Role="Securities">
+        <PropertyRef Name="SecurityTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CortexEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="Currencies" EntityType="Self.Currency" />
+    <EntitySet Name="Deals" EntityType="Self.Deal" />
+    <EntitySet Name="DocumentGroups" EntityType="Self.DocumentGroup" />
+    <EntitySet Name="Documents" EntityType="Self.Document" />
+    <EntitySet Name="Events" EntityType="Self.Event" />
+    <EntitySet Name="EventTypes" EntityType="Self.EventType" />
+    <EntitySet Name="Securities" EntityType="Self.Security" />
+    <EntitySet Name="SecurityGroups" EntityType="Self.SecurityGroup" />
+    <EntitySet Name="SecurityTypes" EntityType="Self.SecurityType" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="Companies_Deals_FK1" Association="Self.Companies_Deals_FK1">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK2" Association="Self.Companies_Deals_FK2">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK3" Association="Self.Companies_Deals_FK3">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Currencies_Securities_FK1" Association="Self.Currencies_Securities_FK1">
+      <End Role="Currencies" EntitySet="Currencies" />
+      <End Role="Securities" EntitySet="Securities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_Currencies" Association="Self.FK_Deals_Currencies">
+      <End Role="Currencies" EntitySet="Currencies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK1" Association="Self.Events_Deals_FK1">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK2" Association="Self.Events_Deals_FK2">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK3" Association="Self.Events_Deals_FK3">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK4" Association="Self.Events_Deals_FK4">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_Deals" Association="Self.FK_Deals_Deals">
+      <End Role="Deals" EntitySet="Deals" />
+      <End Role="Deals1" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_DocumentGroups" Association="Self.FK_Deals_DocumentGroups">
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="SecurityGroups_Deals_FK1" Association="Self.SecurityGroups_Deals_FK1">
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Documents_DocumentGroups_FK1" Association="Self.Documents_DocumentGroups_FK1">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Documents_DocumentGroups_FK2" Association="Self.Documents_DocumentGroups_FK2">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Documents_DocumentGroups_FK3" Association="Self.Documents_DocumentGroups_FK3">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK1" Association="Self.Securities_SecurityGroups_FK1">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK2" Association="Self.Securities_SecurityGroups_FK2">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK3" Association="Self.Securities_SecurityGroups_FK3">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK4" Association="Self.Securities_SecurityGroups_FK4">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK5" Association="Self.Securities_SecurityGroups_FK5">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="SecurityTypes_Securities_FK1" Association="Self.SecurityTypes_Securities_FK1">
+      <End Role="SecurityTypes" EntitySet="SecurityTypes" />
+      <End Role="Securities" EntitySet="Securities" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(CortexDataModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(CortexDataModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="CompanyAssociations" EntityType="CortexDataModel.CompanyAssociation" />
+    <AssociationSet Name="Companies_CompanyAssociations_FK1" Association="CortexDataModel.Companies_CompanyAssociations_FK1">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="CompanyAssociation" EntitySet="CompanyAssociations" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_CompanyAssociations_FK2" Association="CortexDataModel.Companies_CompanyAssociations_FK2">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="CompanyAssociation" EntitySet="CompanyAssociations" />
+    </AssociationSet>
+    <EntitySet Name="DealTypes" EntityType="CortexDataModel.DealType" />
+    <EntitySet Name="Prices" EntityType="CortexDataModel.Price" />
+    <EntitySet Name="StatisticTypes" EntityType="CortexDataModel.StatisticType" />
+    <EntitySet Name="AnnualCompanyStatistics" EntityType="CortexDataModel.AnnualCompanyStatistic" />
+    <AssociationSet Name="FK_Companies_ToSecurities" Association="CortexDataModel.FK_Companies_ToSecurities">
+      <End Role="Security" EntitySet="Securities" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_DealTypes" Association="CortexDataModel.FK_Deals_DealTypes">
+      <End Role="DealType" EntitySet="DealTypes" />
+      <End Role="Deal" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_ToDealTypes" Association="CortexDataModel.FK_Deals_ToDealTypes">
+      <End Role="DealType" EntitySet="DealTypes" />
+      <End Role="Deal" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prices_ToSecurities" Association="CortexDataModel.FK_Prices_ToSecurities">
+      <End Role="Security" EntitySet="Securities" />
+      <End Role="Price" EntitySet="Prices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AnnualCompanyStatistics_StatisticTypes" Association="CortexDataModel.FK_AnnualCompanyStatistics_StatisticTypes">
+      <End Role="StatisticType" EntitySet="StatisticTypes" />
+      <End Role="AnnualCompanyStatistic" EntitySet="AnnualCompanyStatistics" />
+    </AssociationSet>
+    <EntitySet Name="Categories" EntityType="CortexDataModel.Category" />
+    <EntitySet Name="vw_DealSecPrice" EntityType="CortexDataModel.vw_DealSecPrice" />
+    <AssociationSet Name="FK_Deals_Categories" Association="CortexDataModel.FK_Deals_Categories">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Deal" EntitySet="Deals" />
+    </AssociationSet>
+    <EntitySet Name="Analysts" EntityType="CortexDataModel.Analyst" />
+    <EntitySet Name="DealStatuses" EntityType="CortexDataModel.DealStatus" />
+    <EntitySet Name="MapDealAnalysts" EntityType="CortexDataModel.MapDealAnalyst" />
+    <AssociationSet Name="FK_MapDealAnalyst_Analysts" Association="CortexDataModel.FK_MapDealAnalyst_Analysts">
+      <End Role="Analyst" EntitySet="Analysts" />
+      <End Role="MapDealAnalyst" EntitySet="MapDealAnalysts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_DealStatuses" Association="CortexDataModel.FK_Deals_DealStatuses">
+      <End Role="DealStatus" EntitySet="DealStatuses" />
+      <End Role="Deal" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MapDealAnalyst_Deals" Association="CortexDataModel.FK_MapDealAnalyst_Deals">
+      <End Role="Deal" EntitySet="Deals" />
+      <End Role="MapDealAnalyst" EntitySet="MapDealAnalysts" />
+    </AssociationSet>
+    <AssociationSet Name="Deals_Events_FK" Association="CortexDataModel.Deals_Events_FK">
+      <End Role="Deal" EntitySet="Deals" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documents_Deals" Association="CortexDataModel.FK_Documents_Deals">
+      <End Role="Deal" EntitySet="Deals" />
+      <End Role="Document" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventTypes" Association="CortexDataModel.FK_Events_EventTypes">
+      <End Role="EventType" EntitySet="EventTypes" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <EntitySet Name="ApplicationUsers" EntityType="CortexDataModel.ApplicationUser" />
+    <EntitySet Name="MergerArbs" EntityType="CortexDataModel.MergerArb" />
+    <EntitySet Name="MergerArbNews" EntityType="CortexDataModel.MergerArbNew" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="CompanyAssociation">
+    <Key>
+      <PropertyRef Name="CompanyAssociationID" />
+    </Key>
+    <Property Name="CompanyAssociationID" Type="Int32" Nullable="false" />
+    <Property Name="Company1ID" Type="Int32" Nullable="false" />
+    <Property Name="Company2ID" Type="Int32" Nullable="false" />
+    <Property Name="AssociationType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Company" Relationship="CortexDataModel.Companies_CompanyAssociations_FK1" FromRole="CompanyAssociation" ToRole="Company" />
+    <NavigationProperty Name="Company1" Relationship="CortexDataModel.Companies_CompanyAssociations_FK2" FromRole="CompanyAssociation" ToRole="Company" />
+  </EntityType>
+  <Association Name="Companies_CompanyAssociations_FK1">
+    <End Type="CortexDataModel.Company" Role="Company" Multiplicity="1" />
+    <End Type="CortexDataModel.CompanyAssociation" Role="CompanyAssociation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyAssociation">
+        <PropertyRef Name="Company1ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_CompanyAssociations_FK2">
+    <End Type="CortexDataModel.Company" Role="Company" Multiplicity="1" />
+    <End Type="CortexDataModel.CompanyAssociation" Role="CompanyAssociation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyAssociation">
+        <PropertyRef Name="Company2ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DealType">
+    <Key>
+      <PropertyRef Name="DealTypeID" />
+    </Key>
+    <Property Name="DealTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Deals" Relationship="CortexDataModel.FK_Deals_DealTypes" FromRole="DealType" ToRole="Deal" />
+    <NavigationProperty Name="Deals1" Relationship="CortexDataModel.FK_Deals_ToDealTypes" FromRole="DealType" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="PriceID" />
+    </Key>
+    <Property Name="PriceID" Type="Int32" Nullable="false" />
+    <Property Name="SecurityID" Type="Int32" Nullable="false" />
+    <Property Name="Price1" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="PriceDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PriceSource" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Security" Relationship="CortexDataModel.FK_Prices_ToSecurities" FromRole="Price" ToRole="Security" />
+  </EntityType>
+  <EntityType Name="StatisticType">
+    <Key>
+      <PropertyRef Name="StatisticTypeID" />
+    </Key>
+    <Property Name="StatisticTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AnnualCompanyStatistics" Relationship="CortexDataModel.FK_AnnualCompanyStatistics_StatisticTypes" FromRole="StatisticType" ToRole="AnnualCompanyStatistic" />
+  </EntityType>
+  <EntityType Name="AnnualCompanyStatistic">
+    <Key>
+      <PropertyRef Name="AnnualCompanyStatisticID" />
+    </Key>
+    <Property Name="AnnualCompanyStatisticID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="StatisticTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Source" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="StatisticType" Relationship="CortexDataModel.FK_AnnualCompanyStatistics_StatisticTypes" FromRole="AnnualCompanyStatistic" ToRole="StatisticType" />
+  </EntityType>
+  <Association Name="FK_Companies_ToSecurities">
+    <End Type="CortexDataModel.Security" Role="Security" Multiplicity="0..1" />
+    <End Type="CortexDataModel.Company" Role="Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Security">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="SecurityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_DealTypes">
+    <End Type="CortexDataModel.DealType" Role="DealType" Multiplicity="0..1" />
+    <End Type="CortexDataModel.Deal" Role="Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealType">
+        <PropertyRef Name="DealTypeID" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="DealTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_ToDealTypes">
+    <End Type="CortexDataModel.DealType" Role="DealType" Multiplicity="0..1" />
+    <End Type="CortexDataModel.Deal" Role="Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealType">
+        <PropertyRef Name="DealTypeID" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="DealTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prices_ToSecurities">
+    <End Type="CortexDataModel.Security" Role="Security" Multiplicity="1" />
+    <End Type="CortexDataModel.Price" Role="Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Security">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="SecurityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AnnualCompanyStatistics_StatisticTypes">
+    <End Type="CortexDataModel.StatisticType" Role="StatisticType" Multiplicity="1" />
+    <End Type="CortexDataModel.AnnualCompanyStatistic" Role="AnnualCompanyStatistic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatisticType">
+        <PropertyRef Name="StatisticTypeID" />
+      </Principal>
+      <Dependent Role="AnnualCompanyStatistic">
+        <PropertyRef Name="StatisticTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Deals" Relationship="CortexDataModel.FK_Deals_Categories" FromRole="Category" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="vw_DealSecPrice">
+    <Key>
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="DealID" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="SecGrp" />
+      <PropertyRef Name="SecurityID1" />
+      <PropertyRef Name="SecurityID" />
+      <PropertyRef Name="PricSec" />
+      <PropertyRef Name="CurrentPrice" />
+    </Key>
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DealID" Type="Int32" Nullable="false" />
+    <Property Name="SecurityGroupID" Type="Int32" />
+    <Property Name="TargetPrice" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="DownsidePrice" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="Comps" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ExpirationDate" Type="DateTime" Precision="3" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SecGrp" Type="Int32" Nullable="false" />
+    <Property Name="SecurityID1" Type="Int32" Nullable="false" />
+    <Property Name="SecurityID" Type="Int32" Nullable="false" />
+    <Property Name="PricSec" Type="Int32" Nullable="false" />
+    <Property Name="CurrentPrice" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+  </EntityType>
+  <Association Name="FK_Deals_Categories">
+    <End Type="CortexDataModel.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="CortexDataModel.Deal" Role="Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Analyst">
+    <Key>
+      <PropertyRef Name="AnalystID" />
+    </Key>
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AnalystID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="MapDealAnalysts" Relationship="CortexDataModel.FK_MapDealAnalyst_Analysts" FromRole="Analyst" ToRole="MapDealAnalyst" />
+  </EntityType>
+  <EntityType Name="DealStatus">
+    <Key>
+      <PropertyRef Name="DealStatusID" />
+    </Key>
+    <Property Name="DealStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Deals" Relationship="CortexDataModel.FK_Deals_DealStatuses" FromRole="DealStatus" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="MapDealAnalyst">
+    <Key>
+      <PropertyRef Name="MapDealAnalystID" />
+    </Key>
+    <Property Name="DealID" Type="Int32" />
+    <Property Name="AnalystID" Type="Int32" />
+    <Property Name="MapDealAnalystID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IsLeadAnalyst" Type="Boolean" />
+    <NavigationProperty Name="Analyst" Relationship="CortexDataModel.FK_MapDealAnalyst_Analysts" FromRole="MapDealAnalyst" ToRole="Analyst" />
+    <NavigationProperty Name="Deal" Relationship="CortexDataModel.FK_MapDealAnalyst_Deals" FromRole="MapDealAnalyst" ToRole="Deal" />
+  </EntityType>
+  <Association Name="FK_MapDealAnalyst_Analysts">
+    <End Type="CortexDataModel.Analyst" Role="Analyst" Multiplicity="0..1" />
+    <End Type="CortexDataModel.MapDealAnalyst" Role="MapDealAnalyst" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Analyst">
+        <PropertyRef Name="AnalystID" />
+      </Principal>
+      <Dependent Role="MapDealAnalyst">
+        <PropertyRef Name="AnalystID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_DealStatuses">
+    <End Type="CortexDataModel.DealStatus" Role="DealStatus" Multiplicity="0..1" />
+    <End Type="CortexDataModel.Deal" Role="Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealStatus">
+        <PropertyRef Name="DealStatusID" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="DealStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MapDealAnalyst_Deals">
+    <End Type="CortexDataModel.Deal" Role="Deal" Multiplicity="0..1" />
+    <End Type="CortexDataModel.MapDealAnalyst" Role="MapDealAnalyst" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deal">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="MapDealAnalyst">
+        <PropertyRef Name="DealID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Deals_Events_FK">
+    <End Type="CortexDataModel.Deal" Role="Deal" Multiplicity="0..1" />
+    <End Type="CortexDataModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deal">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="DealID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documents_Deals">
+    <End Type="CortexDataModel.Deal" Role="Deal" Multiplicity="0..1" />
+    <End Type="CortexDataModel.Document" Role="Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deal">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="DealId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventTypes">
+    <End Type="CortexDataModel.EventType" Role="EventType" Multiplicity="1" />
+    <End Type="CortexDataModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventType">
+        <PropertyRef Name="EventTypeID" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="EventTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ApplicationUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DomainCredential" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MachineAddress" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Version" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="CreatedById" Type="Guid" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EditedById" Type="Guid" Nullable="false" />
+    <Property Name="EditedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="Actions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MergerArb">
+    <Key>
+      <PropertyRef Name="MergerArbID" />
+    </Key>
+    <Property Name="C000_DealId__Required_" Type="Int32" Nullable="false" />
+    <Property Name="C001_Deal_Name__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C002_Target_Ticker__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C003_Target_Name__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C004_Acquirer_Ticker__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C005_Acquirer_Name__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C006_File_Name_Path__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C008_Target_Shares_Owned__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C009_Acquirer_Shares_Owned__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C011_Key_Notes_1__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C012_Key_Notes_2__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C013_Key_Notes_3__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C014_Pricing_Period__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C015_Target_Earnings_Date__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C016_Acquirer_Earnings_Date__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C017_Key_Dates__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C019_Stated_Cash_Terms__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C020_Stated_Stock_Exchange_Ratio__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C021_Cash_Prorate__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C022_Stock_Prorate__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C023_Hedge_Ratio__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C024_Cash_Terms__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C025_Stock_Exchange_Ratio__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C027_Target_Price_in_Local_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C028_Acquirer_Price_in_Local_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C029_Target_Price_in_Deal_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C030_Acquirer_Price_in_Deal_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C032_Target_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C033_Acquirer_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C034_Deal_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C039_Today__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C040_Announced_Date__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C041_Estimated_Close_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C042_Potential_Days_Delayed__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C043_Days_to_Close__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C044_Close_Date__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C046_Total_Consideration__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C047_Gross_Spread__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C048_Net_Spread_before_Leverage__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C049_Cost_of_Leverage__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C050_Net_Dividends__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C051_Short_Rebates__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C052_Net_Spread__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C053_Hypothetical_Targeted_Net_Spread__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C054_Hypothetical_Unwind_Net_Spread__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C055_Theoretical_Spread_collar__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C057_Gross_Return__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C058_Annualized_ROR__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C059_Hypothetical_Targeted_Annualized_Return__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C060_Hypothetical_Unwind_Annualized_Return__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C061_Theoretical_Annualized_Return_collar__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C063_Commission_Cost_per_Share__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C064_Long_Financing_Rate__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C065_Short_Rebate__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C066_Long_Margin_Required__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C067_Short_Margin_Required__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C069_Target_Ex_Dividend_Date__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C070_Aquirer_Ex_Dividend_Date__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C071_Target_Dividend_Projected_or_Declared__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C072_Acquirer_Dividend_Projected_or_Declared__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C073_Number_of_Target_Dividends__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C074_Number_of_Acquirer_Dividends__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C075_Target_Dividend_Quarterly_Amount__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C076_Acquirer_Dividend_Quarterly_Amount__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C077_Total_Target_Dividends__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C078_Total_Acquirer_Dividends__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C080_Target_Break_Price__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C081_Acquirer_Break_Price__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C082_Expected_USD_Return_prob_wtd__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C083_RiskReward__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C084_Notional_Long_USD_MV__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C085_Net_USD_Profit_at_Close__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C086_Net_USD_Profit_at_Break__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C087_Probability_of_Break__Required_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C088_Tgt_13D_Num_shs_remaining__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C090_Prorate_Value_of_Stock__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C091_Prorate_Value_of_Cash__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C092_Prorate_Comment_1__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C093_Prorate_Comment_2__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C095_Collar_Flag_Yes_No__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C096_Collar_Flag_Normal_Inverted__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C097_Collar_Num_of_Segments__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C098_Collar_Num_of_Breakpoints__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C099_Collar___Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C100_Collar_High_Breakpoint__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C101_Collar_Position__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C102_Collar_Walk__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C103_Collar_Cure_Low_Breakpoint__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C104_Collar_Cure_High_Breakpoint__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C105_Collar_Value_of_Collar__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C106_Collar_Note_Description__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C108_Pricing_Period_Start_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C109_Pricing_Period_End_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C110_Pricing_Period_Length_days__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C112_Pricing_Period_Prc_Complete__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C113_Pricing_Period_Prc_Remaining__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C116_Pricing_Period_Weighted_Price__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C118_Bloomberg_Corporate_Action_ID__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C119_Bloomberg_Target_Company_Description__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C120_Bloomberg_Acquirer_Company_Description__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C121_Bloomberg_Deal_Description__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C122_Bloomberg_Target_Legal_Advisors__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C123_Bloomberg_Target_Financial_Advisors__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C124_Bloomberg_Acquirer_Legal_Advisors__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C125_Bloomberg_Acquirer_Financial_Advisors__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C126_Bloomberg_Pending_Approvals__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C127_Bloomberg_Approved_Approvals__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C128_Bloomberg_Expired_Approvals__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C129_Bloomberg_Entended_Approvals__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C130_Bloomberg_Announced_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C131_Bloomberg_Amendment_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C132_Bloomberg_Expected_Completion_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C133_Bloomberg_Completed_Termination_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C134_Bloomberg_Merger_Agreement_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C135_Bloomberg_Drop_Dead_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="C137_Bloomberg_Go_Shop_Period_End_Date__Optional_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MergerArbID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MergerArbNew">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Field_Updated" Type="DateTime" Precision="3" />
+    <Property Name="Field_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Field_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Calendar_Flag" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Field_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Calendar_Time" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Calendar_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DealId" Type="Int32" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

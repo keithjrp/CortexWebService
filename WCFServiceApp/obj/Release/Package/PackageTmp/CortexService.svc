@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CortexWebService.CortexWCFServices" CodeBehind="CortexService.svc.cs" %>

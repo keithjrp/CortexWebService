@@ -1,0 +1,8 @@
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\bin\CortexWebService.dll.config
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\bin\CortexWebService.dll
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\bin\CortexWebService.pdb
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\bin\EntityFramework.dll
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\bin\EntityFramework.xml
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\obj\Release\CortexWebService.csprojResolveAssemblyReference.cache
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\obj\Release\CortexWebService.dll
+E:\JRP\Cortex\CortexWebService\WCFServiceApp\obj\Release\CortexWebService.pdb

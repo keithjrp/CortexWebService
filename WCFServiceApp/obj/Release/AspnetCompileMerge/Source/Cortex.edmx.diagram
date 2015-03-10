@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="039bd22784f1484695f99378e77efdff" Name="Diagram1" ZoomLevel="124">
+        <EntityTypeShape EntityType="CortexDataModel.Company" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.Currency" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.Deal" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.DocumentGroup" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.Document" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.Event" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.EventType" Width="1.5" PointX="0.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.Security" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.SecurityGroup" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.SecurityType" Width="1.5" PointX="1.5" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="CortexDataModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="CortexDataModel.Companies_Deals_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Companies_Deals_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Companies_Deals_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Currencies_Securities_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.FK_Deals_Currencies" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Events_Deals_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Events_Deals_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Events_Deals_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Events_Deals_FK4" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.FK_Deals_Deals" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.FK_Deals_DocumentGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.SecurityGroups_Deals_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Documents_DocumentGroups_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Documents_DocumentGroups_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Documents_DocumentGroups_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Securities_SecurityGroups_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Securities_SecurityGroups_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Securities_SecurityGroups_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Securities_SecurityGroups_FK4" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.Securities_SecurityGroups_FK5" ManuallyRouted="false" />
+        <AssociationConnector Association="CortexDataModel.SecurityTypes_Securities_FK1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CortexDataModel.CompanyAssociation" Width="1.5" PointX="5.25" PointY="8.75" />
+        <AssociationConnector Association="CortexDataModel.Companies_CompanyAssociations_FK1" />
+        <AssociationConnector Association="CortexDataModel.Companies_CompanyAssociations_FK2" />
+        <EntityTypeShape EntityType="CortexDataModel.DealType" Width="1.5" PointX="7.375" PointY="3.875" />
+        <EntityTypeShape EntityType="CortexDataModel.Price" Width="1.5" PointX="3" PointY="25.5" />
+        <EntityTypeShape EntityType="CortexDataModel.StatisticType" Width="1.5" PointX="7.375" PointY="7.25" />
+        <EntityTypeShape EntityType="CortexDataModel.AnnualCompanyStatistic" Width="1.5" PointX="9.75" PointY="7.5" />
+        <AssociationConnector Association="CortexDataModel.FK_Companies_ToSecurities" />
+        <AssociationConnector Association="CortexDataModel.FK_Deals_DealTypes" />
+        <AssociationConnector Association="CortexDataModel.FK_Deals_ToDealTypes" />
+        <AssociationConnector Association="CortexDataModel.FK_Prices_ToSecurities" />
+        <AssociationConnector Association="CortexDataModel.FK_AnnualCompanyStatistics_StatisticTypes" />
+        <EntityTypeShape EntityType="CortexDataModel.Category" Width="1.5" PointX="3" PointY="29.25" />
+        <EntityTypeShape EntityType="CortexDataModel.vw_DealSecPrice" Width="1.5" PointX="10.375" PointY="11.625" />
+        <AssociationConnector Association="CortexDataModel.FK_Deals_Categories" />
+        <EntityTypeShape EntityType="CortexDataModel.Analyst" Width="1.5" PointX="8.25" PointY="16.75" />
+        <EntityTypeShape EntityType="CortexDataModel.DealStatus" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="CortexDataModel.MapDealAnalyst" Width="1.5" PointX="10.5" PointY="4.5" />
+        <AssociationConnector Association="CortexDataModel.FK_MapDealAnalyst_Analysts" />
+        <AssociationConnector Association="CortexDataModel.FK_Deals_DealStatuses" />
+        <AssociationConnector Association="CortexDataModel.FK_MapDealAnalyst_Deals" />
+        <AssociationConnector Association="CortexDataModel.Deals_Events_FK" />
+        <AssociationConnector Association="CortexDataModel.FK_Documents_Deals" />
+        <AssociationConnector Association="CortexDataModel.FK_Events_EventTypes" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CortexDataModelStoreContainer" CdmEntityContainer="CortexEntities">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="CortexDataModel.Company">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="SecurityID" ColumnName="SecurityID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="CortexDataModel.Currency">
+        <MappingFragment StoreEntitySet="Currencies">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deals">
+      <EntityTypeMapping TypeName="CortexDataModel.Deal">
+        <MappingFragment StoreEntitySet="Deals">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="DealStatusID" ColumnName="DealStatusID" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="DealTypeID" ColumnName="DealTypeID" />
+          <ScalarProperty Name="Comps" ColumnName="Comps" />
+          <ScalarProperty Name="DownsidePriceValuation" ColumnName="DownsidePriceValuation" />
+          <ScalarProperty Name="DownsidePrice" ColumnName="DownsidePrice" />
+          <ScalarProperty Name="Background" ColumnName="Background" />
+          <ScalarProperty Name="ValuationMethodology" ColumnName="ValuationMethodology" />
+          <ScalarProperty Name="KeyRisks" ColumnName="KeyRisks" />
+          <ScalarProperty Name="Catalyst" ColumnName="Catalyst" />
+          <ScalarProperty Name="CurrentValuation" ColumnName="CurrentValuation" />
+          <ScalarProperty Name="TargetPriceValuation" ColumnName="TargetPriceValuation" />
+          <ScalarProperty Name="DealID" ColumnName="DealID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SecurityGroupID" ColumnName="SecurityGroupID" />
+          <ScalarProperty Name="CompanyID1" ColumnName="CompanyID1" />
+          <ScalarProperty Name="CompanyID2" ColumnName="CompanyID2" />
+          <ScalarProperty Name="CompanyID3" ColumnName="CompanyID3" />
+          <ScalarProperty Name="InvestmentThesis" ColumnName="InvestmentThesis" />
+          <ScalarProperty Name="MergerAgreementEventID" ColumnName="MergerAgreementEventID" />
+          <ScalarProperty Name="DropDeadEventID" ColumnName="DropDeadEventID" />
+          <ScalarProperty Name="TargetShareholderMeetingEventID" ColumnName="TargetShareholderMeetingEventID" />
+          <ScalarProperty Name="AcquirerShareholderMeetingEventID" ColumnName="AcquirerShareholderMeetingEventID" />
+          <ScalarProperty Name="TargetPrice" ColumnName="TargetPrice" />
+          <ScalarProperty Name="Recommendation" ColumnName="Recommendation" />
+          <ScalarProperty Name="DealCurrencyID" ColumnName="DealCurrencyID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="DocumentGroupID" ColumnName="DocumentGroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentGroups">
+      <EntityTypeMapping TypeName="CortexDataModel.DocumentGroup">
+        <MappingFragment StoreEntitySet="DocumentGroups">
+          <ScalarProperty Name="DocumentGroupID" ColumnName="DocumentGroupID" />
+          <ScalarProperty Name="DocumentID1" ColumnName="DocumentID1" />
+          <ScalarProperty Name="DocumentID2" ColumnName="DocumentID2" />
+          <ScalarProperty Name="DocumentID3" ColumnName="DocumentID3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="CortexDataModel.Document">
+        <MappingFragment StoreEntitySet="Documents">
+          <ScalarProperty Name="DealId" ColumnName="DealId" />
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="URI" ColumnName="URI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="CortexDataModel.Event">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="DealID" ColumnName="DealID" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="EventTypeID" ColumnName="EventTypeID" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventTypes">
+      <EntityTypeMapping TypeName="CortexDataModel.EventType">
+        <MappingFragment StoreEntitySet="EventTypes">
+          <ScalarProperty Name="EventTypeID" ColumnName="EventTypeID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Securities">
+      <EntityTypeMapping TypeName="CortexDataModel.Security">
+        <MappingFragment StoreEntitySet="Securities">
+          <ScalarProperty Name="Ticker" ColumnName="Ticker" />
+          <ScalarProperty Name="Sedol" ColumnName="Sedol" />
+          <ScalarProperty Name="Isin" ColumnName="Isin" />
+          <ScalarProperty Name="Cusip" ColumnName="Cusip" />
+          <ScalarProperty Name="SecurityID" ColumnName="SecurityID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SecurityTypeID" ColumnName="SecurityTypeID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityGroups">
+      <EntityTypeMapping TypeName="CortexDataModel.SecurityGroup">
+        <MappingFragment StoreEntitySet="SecurityGroups">
+          <ScalarProperty Name="SecurityGroupID" ColumnName="SecurityGroupID" />
+          <ScalarProperty Name="SecurityID1" ColumnName="SecurityID1" />
+          <ScalarProperty Name="SecurityID2" ColumnName="SecurityID2" />
+          <ScalarProperty Name="SecurityID3" ColumnName="SecurityID3" />
+          <ScalarProperty Name="SecurityID4" ColumnName="SecurityID4" />
+          <ScalarProperty Name="SecurityID5" ColumnName="SecurityID5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityTypes">
+      <EntityTypeMapping TypeName="CortexDataModel.SecurityType">
+        <MappingFragment StoreEntitySet="SecurityTypes">
+          <ScalarProperty Name="SecurityTypeID" ColumnName="SecurityTypeID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CortexDataModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="CortexDataModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="CortexDataModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="CortexDataModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="CortexDataModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CortexDataModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="CortexDataModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CortexDataModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="CortexDataModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="CortexDataModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="CompanyAssociations">
+      <EntityTypeMapping TypeName="CortexDataModel.CompanyAssociation">
+        <MappingFragment StoreEntitySet="CompanyAssociations">
+          <ScalarProperty Name="AssociationType" ColumnName="AssociationType" />
+          <ScalarProperty Name="Company2ID" ColumnName="Company2ID" />
+          <ScalarProperty Name="Company1ID" ColumnName="Company1ID" />
+          <ScalarProperty Name="CompanyAssociationID" ColumnName="CompanyAssociationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DealTypes">
+      <EntityTypeMapping TypeName="CortexDataModel.DealType">
+        <MappingFragment StoreEntitySet="DealTypes">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DealTypeID" ColumnName="DealTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prices">
+      <EntityTypeMapping TypeName="CortexDataModel.Price">
+        <MappingFragment StoreEntitySet="Prices">
+          <ScalarProperty Name="PriceSource" ColumnName="PriceSource" />
+          <ScalarProperty Name="PriceDateTime" ColumnName="PriceDateTime" />
+          <ScalarProperty Name="Price1" ColumnName="Price" />
+          <ScalarProperty Name="SecurityID" ColumnName="SecurityID" />
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatisticTypes">
+      <EntityTypeMapping TypeName="CortexDataModel.StatisticType">
+        <MappingFragment StoreEntitySet="StatisticTypes">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StatisticTypeID" ColumnName="StatisticTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnnualCompanyStatistics">
+      <EntityTypeMapping TypeName="CortexDataModel.AnnualCompanyStatistic">
+        <MappingFragment StoreEntitySet="AnnualCompanyStatistics">
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="StatisticTypeID" ColumnName="StatisticTypeID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="AnnualCompanyStatisticID" ColumnName="AnnualCompanyStatisticID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="CortexDataModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_DealSecPrice">
+      <EntityTypeMapping TypeName="CortexDataModel.vw_DealSecPrice">
+        <MappingFragment StoreEntitySet="vw_DealSecPrice">
+          <ScalarProperty Name="CurrentPrice" ColumnName="CurrentPrice" />
+          <ScalarProperty Name="PricSec" ColumnName="PricSec" />
+          <ScalarProperty Name="SecurityID" ColumnName="SecurityID" />
+          <ScalarProperty Name="SecurityID1" ColumnName="SecurityID1" />
+          <ScalarProperty Name="SecGrp" ColumnName="SecGrp" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="Comps" ColumnName="Comps" />
+          <ScalarProperty Name="DownsidePrice" ColumnName="DownsidePrice" />
+          <ScalarProperty Name="TargetPrice" ColumnName="TargetPrice" />
+          <ScalarProperty Name="SecurityGroupID" ColumnName="SecurityGroupID" />
+          <ScalarProperty Name="DealID" ColumnName="DealID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Analysts">
+      <EntityTypeMapping TypeName="CortexDataModel.Analyst">
+        <MappingFragment StoreEntitySet="Analysts">
+          <ScalarProperty Name="AnalystID" ColumnName="AnalystID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DealStatuses">
+      <EntityTypeMapping TypeName="CortexDataModel.DealStatus">
+        <MappingFragment StoreEntitySet="DealStatuses">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DealStatusID" ColumnName="DealStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapDealAnalysts">
+      <EntityTypeMapping TypeName="CortexDataModel.MapDealAnalyst">
+        <MappingFragment StoreEntitySet="MapDealAnalyst">
+          <ScalarProperty Name="IsLeadAnalyst" ColumnName="IsLeadAnalyst" />
+          <ScalarProperty Name="MapDealAnalystID" ColumnName="MapDealAnalystID" />
+          <ScalarProperty Name="AnalystID" ColumnName="AnalystID" />
+          <ScalarProperty Name="DealID" ColumnName="DealID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationUsers">
+      <EntityTypeMapping TypeName="CortexDataModel.ApplicationUser">
+        <MappingFragment StoreEntitySet="ApplicationUser">
+          <ScalarProperty Name="Actions" ColumnName="Actions" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="EditedDateTime" ColumnName="EditedDateTime" />
+          <ScalarProperty Name="EditedById" ColumnName="EditedById" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastAccessDateTime" ColumnName="LastAccessDateTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MachineAddress" ColumnName="MachineAddress" />
+          <ScalarProperty Name="DomainCredential" ColumnName="DomainCredential" />
+          <ScalarProperty Name="Id" ColumnName="ApplicationUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MergerArbs">
+      <EntityTypeMapping TypeName="CortexDataModel.MergerArb">
+        <MappingFragment StoreEntitySet="MergerArb">
+          <ScalarProperty Name="MergerArbID" ColumnName="MergerArbID" />
+          <ScalarProperty Name="C137_Bloomberg_Go_Shop_Period_End_Date__Optional_" ColumnName="137 Bloomberg_Go-Shop_Period_End_Date (Optional)" />
+          <ScalarProperty Name="C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_" ColumnName="136 Bloomberg_Go-Shop_Period_Start_Date (Optional)" />
+          <ScalarProperty Name="C135_Bloomberg_Drop_Dead_Date__Optional_" ColumnName="135 Bloomberg_Drop_Dead_Date (Optional)" />
+          <ScalarProperty Name="C134_Bloomberg_Merger_Agreement_Date__Optional_" ColumnName="134 Bloomberg_Merger_Agreement_Date (Optional)" />
+          <ScalarProperty Name="C133_Bloomberg_Completed_Termination_Date__Optional_" ColumnName="133 Bloomberg_Completed_Termination_Date (Optional)" />
+          <ScalarProperty Name="C132_Bloomberg_Expected_Completion_Date__Optional_" ColumnName="132 Bloomberg_Expected_Completion_Date (Optional)" />
+          <ScalarProperty Name="C131_Bloomberg_Amendment_Date__Optional_" ColumnName="131 Bloomberg_Amendment_Date (Optional)" />
+          <ScalarProperty Name="C130_Bloomberg_Announced_Date__Optional_" ColumnName="130 Bloomberg_Announced_Date (Optional)" />
+          <ScalarProperty Name="C129_Bloomberg_Entended_Approvals__Optional_" ColumnName="129 Bloomberg_Entended_Approvals (Optional)" />
+          <ScalarProperty Name="C128_Bloomberg_Expired_Approvals__Optional_" ColumnName="128 Bloomberg_Expired_Approvals (Optional)" />
+          <ScalarProperty Name="C127_Bloomberg_Approved_Approvals__Optional_" ColumnName="127 Bloomberg_Approved_Approvals (Optional)" />
+          <ScalarProperty Name="C126_Bloomberg_Pending_Approvals__Optional_" ColumnName="126 Bloomberg_Pending_Approvals (Optional)" />
+          <ScalarProperty Name="C125_Bloomberg_Acquirer_Financial_Advisors__Optional_" ColumnName="125 Bloomberg_Acquirer_Financial_Advisors (Optional)" />
+          <ScalarProperty Name="C124_Bloomberg_Acquirer_Legal_Advisors__Optional_" ColumnName="124 Bloomberg_Acquirer_Legal_Advisors (Optional)" />
+          <ScalarProperty Name="C123_Bloomberg_Target_Financial_Advisors__Optional_" ColumnName="123 Bloomberg_Target_Financial_Advisors (Optional)" />
+          <ScalarProperty Name="C122_Bloomberg_Target_Legal_Advisors__Optional_" ColumnName="122 Bloomberg_Target_Legal_Advisors (Optional)" />
+          <ScalarProperty Name="C121_Bloomberg_Deal_Description__Optional_" ColumnName="121 Bloomberg_Deal_Description (Optional)" />
+          <ScalarProperty Name="C120_Bloomberg_Acquirer_Company_Description__Optional_" ColumnName="120 Bloomberg_Acquirer_Company_Description (Optional)" />
+          <ScalarProperty Name="C119_Bloomberg_Target_Company_Description__Optional_" ColumnName="119 Bloomberg_Target_Company_Description (Optional)" />
+          <ScalarProperty Name="C118_Bloomberg_Corporate_Action_ID__Optional_" ColumnName="118 Bloomberg_Corporate_Action_ID (Optional)" />
+          <ScalarProperty Name="C116_Pricing_Period_Weighted_Price__Optional_" ColumnName="116 Pricing_Period_Weighted_Price (Optional)" />
+          <ScalarProperty Name="C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_" ColumnName="115 Pricing_Period_Price_Based_on_Prc_Remaining (Optional)" />
+          <ScalarProperty Name="C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_" ColumnName="114 Pricing_Period_Price_Based_on_Prc_Complete (Optional)" />
+          <ScalarProperty Name="C113_Pricing_Period_Prc_Remaining__Optional_" ColumnName="113 Pricing_Period_Prc_Remaining (Optional)" />
+          <ScalarProperty Name="C112_Pricing_Period_Prc_Complete__Optional_" ColumnName="112 Pricing_Period_Prc_Complete (Optional)" />
+          <ScalarProperty Name="C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_" ColumnName="111 Pricing_Period_Trading_Days_Prior_to_Close_ (Optional)" />
+          <ScalarProperty Name="C110_Pricing_Period_Length_days__Optional_" ColumnName="110 Pricing_Period_Length_days (Optional)" />
+          <ScalarProperty Name="C109_Pricing_Period_End_Date__Optional_" ColumnName="109 Pricing_Period_End_Date (Optional)" />
+          <ScalarProperty Name="C108_Pricing_Period_Start_Date__Optional_" ColumnName="108 Pricing_Period_Start_Date (Optional)" />
+          <ScalarProperty Name="C106_Collar_Note_Description__Optional_" ColumnName="106 Collar_Note_Description (Optional)" />
+          <ScalarProperty Name="C105_Collar_Value_of_Collar__Optional_" ColumnName="105 Collar_Value_of_Collar (Optional)" />
+          <ScalarProperty Name="C104_Collar_Cure_High_Breakpoint__Optional_" ColumnName="104 Collar_Cure_High_Breakpoint (Optional)" />
+          <ScalarProperty Name="C103_Collar_Cure_Low_Breakpoint__Optional_" ColumnName="103 Collar_Cure_Low_Breakpoint (Optional)" />
+          <ScalarProperty Name="C102_Collar_Walk__Optional_" ColumnName="102 Collar_Walk (Optional)" />
+          <ScalarProperty Name="C101_Collar_Position__Optional_" ColumnName="101 Collar_Position (Optional)" />
+          <ScalarProperty Name="C100_Collar_High_Breakpoint__Optional_" ColumnName="100 Collar_High_Breakpoint (Optional)" />
+          <ScalarProperty Name="C099_Collar___Optional_" ColumnName="099 Collar_ (Optional)" />
+          <ScalarProperty Name="C098_Collar_Num_of_Breakpoints__Optional_" ColumnName="098 Collar_Num_of_Breakpoints (Optional)" />
+          <ScalarProperty Name="C097_Collar_Num_of_Segments__Optional_" ColumnName="097 Collar_Num_of_Segments (Optional)" />
+          <ScalarProperty Name="C096_Collar_Flag_Normal_Inverted__Optional_" ColumnName="096 Collar_Flag_Normal_Inverted (Optional)" />
+          <ScalarProperty Name="C095_Collar_Flag_Yes_No__Optional_" ColumnName="095 Collar_Flag_Yes_No (Optional)" />
+          <ScalarProperty Name="C093_Prorate_Comment_2__Optional_" ColumnName="093 Prorate_Comment_2 (Optional)" />
+          <ScalarProperty Name="C092_Prorate_Comment_1__Optional_" ColumnName="092 Prorate_Comment_1 (Optional)" />
+          <ScalarProperty Name="C091_Prorate_Value_of_Cash__Optional_" ColumnName="091 Prorate_Value_of_Cash (Optional)" />
+          <ScalarProperty Name="C090_Prorate_Value_of_Stock__Optional_" ColumnName="090 Prorate_Value_of_Stock (Optional)" />
+          <ScalarProperty Name="C088_Tgt_13D_Num_shs_remaining__Optional_" ColumnName="088 Tgt_13D_Num_shs_remaining (Optional)" />
+          <ScalarProperty Name="C087_Probability_of_Break__Required_" ColumnName="087 Probability_of_Break (Required)" />
+          <ScalarProperty Name="C086_Net_USD_Profit_at_Break__Required_" ColumnName="086 Net_USD_Profit_at_Break (Required)" />
+          <ScalarProperty Name="C085_Net_USD_Profit_at_Close__Required_" ColumnName="085 Net_USD_Profit_at_Close (Required)" />
+          <ScalarProperty Name="C084_Notional_Long_USD_MV__Required_" ColumnName="084 Notional_Long_USD_MV (Required)" />
+          <ScalarProperty Name="C083_RiskReward__Required_" ColumnName="083 RiskReward (Required)" />
+          <ScalarProperty Name="C082_Expected_USD_Return_prob_wtd__Required_" ColumnName="082 Expected_USD_Return_prob_wtd (Required)" />
+          <ScalarProperty Name="C081_Acquirer_Break_Price__Required_" ColumnName="081 Acquirer_Break_Price (Required)" />
+          <ScalarProperty Name="C080_Target_Break_Price__Required_" ColumnName="080 Target_Break_Price (Required)" />
+          <ScalarProperty Name="C078_Total_Acquirer_Dividends__Required_" ColumnName="078 Total_Acquirer_Dividends (Required)" />
+          <ScalarProperty Name="C077_Total_Target_Dividends__Required_" ColumnName="077 Total_Target_Dividends (Required)" />
+          <ScalarProperty Name="C076_Acquirer_Dividend_Quarterly_Amount__Required_" ColumnName="076 Acquirer_Dividend_Quarterly_Amount (Required)" />
+          <ScalarProperty Name="C075_Target_Dividend_Quarterly_Amount__Required_" ColumnName="075 Target_Dividend_Quarterly_Amount (Required)" />
+          <ScalarProperty Name="C074_Number_of_Acquirer_Dividends__Required_" ColumnName="074 Number_of_Acquirer_Dividends (Required)" />
+          <ScalarProperty Name="C073_Number_of_Target_Dividends__Required_" ColumnName="073 Number_of_Target_Dividends (Required)" />
+          <ScalarProperty Name="C072_Acquirer_Dividend_Projected_or_Declared__Required_" ColumnName="072 Acquirer_Dividend_Projected_or_Declared (Required)" />
+          <ScalarProperty Name="C071_Target_Dividend_Projected_or_Declared__Required_" ColumnName="071 Target_Dividend_Projected_or_Declared (Required)" />
+          <ScalarProperty Name="C070_Aquirer_Ex_Dividend_Date__Required_" ColumnName="070 Aquirer_Ex-Dividend_Date (Required)" />
+          <ScalarProperty Name="C069_Target_Ex_Dividend_Date__Required_" ColumnName="069 Target_Ex-Dividend_Date (Required)" />
+          <ScalarProperty Name="C067_Short_Margin_Required__Optional_" ColumnName="067 Short_Margin_Required (Optional)" />
+          <ScalarProperty Name="C066_Long_Margin_Required__Optional_" ColumnName="066 Long_Margin_Required (Optional)" />
+          <ScalarProperty Name="C065_Short_Rebate__Optional_" ColumnName="065 Short_Rebate (Optional)" />
+          <ScalarProperty Name="C064_Long_Financing_Rate__Optional_" ColumnName="064 Long_Financing_Rate (Optional)" />
+          <ScalarProperty Name="C063_Commission_Cost_per_Share__Optional_" ColumnName="063 Commission_Cost_per_Share (Optional)" />
+          <ScalarProperty Name="C061_Theoretical_Annualized_Return_collar__Required_" ColumnName="061 Theoretical_Annualized_Return_collar (Required)" />
+          <ScalarProperty Name="C060_Hypothetical_Unwind_Annualized_Return__Required_" ColumnName="060 Hypothetical_Unwind_Annualized_Return (Required)" />
+          <ScalarProperty Name="C059_Hypothetical_Targeted_Annualized_Return__Required_" ColumnName="059 Hypothetical_Targeted_Annualized_Return (Required)" />
+          <ScalarProperty Name="C058_Annualized_ROR__Required_" ColumnName="058 Annualized_ROR (Required)" />
+          <ScalarProperty Name="C057_Gross_Return__Optional_" ColumnName="057 Gross_Return (Optional)" />
+          <ScalarProperty Name="C055_Theoretical_Spread_collar__Required_" ColumnName="055 Theoretical_Spread_collar (Required)" />
+          <ScalarProperty Name="C054_Hypothetical_Unwind_Net_Spread__Required_" ColumnName="054 Hypothetical_Unwind_Net_Spread (Required)" />
+          <ScalarProperty Name="C053_Hypothetical_Targeted_Net_Spread__Required_" ColumnName="053 Hypothetical_Targeted_Net_Spread (Required)" />
+          <ScalarProperty Name="C052_Net_Spread__Required_" ColumnName="052 Net_Spread (Required)" />
+          <ScalarProperty Name="C051_Short_Rebates__Optional_" ColumnName="051 Short_Rebates (Optional)" />
+          <ScalarProperty Name="C050_Net_Dividends__Required_" ColumnName="050 Net_Dividends (Required)" />
+          <ScalarProperty Name="C049_Cost_of_Leverage__Optional_" ColumnName="049 Cost_of_Leverage (Optional)" />
+          <ScalarProperty Name="C048_Net_Spread_before_Leverage__Required_" ColumnName="048 Net_Spread_before_Leverage (Required)" />
+          <ScalarProperty Name="C047_Gross_Spread__Required_" ColumnName="047 Gross_Spread (Required)" />
+          <ScalarProperty Name="C046_Total_Consideration__Optional_" ColumnName="046 Total_Consideration (Optional)" />
+          <ScalarProperty Name="C044_Close_Date__Required_" ColumnName="044 Close_Date (Required)" />
+          <ScalarProperty Name="C043_Days_to_Close__Optional_" ColumnName="043 Days_to_Close (Optional)" />
+          <ScalarProperty Name="C042_Potential_Days_Delayed__Optional_" ColumnName="042 Potential_Days_Delayed (Optional)" />
+          <ScalarProperty Name="C041_Estimated_Close_Date__Optional_" ColumnName="041 Estimated_Close_Date (Optional)" />
+          <ScalarProperty Name="C040_Announced_Date__Required_" ColumnName="040 Announced_Date (Required)" />
+          <ScalarProperty Name="C039_Today__Optional_" ColumnName="039 Today (Optional)" />
+          <ScalarProperty Name="C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_" ColumnName="037 FX_Ratio_to_Covert_Deal_Currency_to_USD (Optional)" />
+          <ScalarProperty Name="C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_" ColumnName="036 FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency (Required)" />
+          <ScalarProperty Name="C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_" ColumnName="035 FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency (Required)" />
+          <ScalarProperty Name="C034_Deal_Currency__Required_" ColumnName="034 Deal_Currency (Required)" />
+          <ScalarProperty Name="C033_Acquirer_Currency__Required_" ColumnName="033 Acquirer_Currency (Required)" />
+          <ScalarProperty Name="C032_Target_Currency__Required_" ColumnName="032 Target_Currency (Required)" />
+          <ScalarProperty Name="C030_Acquirer_Price_in_Deal_Currency__Required_" ColumnName="030 Acquirer_Price_in_Deal_Currency (Required)" />
+          <ScalarProperty Name="C029_Target_Price_in_Deal_Currency__Required_" ColumnName="029 Target_Price_in_Deal_Currency (Required)" />
+          <ScalarProperty Name="C028_Acquirer_Price_in_Local_Currency__Required_" ColumnName="028 Acquirer_Price_in_Local_Currency (Required)" />
+          <ScalarProperty Name="C027_Target_Price_in_Local_Currency__Required_" ColumnName="027 Target_Price_in_Local_Currency (Required)" />
+          <ScalarProperty Name="C025_Stock_Exchange_Ratio__Required_" ColumnName="025 Stock_Exchange_Ratio (Required)" />
+          <ScalarProperty Name="C024_Cash_Terms__Required_" ColumnName="024 Cash_Terms (Required)" />
+          <ScalarProperty Name="C023_Hedge_Ratio__Required_" ColumnName="023 Hedge_Ratio (Required)" />
+          <ScalarProperty Name="C022_Stock_Prorate__Optional_" ColumnName="022 Stock_Prorate (Optional)" />
+          <ScalarProperty Name="C021_Cash_Prorate__Optional_" ColumnName="021 Cash_Prorate (Optional)" />
+          <ScalarProperty Name="C020_Stated_Stock_Exchange_Ratio__Optional_" ColumnName="020 Stated_Stock_Exchange_Ratio (Optional)" />
+          <ScalarProperty Name="C019_Stated_Cash_Terms__Optional_" ColumnName="019 Stated_Cash_Terms (Optional)" />
+          <ScalarProperty Name="C017_Key_Dates__Required_" ColumnName="017 Key_Dates (Required)" />
+          <ScalarProperty Name="C016_Acquirer_Earnings_Date__Required_" ColumnName="016 Acquirer_Earnings_Date (Required)" />
+          <ScalarProperty Name="C015_Target_Earnings_Date__Required_" ColumnName="015 Target_Earnings_Date (Required)" />
+          <ScalarProperty Name="C014_Pricing_Period__Required_" ColumnName="014 Pricing_Period (Required)" />
+          <ScalarProperty Name="C013_Key_Notes_3__Required_" ColumnName="013 Key_Notes_3 (Required)" />
+          <ScalarProperty Name="C012_Key_Notes_2__Required_" ColumnName="012 Key_Notes_2 (Required)" />
+          <ScalarProperty Name="C011_Key_Notes_1__Required_" ColumnName="011 Key_Notes_1 (Required)" />
+          <ScalarProperty Name="C009_Acquirer_Shares_Owned__Required_" ColumnName="009 Acquirer_Shares_Owned (Required)" />
+          <ScalarProperty Name="C008_Target_Shares_Owned__Required_" ColumnName="008 Target_Shares_Owned (Required)" />
+          <ScalarProperty Name="C006_File_Name_Path__Required_" ColumnName="006 File_Name_Path (Required)" />
+          <ScalarProperty Name="C005_Acquirer_Name__Required_" ColumnName="005 Acquirer_Name (Required)" />
+          <ScalarProperty Name="C004_Acquirer_Ticker__Required_" ColumnName="004 Acquirer_Ticker (Required)" />
+          <ScalarProperty Name="C003_Target_Name__Required_" ColumnName="003 Target_Name (Required)" />
+          <ScalarProperty Name="C002_Target_Ticker__Required_" ColumnName="002 Target_Ticker (Required)" />
+          <ScalarProperty Name="C001_Deal_Name__Required_" ColumnName="001 Deal_Name (Required)" />
+          <ScalarProperty Name="C000_DealId__Required_" ColumnName="000 DealId (Required)" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MergerArbNews">
+      <EntityTypeMapping TypeName="CortexDataModel.MergerArbNew">
+        <MappingFragment StoreEntitySet="MergerArbNew">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DealId" ColumnName="DealId" />
+          <ScalarProperty Name="Calendar_Comment" ColumnName="Calendar Comment" />
+          <ScalarProperty Name="Calendar_Time" ColumnName="Calendar Time" />
+          <ScalarProperty Name="Field_Value" ColumnName="Field Value" />
+          <ScalarProperty Name="Calendar_Flag" ColumnName="Calendar Flag" />
+          <ScalarProperty Name="Field_Name" ColumnName="Field Name" />
+          <ScalarProperty Name="Field_Type" ColumnName="Field Type" />
+          <ScalarProperty Name="Field_Updated" ColumnName="Field Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

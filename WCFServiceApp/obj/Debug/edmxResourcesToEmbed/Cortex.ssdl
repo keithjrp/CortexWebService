@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CortexDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="Analysts">
+    <Key>
+      <PropertyRef Name="AnalystID" />
+    </Key>
+    <Property Name="Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="AnalystID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AnnualCompanyStatistics">
+    <Key>
+      <PropertyRef Name="AnnualCompanyStatisticID" />
+    </Key>
+    <Property Name="AnnualCompanyStatisticID" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="StatisticTypeID" Type="int" Nullable="false" />
+    <Property Name="Value" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Source" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="ApplicationUser">
+    <Key>
+      <PropertyRef Name="ApplicationUserId" />
+    </Key>
+    <Property Name="ApplicationUserId" Type="uniqueidentifier" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DomainCredential" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="MachineAddress" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LastAccessDateTime" Type="datetime" Nullable="false" />
+    <Property Name="Version" Type="int" Nullable="false" />
+    <Property Name="CreatedById" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="EditedById" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EditedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="Actions" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Class" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="SecurityID" Type="int" />
+  </EntityType>
+  <EntityType Name="CompanyAssociations">
+    <Key>
+      <PropertyRef Name="CompanyAssociationID" />
+    </Key>
+    <Property Name="CompanyAssociationID" Type="int" Nullable="false" />
+    <Property Name="Company1ID" Type="int" Nullable="false" />
+    <Property Name="Company2ID" Type="int" Nullable="false" />
+    <Property Name="AssociationType" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Currencies">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="int" Nullable="false" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CurrencyName" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Deals">
+    <Key>
+      <PropertyRef Name="DealID" />
+    </Key>
+    <Property Name="DealID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SecurityGroupID" Type="int" />
+    <Property Name="CompanyID1" Type="int" />
+    <Property Name="CompanyID2" Type="int" />
+    <Property Name="CompanyID3" Type="int" />
+    <Property Name="InvestmentThesis" Type="nvarchar(max)" />
+    <Property Name="MergerAgreementEventID" Type="int" />
+    <Property Name="DropDeadEventID" Type="int" />
+    <Property Name="TargetShareholderMeetingEventID" Type="int" />
+    <Property Name="AcquirerShareholderMeetingEventID" Type="int" />
+    <Property Name="TargetPrice" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="Recommendation" Type="varchar(max)" />
+    <Property Name="DealCurrencyID" Type="int" />
+    <Property Name="CurrencyID" Type="int" />
+    <Property Name="DocumentGroupID" Type="int" />
+    <Property Name="TargetPriceValuation" Type="varchar(max)" />
+    <Property Name="CurrentValuation" Type="varchar(max)" />
+    <Property Name="Catalyst" Type="varchar(max)" />
+    <Property Name="KeyRisks" Type="varchar(max)" />
+    <Property Name="ValuationMethodology" Type="varchar(max)" />
+    <Property Name="Background" Type="varchar(max)" />
+    <Property Name="DownsidePrice" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="DownsidePriceValuation" Type="varchar(max)" />
+    <Property Name="Comps" Type="varchar(max)" />
+    <Property Name="DealTypeID" Type="int" />
+    <Property Name="ExpirationDate" Type="datetime" />
+    <Property Name="DealStatusID" Type="int" />
+    <Property Name="CategoryID" Type="int" />
+  </EntityType>
+  <EntityType Name="DealStatuses">
+    <Key>
+      <PropertyRef Name="DealStatusID" />
+    </Key>
+    <Property Name="DealStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DealTypes">
+    <Key>
+      <PropertyRef Name="DealTypeID" />
+    </Key>
+    <Property Name="DealTypeID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DocumentGroups">
+    <Key>
+      <PropertyRef Name="DocumentGroupID" />
+    </Key>
+    <Property Name="DocumentGroupID" Type="int" Nullable="false" />
+    <Property Name="DocumentID1" Type="int" Nullable="false" />
+    <Property Name="DocumentID2" Type="int" />
+    <Property Name="DocumentID3" Type="int" />
+  </EntityType>
+  <EntityType Name="Documents">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="DocumentID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="URI" Type="varchar(max)" Nullable="false" />
+    <Property Name="DealId" Type="int" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+    <Property Name="EventDate" Type="datetime" Nullable="false" />
+    <Property Name="EventTypeID" Type="int" Nullable="false" />
+    <Property Name="Note" Type="varchar(max)" />
+    <Property Name="DealID" Type="int" />
+  </EntityType>
+  <EntityType Name="EventTypes">
+    <Key>
+      <PropertyRef Name="EventTypeID" />
+    </Key>
+    <Property Name="EventTypeID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="MapDealAnalyst">
+    <Key>
+      <PropertyRef Name="MapDealAnalystID" />
+    </Key>
+    <Property Name="DealID" Type="int" />
+    <Property Name="AnalystID" Type="int" />
+    <Property Name="MapDealAnalystID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IsLeadAnalyst" Type="bit" />
+  </EntityType>
+  <EntityType Name="MergerArb">
+    <Key>
+      <PropertyRef Name="MergerArbID" />
+    </Key>
+    <Property Name="000 DealId (Required)" Type="int" Nullable="false" />
+    <Property Name="001 Deal_Name (Required)" Type="varchar(max)" />
+    <Property Name="002 Target_Ticker (Required)" Type="varchar(max)" />
+    <Property Name="003 Target_Name (Required)" Type="varchar(max)" />
+    <Property Name="004 Acquirer_Ticker (Required)" Type="varchar(max)" />
+    <Property Name="005 Acquirer_Name (Required)" Type="varchar(max)" />
+    <Property Name="006 File_Name_Path (Required)" Type="varchar(max)" />
+    <Property Name="008 Target_Shares_Owned (Required)" Type="varchar(max)" />
+    <Property Name="009 Acquirer_Shares_Owned (Required)" Type="varchar(max)" />
+    <Property Name="011 Key_Notes_1 (Required)" Type="varchar(max)" />
+    <Property Name="012 Key_Notes_2 (Required)" Type="varchar(max)" />
+    <Property Name="013 Key_Notes_3 (Required)" Type="varchar(max)" />
+    <Property Name="014 Pricing_Period (Required)" Type="varchar(max)" />
+    <Property Name="015 Target_Earnings_Date (Required)" Type="varchar(max)" />
+    <Property Name="016 Acquirer_Earnings_Date (Required)" Type="varchar(max)" />
+    <Property Name="017 Key_Dates (Required)" Type="varchar(max)" />
+    <Property Name="019 Stated_Cash_Terms (Optional)" Type="varchar(max)" />
+    <Property Name="020 Stated_Stock_Exchange_Ratio (Optional)" Type="varchar(max)" />
+    <Property Name="021 Cash_Prorate (Optional)" Type="varchar(max)" />
+    <Property Name="022 Stock_Prorate (Optional)" Type="varchar(max)" />
+    <Property Name="023 Hedge_Ratio (Required)" Type="varchar(max)" />
+    <Property Name="024 Cash_Terms (Required)" Type="varchar(max)" />
+    <Property Name="025 Stock_Exchange_Ratio (Required)" Type="varchar(max)" />
+    <Property Name="027 Target_Price_in_Local_Currency (Required)" Type="varchar(max)" />
+    <Property Name="028 Acquirer_Price_in_Local_Currency (Required)" Type="varchar(max)" />
+    <Property Name="029 Target_Price_in_Deal_Currency (Required)" Type="varchar(max)" />
+    <Property Name="030 Acquirer_Price_in_Deal_Currency (Required)" Type="varchar(max)" />
+    <Property Name="032 Target_Currency (Required)" Type="varchar(max)" />
+    <Property Name="033 Acquirer_Currency (Required)" Type="varchar(max)" />
+    <Property Name="034 Deal_Currency (Required)" Type="varchar(max)" />
+    <Property Name="035 FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency (Required)" Type="varchar(max)" />
+    <Property Name="036 FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency (Required)" Type="varchar(max)" />
+    <Property Name="037 FX_Ratio_to_Covert_Deal_Currency_to_USD (Optional)" Type="varchar(max)" />
+    <Property Name="039 Today (Optional)" Type="varchar(max)" />
+    <Property Name="040 Announced_Date (Required)" Type="varchar(max)" />
+    <Property Name="041 Estimated_Close_Date (Optional)" Type="varchar(max)" />
+    <Property Name="042 Potential_Days_Delayed (Optional)" Type="varchar(max)" />
+    <Property Name="043 Days_to_Close (Optional)" Type="varchar(max)" />
+    <Property Name="044 Close_Date (Required)" Type="varchar(max)" />
+    <Property Name="046 Total_Consideration (Optional)" Type="varchar(max)" />
+    <Property Name="047 Gross_Spread (Required)" Type="varchar(max)" />
+    <Property Name="048 Net_Spread_before_Leverage (Required)" Type="varchar(max)" />
+    <Property Name="049 Cost_of_Leverage (Optional)" Type="varchar(max)" />
+    <Property Name="050 Net_Dividends (Required)" Type="varchar(max)" />
+    <Property Name="051 Short_Rebates (Optional)" Type="varchar(max)" />
+    <Property Name="052 Net_Spread (Required)" Type="varchar(max)" />
+    <Property Name="053 Hypothetical_Targeted_Net_Spread (Required)" Type="varchar(max)" />
+    <Property Name="054 Hypothetical_Unwind_Net_Spread (Required)" Type="varchar(max)" />
+    <Property Name="055 Theoretical_Spread_collar (Required)" Type="varchar(max)" />
+    <Property Name="057 Gross_Return (Optional)" Type="varchar(max)" />
+    <Property Name="058 Annualized_ROR (Required)" Type="varchar(max)" />
+    <Property Name="059 Hypothetical_Targeted_Annualized_Return (Required)" Type="varchar(max)" />
+    <Property Name="060 Hypothetical_Unwind_Annualized_Return (Required)" Type="varchar(max)" />
+    <Property Name="061 Theoretical_Annualized_Return_collar (Required)" Type="varchar(max)" />
+    <Property Name="063 Commission_Cost_per_Share (Optional)" Type="varchar(max)" />
+    <Property Name="064 Long_Financing_Rate (Optional)" Type="varchar(max)" />
+    <Property Name="065 Short_Rebate (Optional)" Type="varchar(max)" />
+    <Property Name="066 Long_Margin_Required (Optional)" Type="varchar(max)" />
+    <Property Name="067 Short_Margin_Required (Optional)" Type="varchar(max)" />
+    <Property Name="069 Target_Ex-Dividend_Date (Required)" Type="varchar(max)" />
+    <Property Name="070 Aquirer_Ex-Dividend_Date (Required)" Type="varchar(max)" />
+    <Property Name="071 Target_Dividend_Projected_or_Declared (Required)" Type="varchar(max)" />
+    <Property Name="072 Acquirer_Dividend_Projected_or_Declared (Required)" Type="varchar(max)" />
+    <Property Name="073 Number_of_Target_Dividends (Required)" Type="varchar(max)" />
+    <Property Name="074 Number_of_Acquirer_Dividends (Required)" Type="varchar(max)" />
+    <Property Name="075 Target_Dividend_Quarterly_Amount (Required)" Type="varchar(max)" />
+    <Property Name="076 Acquirer_Dividend_Quarterly_Amount (Required)" Type="varchar(max)" />
+    <Property Name="077 Total_Target_Dividends (Required)" Type="varchar(max)" />
+    <Property Name="078 Total_Acquirer_Dividends (Required)" Type="varchar(max)" />
+    <Property Name="080 Target_Break_Price (Required)" Type="varchar(max)" />
+    <Property Name="081 Acquirer_Break_Price (Required)" Type="varchar(max)" />
+    <Property Name="082 Expected_USD_Return_prob_wtd (Required)" Type="varchar(max)" />
+    <Property Name="083 RiskReward (Required)" Type="varchar(max)" />
+    <Property Name="084 Notional_Long_USD_MV (Required)" Type="varchar(max)" />
+    <Property Name="085 Net_USD_Profit_at_Close (Required)" Type="varchar(max)" />
+    <Property Name="086 Net_USD_Profit_at_Break (Required)" Type="varchar(max)" />
+    <Property Name="087 Probability_of_Break (Required)" Type="varchar(max)" />
+    <Property Name="088 Tgt_13D_Num_shs_remaining (Optional)" Type="varchar(max)" />
+    <Property Name="090 Prorate_Value_of_Stock (Optional)" Type="varchar(max)" />
+    <Property Name="091 Prorate_Value_of_Cash (Optional)" Type="varchar(max)" />
+    <Property Name="092 Prorate_Comment_1 (Optional)" Type="varchar(max)" />
+    <Property Name="093 Prorate_Comment_2 (Optional)" Type="varchar(max)" />
+    <Property Name="095 Collar_Flag_Yes_No (Optional)" Type="varchar(max)" />
+    <Property Name="096 Collar_Flag_Normal_Inverted (Optional)" Type="varchar(max)" />
+    <Property Name="097 Collar_Num_of_Segments (Optional)" Type="varchar(max)" />
+    <Property Name="098 Collar_Num_of_Breakpoints (Optional)" Type="varchar(max)" />
+    <Property Name="099 Collar_ (Optional)" Type="varchar(max)" />
+    <Property Name="100 Collar_High_Breakpoint (Optional)" Type="varchar(max)" />
+    <Property Name="101 Collar_Position (Optional)" Type="varchar(max)" />
+    <Property Name="102 Collar_Walk (Optional)" Type="varchar(max)" />
+    <Property Name="103 Collar_Cure_Low_Breakpoint (Optional)" Type="varchar(max)" />
+    <Property Name="104 Collar_Cure_High_Breakpoint (Optional)" Type="varchar(max)" />
+    <Property Name="105 Collar_Value_of_Collar (Optional)" Type="varchar(max)" />
+    <Property Name="106 Collar_Note_Description (Optional)" Type="varchar(max)" />
+    <Property Name="108 Pricing_Period_Start_Date (Optional)" Type="varchar(max)" />
+    <Property Name="109 Pricing_Period_End_Date (Optional)" Type="varchar(max)" />
+    <Property Name="110 Pricing_Period_Length_days (Optional)" Type="varchar(max)" />
+    <Property Name="111 Pricing_Period_Trading_Days_Prior_to_Close_ (Optional)" Type="varchar(max)" />
+    <Property Name="112 Pricing_Period_Prc_Complete (Optional)" Type="varchar(max)" />
+    <Property Name="113 Pricing_Period_Prc_Remaining (Optional)" Type="varchar(max)" />
+    <Property Name="114 Pricing_Period_Price_Based_on_Prc_Complete (Optional)" Type="varchar(max)" />
+    <Property Name="115 Pricing_Period_Price_Based_on_Prc_Remaining (Optional)" Type="varchar(max)" />
+    <Property Name="116 Pricing_Period_Weighted_Price (Optional)" Type="varchar(max)" />
+    <Property Name="118 Bloomberg_Corporate_Action_ID (Optional)" Type="varchar(max)" />
+    <Property Name="119 Bloomberg_Target_Company_Description (Optional)" Type="varchar(max)" />
+    <Property Name="120 Bloomberg_Acquirer_Company_Description (Optional)" Type="varchar(max)" />
+    <Property Name="121 Bloomberg_Deal_Description (Optional)" Type="varchar(max)" />
+    <Property Name="122 Bloomberg_Target_Legal_Advisors (Optional)" Type="varchar(max)" />
+    <Property Name="123 Bloomberg_Target_Financial_Advisors (Optional)" Type="varchar(max)" />
+    <Property Name="124 Bloomberg_Acquirer_Legal_Advisors (Optional)" Type="varchar(max)" />
+    <Property Name="125 Bloomberg_Acquirer_Financial_Advisors (Optional)" Type="varchar(max)" />
+    <Property Name="126 Bloomberg_Pending_Approvals (Optional)" Type="varchar(max)" />
+    <Property Name="127 Bloomberg_Approved_Approvals (Optional)" Type="varchar(max)" />
+    <Property Name="128 Bloomberg_Expired_Approvals (Optional)" Type="varchar(max)" />
+    <Property Name="129 Bloomberg_Entended_Approvals (Optional)" Type="varchar(max)" />
+    <Property Name="130 Bloomberg_Announced_Date (Optional)" Type="varchar(max)" />
+    <Property Name="131 Bloomberg_Amendment_Date (Optional)" Type="varchar(max)" />
+    <Property Name="132 Bloomberg_Expected_Completion_Date (Optional)" Type="varchar(max)" />
+    <Property Name="133 Bloomberg_Completed_Termination_Date (Optional)" Type="varchar(max)" />
+    <Property Name="134 Bloomberg_Merger_Agreement_Date (Optional)" Type="varchar(max)" />
+    <Property Name="135 Bloomberg_Drop_Dead_Date (Optional)" Type="varchar(max)" />
+    <Property Name="136 Bloomberg_Go-Shop_Period_Start_Date (Optional)" Type="varchar(max)" />
+    <Property Name="137 Bloomberg_Go-Shop_Period_End_Date (Optional)" Type="varchar(max)" />
+    <Property Name="MergerArbID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MergerArbNew">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Field Updated" Type="datetime" />
+    <Property Name="Field Type" Type="nvarchar" MaxLength="255" />
+    <Property Name="Field Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Calendar Flag" Type="nvarchar" MaxLength="255" />
+    <Property Name="Field Value" Type="nvarchar(max)" />
+    <Property Name="Calendar Time" Type="nvarchar" MaxLength="255" />
+    <Property Name="Calendar Comment" Type="nvarchar(max)" />
+    <Property Name="DealId" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Prices">
+    <Key>
+      <PropertyRef Name="PriceID" />
+    </Key>
+    <Property Name="PriceID" Type="int" Nullable="false" />
+    <Property Name="SecurityID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="20" Scale="10" Nullable="false" />
+    <Property Name="PriceDateTime" Type="datetime" Nullable="false" />
+    <Property Name="PriceSource" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Securities">
+    <Key>
+      <PropertyRef Name="SecurityID" />
+    </Key>
+    <Property Name="SecurityID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="SecurityTypeID" Type="int" Nullable="false" />
+    <Property Name="CurrencyID" Type="int" />
+    <Property Name="Cusip" Type="varchar" MaxLength="50" />
+    <Property Name="Isin" Type="varchar" MaxLength="50" />
+    <Property Name="Sedol" Type="varchar" MaxLength="50" />
+    <Property Name="Ticker" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SecurityGroups">
+    <Key>
+      <PropertyRef Name="SecurityGroupID" />
+    </Key>
+    <Property Name="SecurityGroupID" Type="int" Nullable="false" />
+    <Property Name="SecurityID1" Type="int" Nullable="false" />
+    <Property Name="SecurityID2" Type="int" />
+    <Property Name="SecurityID3" Type="int" />
+    <Property Name="SecurityID4" Type="int" />
+    <Property Name="SecurityID5" Type="int" />
+  </EntityType>
+  <EntityType Name="SecurityTypes">
+    <Key>
+      <PropertyRef Name="SecurityTypeID" />
+    </Key>
+    <Property Name="SecurityTypeID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="StatisticTypes">
+    <Key>
+      <PropertyRef Name="StatisticTypeID" />
+    </Key>
+    <Property Name="StatisticTypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Cortex_Dev.dbo.vw_DealSecPrice' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_DealSecPrice">
+    <Key>
+      <PropertyRef Name="Description" />
+      <PropertyRef Name="DealID" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="SecGrp" />
+      <PropertyRef Name="SecurityID1" />
+      <PropertyRef Name="SecurityID" />
+      <PropertyRef Name="PricSec" />
+      <PropertyRef Name="CurrentPrice" />
+    </Key>
+    <Property Name="Description" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DealID" Type="int" Nullable="false" />
+    <Property Name="SecurityGroupID" Type="int" />
+    <Property Name="TargetPrice" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="DownsidePrice" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="Comps" Type="varchar(max)" />
+    <Property Name="ExpirationDate" Type="datetime" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="SecGrp" Type="int" Nullable="false" />
+    <Property Name="SecurityID1" Type="int" Nullable="false" />
+    <Property Name="SecurityID" Type="int" Nullable="false" />
+    <Property Name="PricSec" Type="int" Nullable="false" />
+    <Property Name="CurrentPrice" Type="decimal" Precision="20" Scale="10" Nullable="false" />
+  </EntityType>
+  <Association Name="Companies_CompanyAssociations_FK1">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1" />
+    <End Role="CompanyAssociations" Type="Self.CompanyAssociations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyAssociations">
+        <PropertyRef Name="Company1ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_CompanyAssociations_FK2">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1" />
+    <End Role="CompanyAssociations" Type="Self.CompanyAssociations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyAssociations">
+        <PropertyRef Name="Company2ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK1">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK2">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK3">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Currencies_Securities_FK1">
+    <End Role="Currencies" Type="Self.Currencies" Multiplicity="0..1" />
+    <End Role="Securities" Type="Self.Securities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currencies">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="Securities">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Deals_Events_FK">
+    <End Role="Deals" Type="Self.Deals" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deals">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="DealID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AnnualCompanyStatistics_StatisticTypes">
+    <End Role="StatisticTypes" Type="Self.StatisticTypes" Multiplicity="1" />
+    <End Role="AnnualCompanyStatistics" Type="Self.AnnualCompanyStatistics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatisticTypes">
+        <PropertyRef Name="StatisticTypeID" />
+      </Principal>
+      <Dependent Role="AnnualCompanyStatistics">
+        <PropertyRef Name="StatisticTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_ToSecurities">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="Companies">
+        <PropertyRef Name="SecurityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_Categories">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_Currencies">
+    <End Role="Currencies" Type="Self.Currencies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currencies">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_DealStatuses">
+    <End Role="DealStatuses" Type="Self.DealStatuses" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealStatuses">
+        <PropertyRef Name="DealStatusID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="DealStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_DealTypes">
+    <End Role="DealTypes" Type="Self.DealTypes" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealTypes">
+        <PropertyRef Name="DealTypeID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="DealTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documents_Deals">
+    <End Role="Deals" Type="Self.Deals" Multiplicity="0..1" />
+    <End Role="Documents" Type="Self.Documents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deals">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="Documents">
+        <PropertyRef Name="DealId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventTypes">
+    <End Role="EventTypes" Type="Self.EventTypes" Multiplicity="1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventTypes">
+        <PropertyRef Name="EventTypeID" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="EventTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MapDealAnalyst_Analysts">
+    <End Role="Analysts" Type="Self.Analysts" Multiplicity="0..1" />
+    <End Role="MapDealAnalyst" Type="Self.MapDealAnalyst" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Analysts">
+        <PropertyRef Name="AnalystID" />
+      </Principal>
+      <Dependent Role="MapDealAnalyst">
+        <PropertyRef Name="AnalystID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MapDealAnalyst_Deals">
+    <End Role="Deals" Type="Self.Deals" Multiplicity="0..1" />
+    <End Role="MapDealAnalyst" Type="Self.MapDealAnalyst" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deals">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="MapDealAnalyst">
+        <PropertyRef Name="DealID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prices_ToSecurities">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="1" />
+    <End Role="Prices" Type="Self.Prices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="Prices">
+        <PropertyRef Name="SecurityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK1">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK2">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK3">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK4">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK5">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID5" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SecurityGroups_Deals_FK1">
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecurityGroups">
+        <PropertyRef Name="SecurityGroupID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="SecurityGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SecurityTypes_Securities_FK1">
+    <End Role="SecurityTypes" Type="Self.SecurityTypes" Multiplicity="1" />
+    <End Role="Securities" Type="Self.Securities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecurityTypes">
+        <PropertyRef Name="SecurityTypeID" />
+      </Principal>
+      <Dependent Role="Securities">
+        <PropertyRef Name="SecurityTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="CortexDataModelStoreContainer">
+    <EntitySet Name="Analysts" EntityType="Self.Analysts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AnnualCompanyStatistics" EntityType="Self.AnnualCompanyStatistics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUser" EntityType="Self.ApplicationUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CompanyAssociations" EntityType="Self.CompanyAssociations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Currencies" EntityType="Self.Currencies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Deals" EntityType="Self.Deals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DealStatuses" EntityType="Self.DealStatuses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DealTypes" EntityType="Self.DealTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocumentGroups" EntityType="Self.DocumentGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Documents" EntityType="Self.Documents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventTypes" EntityType="Self.EventTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MapDealAnalyst" EntityType="Self.MapDealAnalyst" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MergerArb" EntityType="Self.MergerArb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MergerArbNew" EntityType="Self.MergerArbNew" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Prices" EntityType="Self.Prices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Securities" EntityType="Self.Securities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SecurityGroups" EntityType="Self.SecurityGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SecurityTypes" EntityType="Self.SecurityTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StatisticTypes" EntityType="Self.StatisticTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vw_DealSecPrice" EntityType="Self.vw_DealSecPrice" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[vw_DealSecPrice].[Description] AS [Description], 
+[vw_DealSecPrice].[DealID] AS [DealID], 
+[vw_DealSecPrice].[SecurityGroupID] AS [SecurityGroupID], 
+[vw_DealSecPrice].[TargetPrice] AS [TargetPrice], 
+[vw_DealSecPrice].[DownsidePrice] AS [DownsidePrice], 
+[vw_DealSecPrice].[Comps] AS [Comps], 
+[vw_DealSecPrice].[ExpirationDate] AS [ExpirationDate], 
+[vw_DealSecPrice].[Code] AS [Code], 
+[vw_DealSecPrice].[SecGrp] AS [SecGrp], 
+[vw_DealSecPrice].[SecurityID1] AS [SecurityID1], 
+[vw_DealSecPrice].[SecurityID] AS [SecurityID], 
+[vw_DealSecPrice].[PricSec] AS [PricSec], 
+[vw_DealSecPrice].[CurrentPrice] AS [CurrentPrice]
+FROM [dbo].[vw_DealSecPrice] AS [vw_DealSecPrice]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="Companies_CompanyAssociations_FK1" Association="Self.Companies_CompanyAssociations_FK1">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyAssociations" EntitySet="CompanyAssociations" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_CompanyAssociations_FK2" Association="Self.Companies_CompanyAssociations_FK2">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyAssociations" EntitySet="CompanyAssociations" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK1" Association="Self.Companies_Deals_FK1">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK2" Association="Self.Companies_Deals_FK2">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK3" Association="Self.Companies_Deals_FK3">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Currencies_Securities_FK1" Association="Self.Currencies_Securities_FK1">
+      <End Role="Currencies" EntitySet="Currencies" />
+      <End Role="Securities" EntitySet="Securities" />
+    </AssociationSet>
+    <AssociationSet Name="Deals_Events_FK" Association="Self.Deals_Events_FK">
+      <End Role="Deals" EntitySet="Deals" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AnnualCompanyStatistics_StatisticTypes" Association="Self.FK_AnnualCompanyStatistics_StatisticTypes">
+      <End Role="StatisticTypes" EntitySet="StatisticTypes" />
+      <End Role="AnnualCompanyStatistics" EntitySet="AnnualCompanyStatistics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_ToSecurities" Association="Self.FK_Companies_ToSecurities">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="Companies" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_Categories" Association="Self.FK_Deals_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_Currencies" Association="Self.FK_Deals_Currencies">
+      <End Role="Currencies" EntitySet="Currencies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_DealStatuses" Association="Self.FK_Deals_DealStatuses">
+      <End Role="DealStatuses" EntitySet="DealStatuses" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_DealTypes" Association="Self.FK_Deals_DealTypes">
+      <End Role="DealTypes" EntitySet="DealTypes" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documents_Deals" Association="Self.FK_Documents_Deals">
+      <End Role="Deals" EntitySet="Deals" />
+      <End Role="Documents" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventTypes" Association="Self.FK_Events_EventTypes">
+      <End Role="EventTypes" EntitySet="EventTypes" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MapDealAnalyst_Analysts" Association="Self.FK_MapDealAnalyst_Analysts">
+      <End Role="Analysts" EntitySet="Analysts" />
+      <End Role="MapDealAnalyst" EntitySet="MapDealAnalyst" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MapDealAnalyst_Deals" Association="Self.FK_MapDealAnalyst_Deals">
+      <End Role="Deals" EntitySet="Deals" />
+      <End Role="MapDealAnalyst" EntitySet="MapDealAnalyst" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prices_ToSecurities" Association="Self.FK_Prices_ToSecurities">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="Prices" EntitySet="Prices" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK1" Association="Self.Securities_SecurityGroups_FK1">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK2" Association="Self.Securities_SecurityGroups_FK2">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK3" Association="Self.Securities_SecurityGroups_FK3">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK4" Association="Self.Securities_SecurityGroups_FK4">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK5" Association="Self.Securities_SecurityGroups_FK5">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="SecurityGroups_Deals_FK1" Association="Self.SecurityGroups_Deals_FK1">
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="SecurityTypes_Securities_FK1" Association="Self.SecurityTypes_Securities_FK1">
+      <End Role="SecurityTypes" EntitySet="SecurityTypes" />
+      <End Role="Securities" EntitySet="Securities" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

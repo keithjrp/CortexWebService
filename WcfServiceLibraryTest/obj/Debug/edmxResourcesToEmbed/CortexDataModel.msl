@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CortexModelStoreContainer" CdmEntityContainer="CortexEntities">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="CortexModel.Company">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyAssociations">
+      <EntityTypeMapping TypeName="CortexModel.CompanyAssociation">
+        <MappingFragment StoreEntitySet="CompanyAssociations">
+          <ScalarProperty Name="CompanyAssociationID" ColumnName="CompanyAssociationID" />
+          <ScalarProperty Name="Company1ID" ColumnName="Company1ID" />
+          <ScalarProperty Name="Company2ID" ColumnName="Company2ID" />
+          <ScalarProperty Name="AssociationType" ColumnName="AssociationType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="CortexModel.Currency">
+        <MappingFragment StoreEntitySet="Currencies">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deals">
+      <EntityTypeMapping TypeName="CortexModel.Deal">
+        <MappingFragment StoreEntitySet="Deals">
+          <ScalarProperty Name="DealID" ColumnName="DealID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SecurityGroupID" ColumnName="SecurityGroupID" />
+          <ScalarProperty Name="CompanyID1" ColumnName="CompanyID1" />
+          <ScalarProperty Name="CompanyID2" ColumnName="CompanyID2" />
+          <ScalarProperty Name="CompanyID3" ColumnName="CompanyID3" />
+          <ScalarProperty Name="InvestmentThesis" ColumnName="InvestmentThesis" />
+          <ScalarProperty Name="MergerAgreementEventID" ColumnName="MergerAgreementEventID" />
+          <ScalarProperty Name="DropDeadEventID" ColumnName="DropDeadEventID" />
+          <ScalarProperty Name="TargetShareholderMeetingEventID" ColumnName="TargetShareholderMeetingEventID" />
+          <ScalarProperty Name="AcquirerShareholderMeetingEventID" ColumnName="AcquirerShareholderMeetingEventID" />
+          <ScalarProperty Name="TargetPrice" ColumnName="TargetPrice" />
+          <ScalarProperty Name="Recommendation" ColumnName="Recommendation" />
+          <ScalarProperty Name="DealCurrencyID" ColumnName="DealCurrencyID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="DocumentGroupID" ColumnName="DocumentGroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentGroups">
+      <EntityTypeMapping TypeName="CortexModel.DocumentGroup">
+        <MappingFragment StoreEntitySet="DocumentGroups">
+          <ScalarProperty Name="DocumentGroupID" ColumnName="DocumentGroupID" />
+          <ScalarProperty Name="DocumentID1" ColumnName="DocumentID1" />
+          <ScalarProperty Name="DocumentID2" ColumnName="DocumentID2" />
+          <ScalarProperty Name="DocumentID3" ColumnName="DocumentID3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="CortexModel.Document">
+        <MappingFragment StoreEntitySet="Documents">
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="URI" ColumnName="URI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="CortexModel.Event">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventTypeID" ColumnName="EventTypeID" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventTypes">
+      <EntityTypeMapping TypeName="CortexModel.EventType">
+        <MappingFragment StoreEntitySet="EventTypes">
+          <ScalarProperty Name="EventTypeID" ColumnName="EventTypeID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Securities">
+      <EntityTypeMapping TypeName="CortexModel.Security">
+        <MappingFragment StoreEntitySet="Securities">
+          <ScalarProperty Name="SecurityID" ColumnName="SecurityID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SecurityTypeID" ColumnName="SecurityTypeID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityGroups">
+      <EntityTypeMapping TypeName="CortexModel.SecurityGroup">
+        <MappingFragment StoreEntitySet="SecurityGroups">
+          <ScalarProperty Name="SecurityGroupID" ColumnName="SecurityGroupID" />
+          <ScalarProperty Name="SecurityID1" ColumnName="SecurityID1" />
+          <ScalarProperty Name="SecurityID2" ColumnName="SecurityID2" />
+          <ScalarProperty Name="SecurityID3" ColumnName="SecurityID3" />
+          <ScalarProperty Name="SecurityID4" ColumnName="SecurityID4" />
+          <ScalarProperty Name="SecurityID5" ColumnName="SecurityID5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityTypes">
+      <EntityTypeMapping TypeName="CortexModel.SecurityType">
+        <MappingFragment StoreEntitySet="SecurityTypes">
+          <ScalarProperty Name="SecurityTypeID" ColumnName="SecurityTypeID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CortexModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

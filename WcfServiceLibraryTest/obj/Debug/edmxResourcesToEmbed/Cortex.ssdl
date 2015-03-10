@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CortexDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="CompanyAssociations">
+    <Key>
+      <PropertyRef Name="CompanyAssociationID" />
+    </Key>
+    <Property Name="CompanyAssociationID" Type="int" Nullable="false" />
+    <Property Name="Company1ID" Type="int" Nullable="false" />
+    <Property Name="Company2ID" Type="int" Nullable="false" />
+    <Property Name="AssociationType" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Currencies">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="int" Nullable="false" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CurrencyName" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Deals">
+    <Key>
+      <PropertyRef Name="DealID" />
+    </Key>
+    <Property Name="DealID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SecurityGroupID" Type="int" />
+    <Property Name="CompanyID1" Type="int" />
+    <Property Name="CompanyID2" Type="int" />
+    <Property Name="CompanyID3" Type="int" />
+    <Property Name="InvestmentThesis" Type="varchar" MaxLength="255" />
+    <Property Name="MergerAgreementEventID" Type="int" />
+    <Property Name="DropDeadEventID" Type="int" />
+    <Property Name="TargetShareholderMeetingEventID" Type="int" />
+    <Property Name="AcquirerShareholderMeetingEventID" Type="int" />
+    <Property Name="TargetPrice" Type="decimal" Precision="10" Scale="8" />
+    <Property Name="Recommendation" Type="varchar(max)" />
+    <Property Name="DealCurrencyID" Type="int" />
+    <Property Name="CurrencyID" Type="int" />
+    <Property Name="DocumentGroupID" Type="int" />
+  </EntityType>
+  <EntityType Name="DocumentGroups">
+    <Key>
+      <PropertyRef Name="DocumentGroupID" />
+    </Key>
+    <Property Name="DocumentGroupID" Type="int" Nullable="false" />
+    <Property Name="DocumentID1" Type="int" Nullable="false" />
+    <Property Name="DocumentID2" Type="int" />
+    <Property Name="DocumentID3" Type="int" />
+  </EntityType>
+  <EntityType Name="Documents">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="DocumentID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="URI" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+    <Property Name="EventDate" Type="datetime" Nullable="false" />
+    <Property Name="EventType" Type="int" Nullable="false" />
+    <Property Name="EventTypeID" Type="int" Nullable="false" />
+    <Property Name="Note" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="EventTypes">
+    <Key>
+      <PropertyRef Name="EventTypeID" />
+    </Key>
+    <Property Name="EventTypeID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Securities">
+    <Key>
+      <PropertyRef Name="SecurityID" />
+    </Key>
+    <Property Name="SecurityID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="SecurityTypeID" Type="int" Nullable="false" />
+    <Property Name="CurrencyID" Type="int" />
+  </EntityType>
+  <EntityType Name="SecurityGroups">
+    <Key>
+      <PropertyRef Name="SecurityGroupID" />
+    </Key>
+    <Property Name="SecurityGroupID" Type="int" Nullable="false" />
+    <Property Name="SecurityID1" Type="int" Nullable="false" />
+    <Property Name="SecurityID2" Type="int" />
+    <Property Name="SecurityID3" Type="int" />
+    <Property Name="SecurityID4" Type="int" />
+    <Property Name="SecurityID5" Type="int" />
+  </EntityType>
+  <EntityType Name="SecurityTypes">
+    <Key>
+      <PropertyRef Name="SecurityTypeID" />
+    </Key>
+    <Property Name="SecurityTypeID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="Companies_CompanyAssociations_FK1">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1" />
+    <End Role="CompanyAssociations" Type="Self.CompanyAssociations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyAssociations">
+        <PropertyRef Name="Company1ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_CompanyAssociations_FK2">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1" />
+    <End Role="CompanyAssociations" Type="Self.CompanyAssociations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CompanyAssociations">
+        <PropertyRef Name="Company2ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK1">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK2">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Companies_Deals_FK3">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CompanyID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Currencies_Securities_FK1">
+    <End Role="Currencies" Type="Self.Currencies" Multiplicity="0..1" />
+    <End Role="Securities" Type="Self.Securities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currencies">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="Securities">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Documents_DocumentGroups_FK1">
+    <End Role="Documents" Type="Self.Documents" Multiplicity="1" />
+    <End Role="DocumentGroups" Type="Self.DocumentGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="DocumentGroups">
+        <PropertyRef Name="DocumentID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Documents_DocumentGroups_FK2">
+    <End Role="Documents" Type="Self.Documents" Multiplicity="0..1" />
+    <End Role="DocumentGroups" Type="Self.DocumentGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="DocumentGroups">
+        <PropertyRef Name="DocumentID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Documents_DocumentGroups_FK3">
+    <End Role="Documents" Type="Self.Documents" Multiplicity="0..1" />
+    <End Role="DocumentGroups" Type="Self.DocumentGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="DocumentGroups">
+        <PropertyRef Name="DocumentID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK1">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="MergerAgreementEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK2">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="DropDeadEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK3">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="TargetShareholderMeetingEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Events_Deals_FK4">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="AcquirerShareholderMeetingEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EventTypes_Events_FK1">
+    <End Role="EventTypes" Type="Self.EventTypes" Multiplicity="1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventTypes">
+        <PropertyRef Name="EventTypeID" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="EventTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_Currencies">
+    <End Role="Currencies" Type="Self.Currencies" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currencies">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_Deals">
+    <End Role="Deals" Type="Self.Deals" Multiplicity="1" />
+    <End Role="Deals1" Type="Self.Deals" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Deals">
+        <PropertyRef Name="DealID" />
+      </Principal>
+      <Dependent Role="Deals1">
+        <PropertyRef Name="DealID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deals_DocumentGroups">
+    <End Role="DocumentGroups" Type="Self.DocumentGroups" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentGroups">
+        <PropertyRef Name="DocumentGroupID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="DocumentGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK1">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK2">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK3">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK4">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Securities_SecurityGroups_FK5">
+    <End Role="Securities" Type="Self.Securities" Multiplicity="0..1" />
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Securities">
+        <PropertyRef Name="SecurityID" />
+      </Principal>
+      <Dependent Role="SecurityGroups">
+        <PropertyRef Name="SecurityID5" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SecurityGroups_Deals_FK1">
+    <End Role="SecurityGroups" Type="Self.SecurityGroups" Multiplicity="0..1" />
+    <End Role="Deals" Type="Self.Deals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecurityGroups">
+        <PropertyRef Name="SecurityGroupID" />
+      </Principal>
+      <Dependent Role="Deals">
+        <PropertyRef Name="SecurityGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SecurityTypes_Securities_FK1">
+    <End Role="SecurityTypes" Type="Self.SecurityTypes" Multiplicity="1" />
+    <End Role="Securities" Type="Self.Securities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecurityTypes">
+        <PropertyRef Name="SecurityTypeID" />
+      </Principal>
+      <Dependent Role="Securities">
+        <PropertyRef Name="SecurityTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="CortexDataModelStoreContainer">
+    <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="CompanyAssociations" EntityType="Self.CompanyAssociations" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Currencies" EntityType="Self.Currencies" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Deals" EntityType="Self.Deals" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="DocumentGroups" EntityType="Self.DocumentGroups" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Documents" EntityType="Self.Documents" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="EventTypes" EntityType="Self.EventTypes" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Securities" EntityType="Self.Securities" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="SecurityGroups" EntityType="Self.SecurityGroups" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="SecurityTypes" EntityType="Self.SecurityTypes" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <AssociationSet Name="Companies_CompanyAssociations_FK1" Association="Self.Companies_CompanyAssociations_FK1">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyAssociations" EntitySet="CompanyAssociations" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_CompanyAssociations_FK2" Association="Self.Companies_CompanyAssociations_FK2">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="CompanyAssociations" EntitySet="CompanyAssociations" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK1" Association="Self.Companies_Deals_FK1">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK2" Association="Self.Companies_Deals_FK2">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Companies_Deals_FK3" Association="Self.Companies_Deals_FK3">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Currencies_Securities_FK1" Association="Self.Currencies_Securities_FK1">
+      <End Role="Currencies" EntitySet="Currencies" />
+      <End Role="Securities" EntitySet="Securities" />
+    </AssociationSet>
+    <AssociationSet Name="Documents_DocumentGroups_FK1" Association="Self.Documents_DocumentGroups_FK1">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Documents_DocumentGroups_FK2" Association="Self.Documents_DocumentGroups_FK2">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Documents_DocumentGroups_FK3" Association="Self.Documents_DocumentGroups_FK3">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK1" Association="Self.Events_Deals_FK1">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK2" Association="Self.Events_Deals_FK2">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK3" Association="Self.Events_Deals_FK3">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Events_Deals_FK4" Association="Self.Events_Deals_FK4">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="EventTypes_Events_FK1" Association="Self.EventTypes_Events_FK1">
+      <End Role="EventTypes" EntitySet="EventTypes" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_Currencies" Association="Self.FK_Deals_Currencies">
+      <End Role="Currencies" EntitySet="Currencies" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_Deals" Association="Self.FK_Deals_Deals">
+      <End Role="Deals" EntitySet="Deals" />
+      <End Role="Deals1" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deals_DocumentGroups" Association="Self.FK_Deals_DocumentGroups">
+      <End Role="DocumentGroups" EntitySet="DocumentGroups" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK1" Association="Self.Securities_SecurityGroups_FK1">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK2" Association="Self.Securities_SecurityGroups_FK2">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK3" Association="Self.Securities_SecurityGroups_FK3">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK4" Association="Self.Securities_SecurityGroups_FK4">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="Securities_SecurityGroups_FK5" Association="Self.Securities_SecurityGroups_FK5">
+      <End Role="Securities" EntitySet="Securities" />
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="SecurityGroups_Deals_FK1" Association="Self.SecurityGroups_Deals_FK1">
+      <End Role="SecurityGroups" EntitySet="SecurityGroups" />
+      <End Role="Deals" EntitySet="Deals" />
+    </AssociationSet>
+    <AssociationSet Name="SecurityTypes_Securities_FK1" Association="Self.SecurityTypes_Securities_FK1">
+      <End Role="SecurityTypes" EntitySet="SecurityTypes" />
+      <End Role="Securities" EntitySet="Securities" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

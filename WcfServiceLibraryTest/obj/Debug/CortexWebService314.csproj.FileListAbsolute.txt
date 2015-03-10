@@ -1,0 +1,9 @@
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\bin\Debug\WcfServiceLibraryTest.dll.config
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\bin\Debug\WcfServiceLibraryTest.dll
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\bin\Debug\EntityFramework.dll
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\bin\Debug\EntityFramework.SqlServer.dll
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\bin\Debug\EntityFramework.xml
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\bin\Debug\EntityFramework.SqlServer.xml
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\obj\Debug\WcfServiceLibraryTest.dll
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\obj\Debug\WcfServiceLibraryTest.pdb
+E:\JRP\Cortex\CortexWebService\WcfServiceLibraryTest\bin\Debug\WcfServiceLibraryTest.pdb
