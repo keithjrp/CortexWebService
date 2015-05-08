@@ -321,7 +321,7 @@
           <Key>
             <PropertyRef Name="PriceID" />
           </Key>
-          <Property Name="PriceID" Type="int" Nullable="false" />
+          <Property Name="PriceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SecurityID" Type="int" Nullable="false" />
           <Property Name="Price" Type="decimal" Precision="20" Scale="10" Nullable="false" />
           <Property Name="PriceDateTime" Type="datetime" Nullable="false" />

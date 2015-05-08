@@ -44,17 +44,29 @@ namespace CortexWebService
 
         }
         
+
         /// <summary>
-        ///  Passed Test Client check, returns complete list of Deal objects in the database
+        /// Passed Test Client check, returns complete list of Deal objects in the database
         /// </summary>
+        /// <param name="count">number of items to return</param>
         /// <returns></returns>
-        public List<Deal> getDeals()
+        public List<Deal> getDeals(int count = 30)
         {
             List<Deal> dealList = new List<Deal>(), listCopy = new List<Deal>();
             try
             {
                 var crtx = new CortexEntities();
-                dealList = crtx.Deals.ToList<Deal>();
+                dealList = crtx.Deals.ToList<Deal>(); 
+
+                //if (count != -1)
+                //{
+                //    dealList = crtx.Deals.Take(count).ToList<Deal>(); 
+                //}
+                //else
+                //{
+                //    dealList = crtx.Deals.ToList<Deal>(); 
+
+                //}
 
                 foreach (Deal d in dealList)
                 {
@@ -78,6 +90,7 @@ namespace CortexWebService
         public List<Deal> getDealsByDescription(String desc)
         {
             IQueryable<Deal> d = null;
+            if (desc == null) desc = " ";
             List<MergerArbNew> mList = getMergerArbNewByValue(desc);
             try
             {
@@ -104,24 +117,32 @@ namespace CortexWebService
             }
 
             List<Deal> dealArray = new List<Deal>();
-            List<Deal> mbdealArray = new List<Deal>();
-            List<Deal> mbdealArrayNoDupes = new List<Deal>();
-            Deal temp = new Deal();
-            Boolean dealFound = false;
-            foreach (Deal dd in d)
+            try
             {
-                dealArray.Add(CortexClone.clone(dd));
-            }
-            foreach (MergerArbNew man in mList)
-            {
-                temp = CortexClone.clone(getDeal((int)man.DealId));
-                foreach(Deal de in dealArray)
+                List<Deal> mbdealArray = new List<Deal>();
+                List<Deal> mbdealArrayNoDupes = new List<Deal>();
+                Deal temp = new Deal();
+                Boolean dealFound = false;
+                foreach (Deal dd in d)
                 {
-                    if (de.DealID == temp.DealID)
-                        dealFound = true;
+                    dealArray.Add(CortexClone.clone(dd));
                 }
-                    
-                if(!dealFound) dealArray.Add(CortexClone.clone(temp));
+                foreach (MergerArbNew man in mList)
+                {
+                    temp = CortexClone.clone(getDeal((int)man.DealId));
+                    foreach (Deal de in dealArray)
+                    {
+                        if (de.DealID == temp.DealID)
+                            dealFound = true;
+                    }
+
+                    if (!dealFound) dealArray.Add(CortexClone.clone(temp));
+                }
+            }
+            catch (Exception e)
+            {
+                
+                Console.WriteLine("Error fetching deal " + desc + ".\n" + e.StackTrace);
             }
             return dealArray;
         }
@@ -843,14 +864,17 @@ namespace CortexWebService
         public Price getPrice(int pid)
         {
             Price p = new Price(), pCopy = new Price();
-
+            List<Price> pList = new List<Price>();
             try
             {
                 var crtx = new CortexEntities();
                 //sec = crtx.Securities.OrderByDescending(p => p.SecurityID).FirstOrDefault<Security>();
 
-                p = crtx.Prices.OrderByDescending(x => x.PriceDateTime).Where(
-                    x => x.SecurityID == pid).FirstOrDefault<Price>();
+                pList = crtx.Prices.Where(x => x.SecurityID == pid).OrderByDescending(
+                    x => x.PriceDateTime < DateTime.Now).ToList<Price>();
+
+                foreach (Price pp in pList)
+                    p = pp;
                 //p = crtx.Prices.Find(pid);
             }
             catch (Exception e)
@@ -1948,7 +1972,7 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// adds Deals with matching Analyst to the Search All result set
         /// </summary>
         /// <param name="analyst">Analyst name to filter by</param>
         /// <param name="d">List of Deals from Search Result</param>
@@ -1959,13 +1983,13 @@ namespace CortexWebService
             List<Deal> dealArray = new List<Deal>();
             try
             {
-                if (analyst != "")
+                if (analyst != "" && analyst != null)
                 {
                     dealByAnalyst = this.getDealByAnalyst(this.getAnalystByName(analyst));
                 }
                 foreach (Deal dd in d)
                 {
-                    if (analyst != "")
+                    if (analyst != "" && analyst != null)
                     {
                         foreach (Deal aa in dealByAnalyst)
                         {
@@ -2023,7 +2047,7 @@ namespace CortexWebService
             try
             {
                 var crtx = new CortexEntities();
-                SecurityList = crtx.Securities.ToList<Security>();
+                SecurityList = crtx.Securities.OrderBy(a => a.Code).ToList<Security>();
 
                 foreach (Security d in SecurityList)
                 {
@@ -2092,7 +2116,7 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Returns Merger Arb by ID, in old format, soon to be phased out
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -2133,7 +2157,7 @@ namespace CortexWebService
 
 
         /// <summary>
-        /// 
+        /// Returns Merger Arb by Deal ID, in old format, soon to be phased out
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -2295,7 +2319,7 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Returns Merger Arb by Deal ID
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -2361,7 +2385,8 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// retrieves Deal IDs from matching Merger Arb data
+        /// part of the Search All logic for Deals
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

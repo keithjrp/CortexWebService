@@ -19,7 +19,7 @@ namespace CortexWebService
         Deal getDeal(int DealId);
 
         [OperationContract]
-        List<Deal> getDeals();
+        List<Deal> getDeals(int count = 30);
 
         [OperationContract]
         void addDeal(Deal d);
