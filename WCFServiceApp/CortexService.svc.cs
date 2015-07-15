@@ -1,4 +1,13 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : CortexWebService
+// Author           : ktam
+// Created          : 12-16-2014
+//
+// Last Modified By : ktam
+// Last Modified On : 04-24-2015
+// ***********************************************************************
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -11,17 +20,23 @@ using System.Data.SqlClient;
 using System.Linq.Expressions;
 //using CortexWebService;
 
+/// <summary>
+/// The CortexWebService namespace.
+/// </summary>
 namespace CortexWebService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, 
     // svc and config file together.
+    /// <summary>
+    /// Class CortexWCFServices.
+    /// </summary>
     public class CortexWCFServices : CortexWCFService
     {
         /// <summary>
         /// passed Unit Test, returns partial clone of Deal object by id, null if not found in DB
         /// </summary>
-        /// <param name="DealId"></param>
-        /// <returns></returns>
+        /// <param name="DealId">The deal identifier.</param>
+        /// <returns>Deal.</returns>
         public Deal getDeal(int DealId)
         {
             Deal d = new Deal();
@@ -43,13 +58,13 @@ namespace CortexWebService
             return dealCopy;
 
         }
-        
+
 
         /// <summary>
         /// Passed Test Client check, returns complete list of Deal objects in the database
         /// </summary>
         /// <param name="count">number of items to return</param>
-        /// <returns></returns>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDeals(int count = 30)
         {
             List<Deal> dealList = new List<Deal>(), listCopy = new List<Deal>();
@@ -83,10 +98,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// Passed Test Client check, returns partial clone of Deal object by desription, null if not found in DB 
+        /// Passed Test Client check, returns partial clone of Deal object by desription, null if not found in DB
         /// </summary>
-        /// <param name="desc"></param>
-        /// <returns></returns>
+        /// <param name="desc">The desc.</param>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealsByDescription(String desc)
         {
             IQueryable<Deal> d = null;
@@ -150,8 +165,8 @@ namespace CortexWebService
         /// <summary>
         /// return Deal object of matching Event Date on any of the 4 Events associated with
         /// </summary>
-        /// <param name="dt"></param>
-        /// <returns></returns>
+        /// <param name="dt">The dt.</param>
+        /// <returns>Deal.</returns>
         public Deal getDealByDate(DateTime dt)
         {
             Deal d = new Deal();
@@ -184,7 +199,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds Deal to Database
         /// </summary>
-        /// <param name="d"></param>
+        /// <param name="d">The d.</param>
         public void addDeal(Deal d)
         {
             var crtx = new CortexEntities();
@@ -195,18 +210,18 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// passed Unit Test, removes Deal from Database 
+        /// passed Unit Test, removes Deal from Database
         /// </summary>
-        /// <param name="d"></param>
+        /// <param name="d">The d.</param>
         public void removeDeal(Deal d)
         {
             removeDealById(d.DealID);
         }
 
         /// <summary>
-        /// passed Unit Test, removes Deal from Database 
+        /// passed Unit Test, removes Deal from Database
         /// </summary>
-        /// <param name="DealId"></param>
+        /// <param name="DealId">The deal identifier.</param>
         public void removeDealById(int DealId)
         {
             var crtx = new CortexEntities();
@@ -219,9 +234,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// passed Unit Test, removes Deal from Database 
+        /// passed Unit Test, removes Deal from Database
         /// </summary>
-        /// <param name="desc"></param>
+        /// <param name="desc">The desc.</param>
         public void removeDealByDescription(String desc)
         {
             var crtx = new CortexEntities();
@@ -234,9 +249,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// passed Unit Test, update Deal to Database 
+        /// passed Unit Test, update Deal to Database
         /// </summary>
-        /// <param name="d"></param>
+        /// <param name="d">The d.</param>
         public void updateDeal(Deal d)
         {
             var crtx = new CortexEntities();
@@ -249,8 +264,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Security with matching id, null if not found in DB
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Security.</returns>
         public Security getSecurity(int id)
         {
             Security sec = new Security(), secCopy = new Security(); 
@@ -277,7 +292,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, add a Security to database
         /// </summary>
-        /// <param name="sec"></param>
+        /// <param name="sec">The sec.</param>
         public void addSecurity(Security sec)
         {
             var crtx = new CortexEntities();
@@ -290,7 +305,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, updates Security to database, must provide SecurityTypeId as raw int value
         /// </summary>
-        /// <param name="sec"></param>
+        /// <param name="sec">The sec.</param>
         public void updateSecurity(Security sec)
         {
             var crtx = new CortexEntities();
@@ -300,9 +315,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,remove Security record from database
+        /// Passed Test Client check,remove Security record from database
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">The identifier.</param>
         public void removeSecurity(int id)
         {
             var crtx = new CortexEntities();
@@ -316,8 +331,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, returns partial clone of SecurityGroup, null if not found in DB
         /// </summary>
-        /// <param name="sid"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>SecurityGroup.</returns>
         public SecurityGroup getSecurityGroup(int id)
         {
             SecurityGroup sec = new SecurityGroup(), secCopy = new SecurityGroup();
@@ -344,8 +359,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, returns partial clone of SecurityType, null if not found in DB
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>SecurityType.</returns>
         public SecurityType getSecurityType(int id)
         {
             SecurityType sec = new SecurityType(), secCopy = new SecurityType();
@@ -372,8 +387,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Company with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Company.</returns>
         public Company getCompany(int id)
         {
             Company c = new Company(), compCopy = new Company();
@@ -401,7 +416,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds Company to database
         /// </summary>
-        /// <param name="sec"></param>
+        /// <param name="sec">The sec.</param>
         public void addCompany(Company sec)
         {
             var crtx = new CortexEntities();
@@ -413,7 +428,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, update Company to database
         /// </summary>
-        /// <param name="sec"></param>
+        /// <param name="sec">The sec.</param>
         public void updateCompany(Company sec)
         {
             var crtx = new CortexEntities();
@@ -425,7 +440,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, removes Company from database
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">The identifier.</param>
         public void removeCompany(int id)
         {
             var crtx = new CortexEntities();
@@ -439,8 +454,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a CompanyAssociation with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>CompanyAssociation.</returns>
         public CompanyAssociation getCompanyAssociation(int id)
         {
             CompanyAssociation c = new CompanyAssociation(), compCopy = new CompanyAssociation();
@@ -466,10 +481,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,removes CompanyAssociation from database
+        /// Passed Test Client check,removes CompanyAssociation from database
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
         public void removeCompanyAssociation(int id)
         {
             var crtx = new CortexEntities();
@@ -481,10 +495,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,updates CompanyAssociation to database
+        /// Passed Test Client check,updates CompanyAssociation to database
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="ca">The ca.</param>
         public void updateCompanyAssociation(CompanyAssociation ca)
         {
             var crtx = new CortexEntities();
@@ -493,9 +506,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,adds CompanyAssociation to database
+        /// Passed Test Client check,adds CompanyAssociation to database
         /// </summary>
-        /// <param name="ca"></param>
+        /// <param name="ca">The ca.</param>
         public void addCompanyAssociation(CompanyAssociation ca)
         {
             var crtx = new CortexEntities();
@@ -504,10 +517,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,return a partial copy of a Document with matching id, if not, null
+        /// Passed Test Client check,return a partial copy of a Document with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Document.</returns>
         public Document getDocument(int id)
         {
             Document doc = new Document(), docCopy = new Document();
@@ -532,10 +545,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, return a partial copy of a Document with matching Name, if not, null
+        /// Passed Test Client check, return a partial copy of a Document with matching Name, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <returns>Document.</returns>
         public Document getDocumentByName(String name)
         {
             Document doc = new Document(), docCopy = new Document();
@@ -562,8 +575,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a DocumentGroup with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>DocumentGroup.</returns>
         public DocumentGroup getDocumentGroup(int id)
         {
             DocumentGroup doc = new DocumentGroup(), docCopy = new DocumentGroup();
@@ -590,8 +603,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Currency with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Currency.</returns>
         public Currency getCurrency(int id)
         {
             Currency curr = new Currency(), currCopy = new Currency();
@@ -615,10 +628,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves Currency object by Name/Symbol or 3 character Code
+        /// Passed Test Client check, retrieves Currency object by Name/Symbol or 3 character Code
         /// </summary>
-        /// <param name="codename"></param>
-        /// <returns></returns>
+        /// <param name="codename">The codename.</param>
+        /// <returns>Currency.</returns>
         public Currency getCurrencyByCodeOrName(String codename)
         {
             Currency curr = new Currency(), currCopy = new Currency();
@@ -645,8 +658,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Event with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Event.</returns>
         public Event getEvent(int id)
         {
             Event e = new Event(), eCopy =  new Event();
@@ -672,8 +685,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a EventType with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>EventType.</returns>
         public EventType getEventType(int id)
         {
             EventType e = new EventType(), eCopy = new EventType();
@@ -697,9 +710,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,retrieve last Company  inserted to the database
+        /// Passed Test Client check,retrieve last Company  inserted to the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Company.</returns>
         public Company getLastCompany()
         {
             Company comp = new Company(), compCopy = new Company();
@@ -723,9 +736,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,retrieve last CompanyAssociation inserted to the database
+        /// Passed Test Client check,retrieve last CompanyAssociation inserted to the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>CompanyAssociation.</returns>
         public CompanyAssociation getLastCompanyAssociation()
         {
             CompanyAssociation ca = new CompanyAssociation(), caCopy = new CompanyAssociation();
@@ -750,9 +763,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieve last Security inserted to the database
+        /// Passed Test Client check, retrieve last Security inserted to the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Security.</returns>
         public Security getLastSecurity()
         {
             Security sec = new Security(), secCopy = new Security();
@@ -776,9 +789,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieve last Security group inserted to the database
+        /// Passed Test Client check, retrieve last Security group inserted to the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>SecurityGroup.</returns>
         public SecurityGroup getLastSecurityGroup()
         {
             SecurityGroup sec = new SecurityGroup(), secCopy = new SecurityGroup();
@@ -803,9 +816,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, add Security group to database
+        /// Passed Test Client check, add Security group to database
         /// </summary>
-        /// <param name="newSG"></param>
+        /// <param name="newSG">The new sg.</param>
         public void addSecurityGroup(SecurityGroup newSG)
         {
             var crtx = new CortexEntities();
@@ -816,9 +829,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, add Document group to database
+        /// Passed Test Client check, add Document group to database
         /// </summary>
-        /// <param name="newDG"></param>
+        /// <param name="newDG">The new dg.</param>
         public void addDocumentGroup(DocumentGroup newDG)
         {
             var crtx = new CortexEntities();
@@ -830,9 +843,9 @@ namespace CortexWebService
 
 
         /// <summary>
-        ///  Passed Test Client check, retrieve last Security inserted to the database
+        /// Passed Test Client check, retrieve last Security inserted to the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>DocumentGroup.</returns>
         public DocumentGroup getLastDocumentGroup()
         {
             DocumentGroup sec = new DocumentGroup(), secCopy = new DocumentGroup();
@@ -859,8 +872,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Price with matching id, if not, null
         /// </summary>
-        /// <param name="pid"></param>
-        /// <returns></returns>
+        /// <param name="pid">The pid.</param>
+        /// <returns>Price.</returns>
         public Price getPrice(int pid)
         {
             Price p = new Price(), pCopy = new Price();
@@ -893,8 +906,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a StatisticType with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>StatisticType.</returns>
         public StatisticType getStatisticType(int id)
         {
             StatisticType s = new StatisticType(), sCopy = new StatisticType();
@@ -920,8 +933,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a AnnualCompanyStatistic with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>AnnualCompanyStatistic.</returns>
         public AnnualCompanyStatistic getAnnualCompanyStatistic(int id)
         {
             AnnualCompanyStatistic s = new AnnualCompanyStatistic(), sCopy = new AnnualCompanyStatistic();
@@ -947,8 +960,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a DealType with matching id, if not, null
         /// </summary>
-        /// <param name="pid"></param>
-        /// <returns></returns>
+        /// <param name="pid">The pid.</param>
+        /// <returns>DealType.</returns>
         public DealType getDealType(int pid)
         {
             DealType d = new DealType(), dCopy = new DealType();
@@ -974,7 +987,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds Currency to Database
         /// </summary>
-        /// <param name="c"></param>
+        /// <param name="c">The c.</param>
         public void addCurrency(Currency c)
         {
             var crtx = new CortexEntities();
@@ -987,7 +1000,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds Event to Database
         /// </summary>
-        /// <param name="e"></param>
+        /// <param name="e">The e.</param>
         public void addEvent(Event e)
         {
             var crtx = new CortexEntities();
@@ -1000,7 +1013,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds Event Type to Database
         /// </summary>
-        /// <param name="e"></param>
+        /// <param name="e">The e.</param>
         public void addEventType(EventType e)
         {
             var crtx = new CortexEntities();
@@ -1013,7 +1026,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds Document to Database
         /// </summary>
-        /// <param name="d"></param>
+        /// <param name="d">The d.</param>
         public void addDocument(Document d)
         {
             var crtx = new CortexEntities();
@@ -1024,9 +1037,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, adds Price Record to Database
+        /// Passed Test Client check, adds Price Record to Database
         /// </summary>
-        /// <param name="p"></param>
+        /// <param name="p">The p.</param>
         public void addPrice(Price p)
         {
             var crtx = new CortexEntities();
@@ -1037,9 +1050,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, adds AnnualCompanyStatistic to Database
+        /// Passed Test Client check, adds AnnualCompanyStatistic to Database
         /// </summary>
-        /// <param name="acs"></param>
+        /// <param name="acs">The acs.</param>
         public void addAnnualCompanyStatistic(AnnualCompanyStatistic acs)
         {
             var crtx = new CortexEntities();
@@ -1050,9 +1063,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, adds StatisticType to Database
+        /// Passed Test Client check, adds StatisticType to Database
         /// </summary>
-        /// <param name="st"></param>
+        /// <param name="st">The st.</param>
         public void addStatisticType(StatisticType st)
         {
             var crtx = new CortexEntities();
@@ -1063,9 +1076,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, adds Deal Type to Database
+        /// Passed Test Client check, adds Deal Type to Database
         /// </summary>
-        /// <param name="dt"></param>
+        /// <param name="dt">The dt.</param>
         public void addDealType(DealType dt)
         {
             var crtx = new CortexEntities();
@@ -1074,11 +1087,11 @@ namespace CortexWebService
             crtx.SaveChanges();
 
         }
-        
+
         /// <summary>
-        ///  Passed Test Client check, adds Security Type to Database
+        /// Passed Test Client check, adds Security Type to Database
         /// </summary>
-        /// <param name="st"></param>
+        /// <param name="st">The st.</param>
         public void addSecurityType(SecurityType st)
         {
             var crtx = new CortexEntities();
@@ -1088,15 +1101,19 @@ namespace CortexWebService
 
         }
 
+        /// <summary>
+        /// Gets the current date.
+        /// </summary>
+        /// <returns>System.String.</returns>
         public string GetCurrentDate()
         {
             return DateTime.Today.ToString();
         }
 
         /// <summary>
-        ///  Passed Test Client check, updates Document Group to database, must provide Document ID as raw int value
+        /// Passed Test Client check, updates Document Group to database, must provide Document ID as raw int value
         /// </summary>
-        /// <param name="dg"></param>
+        /// <param name="dg">The dg.</param>
         public void updateDocumentGroup(DocumentGroup dg)
         {
             var crtx = new CortexEntities();
@@ -1106,9 +1123,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, updates Security Group to database, must provide Security ID as raw int value
+        /// Passed Test Client check, updates Security Group to database, must provide Security ID as raw int value
         /// </summary>
-        /// <param name="sg"></param>
+        /// <param name="sg">The sg.</param>
         public void updateSecurityGroup(SecurityGroup sg)
         {
             var crtx = new CortexEntities();
@@ -1118,9 +1135,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, updates Document  to database, must provide Document ID as raw int value
+        /// Passed Test Client check, updates Document  to database, must provide Document ID as raw int value
         /// </summary>
-        /// <param name="d"></param>
+        /// <param name="d">The d.</param>
         public void updateDocument(Document d)
         {
             var crtx = new CortexEntities();
@@ -1130,9 +1147,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieve last Document inserted to the database
+        /// Passed Test Client check, retrieve last Document inserted to the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Document.</returns>
         public Document getLastDocument()
         {
             Document doc = new Document(), docCopy = new Document();
@@ -1157,10 +1174,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, returns partial clone of Deal object by Company ID, null if not found in DB 
+        /// Passed Test Client check, returns partial clone of Deal object by Company ID, null if not found in DB
         /// </summary>
-        /// <param name="c"></param>
-        /// <returns></returns>
+        /// <param name="c">The c.</param>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealByCompany(Company c)
         {
             IQueryable<Deal> d = null;
@@ -1189,8 +1206,7 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, returns partial list of Deal object where Expiration Date is greater than today
         /// </summary>
-        /// <param name="c"></param>
-        /// <returns></returns>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealList()
         {
             IQueryable<Deal> d = null;
@@ -1216,10 +1232,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves partial copy of Analyst 
+        /// Passed Test Client check, retrieves partial copy of Analyst
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Analyst.</returns>
         public Analyst getAnalyst(int id)
         {
             Analyst a = new Analyst();
@@ -1243,10 +1259,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves partial copy of Analyst by login
+        /// Passed Test Client check, retrieves partial copy of Analyst by login
         /// </summary>
-        /// <param name="login"></param>
-        /// <returns></returns>
+        /// <param name="login">The login.</param>
+        /// <returns>Analyst.</returns>
         public Analyst getAnalystByName(String login)
         {
             Analyst a = new Analyst();
@@ -1273,10 +1289,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves partial copy of Deal Status 
+        /// Passed Test Client check, retrieves partial copy of Deal Status
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>DealStatus.</returns>
         public DealStatus getDealStatus(int id)
         {
             DealStatus d = new DealStatus();
@@ -1300,10 +1316,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves partial copy of Deal Strategy 
+        /// Passed Test Client check, retrieves partial copy of Deal Strategy
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Category.</returns>
         public Category getCategory(int id)
         {
             Category c = new Category();
@@ -1326,10 +1342,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves partial copy of Deal/Analyst mapping
+        /// Passed Test Client check, retrieves partial copy of Deal/Analyst mapping
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>List&lt;MapDealAnalyst&gt;.</returns>
         public List<MapDealAnalyst> getDealTeam(int id)
         {
             IQueryable<MapDealAnalyst> m = null;
@@ -1354,9 +1370,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, adds Deal/Analyst mapping to database
+        /// Passed Test Client check, adds Deal/Analyst mapping to database
         /// </summary>
-        /// <param name="mda"></param>
+        /// <param name="mda">The mda.</param>
         public void addMapDealAnalyst(MapDealAnalyst mda)
         {
             var crtx = new CortexEntities();
@@ -1366,9 +1382,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, updates Deal/Analyst mapping to database
+        /// Passed Test Client check, updates Deal/Analyst mapping to database
         /// </summary>
-        /// <param name="mda"></param>
+        /// <param name="mda">The mda.</param>
         public void updateMapDealAnalyst(MapDealAnalyst mda)
         {
             var crtx = new CortexEntities();
@@ -1377,11 +1393,11 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves partial copy of Deal/Analyst mapping
+        /// Passed Test Client check, retrieves partial copy of Deal/Analyst mapping
         /// </summary>
-        /// <param name="DealId"></param>
-        /// <param name="AnalystId"></param>
-        /// <returns></returns>
+        /// <param name="DealId">The deal identifier.</param>
+        /// <param name="AnalystId">The analyst identifier.</param>
+        /// <returns>MapDealAnalyst.</returns>
         public MapDealAnalyst getMapDealAnalyst(int DealId, int AnalystId)
         {
             MapDealAnalyst m = new MapDealAnalyst();
@@ -1407,10 +1423,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves a list of Deals containing the Analyst on the Deal Team
+        /// Passed Test Client check, retrieves a list of Deals containing the Analyst on the Deal Team
         /// </summary>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="m">The m.</param>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealByAnalyst(Analyst m)
         {
             IQueryable<MapDealAnalyst> mda = null;
@@ -1436,10 +1452,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves a list of Events with the same Deal Id
+        /// Passed Test Client check, retrieves a list of Events with the same Deal Id
         /// </summary>
-        /// <param name="d"></param>
-        /// <returns></returns>
+        /// <param name="d">The d.</param>
+        /// <returns>List&lt;Event&gt;.</returns>
         public List<Event> getEventsByDeal(int d)
         {
             IQueryable<Event> e = null;
@@ -1464,10 +1480,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves a list of Documents with the same Deal Id
+        /// Passed Test Client check, retrieves a list of Documents with the same Deal Id
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>List&lt;Document&gt;.</returns>
         public List<Document> getDocumentsByDeal(int id)
         {
             IQueryable<Document> d = null;
@@ -1491,14 +1507,14 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieve last Event inserted to the database
-        ///  these getLast.. methods is because some tables didn't have an identity field setup
-        ///  with identity seed and auto increment.  Their add methods will fail if the id is not 
-        ///  given an explicit value.  The getLast methods retrieves the last id value inserted and 
-        ///  lets the developer calculate the next id value to insert.  Workaround of bad initial SQL table setup.
-        ///  Subsequent tables/objects will not have this problem.
+        /// Passed Test Client check, retrieve last Event inserted to the database
+        /// these getLast.. methods is because some tables didn't have an identity field setup
+        /// with identity seed and auto increment.  Their add methods will fail if the id is not
+        /// given an explicit value.  The getLast methods retrieves the last id value inserted and
+        /// lets the developer calculate the next id value to insert.  Workaround of bad initial SQL table setup.
+        /// Subsequent tables/objects will not have this problem.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Event.</returns>
         public Event getLastEvent()
         {
             Event ev = new Event(), evCopy = new Event();
@@ -1522,9 +1538,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, removes Event from database
+        /// Passed Test Client check, removes Event from database
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">The identifier.</param>
         public void removeEvent(int id)
         {
             var crtx = new CortexEntities();
@@ -1536,9 +1552,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, removes Document from database
+        /// Passed Test Client check, removes Document from database
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">The identifier.</param>
         public void removeDocument(int id)
         {
             var crtx = new CortexEntities();
@@ -1550,10 +1566,28 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, removes Deal/Analyst mapping from database, 
-        ///  essentially removes an Analyst from a Deal team.
+        /// Passed Test Client check, removes Document from database
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">The identifier.</param>
+        public void removeMergerArbNewByDealID(int id)
+        {
+            var crtx = new CortexEntities();
+            List<MergerArbNew> doc = (from cc in crtx.MergerArbNews
+                       where cc.DealId == id
+                       select cc).ToList<MergerArbNew>();
+            foreach (MergerArbNew m in doc)
+            {
+                crtx.MergerArbNews.Remove(m);
+                crtx.SaveChanges();
+            }
+
+        }
+
+        /// <summary>
+        /// Passed Test Client check, removes Deal/Analyst mapping from database,
+        /// essentially removes an Analyst from a Deal team.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
         public void removeMapDealAnalyst(int id)
         {
             var crtx = new CortexEntities();
@@ -1565,10 +1599,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, records Deal insertion to database
+        /// Passed Test Client check, records Deal insertion to database
         /// </summary>
-        /// <param name="usr"></param>
-        /// <param name="d"></param>
+        /// <param name="usr">The usr.</param>
+        /// <param name="d">The d.</param>
         public void AuditTrailAdd(ApplicationUser usr, Deal d)
         {
             usr.IsDeleted = false;
@@ -1586,8 +1620,8 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, records Deal updates to database
         /// </summary>
-        /// <param name="usr"></param>
-        /// <param name="d"></param>
+        /// <param name="usr">The usr.</param>
+        /// <param name="d">The d.</param>
         public void AuditTrailUpdate(ApplicationUser usr, Deal d)
         {
             usr.IsDeleted = false;
@@ -1605,8 +1639,8 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, records Deal deletion to database
         /// </summary>
-        /// <param name="usr"></param>
-        /// <param name="d"></param>
+        /// <param name="usr">The usr.</param>
+        /// <param name="d">The d.</param>
         public void AuditTrailDelete(ApplicationUser usr, Deal d)
         {
             usr.IsDeleted = true;
@@ -1624,7 +1658,7 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, records user login to Cortex Application
         /// </summary>
-        /// <param name="usr"></param>
+        /// <param name="usr">The usr.</param>
         public void AuditTrailLogin(ApplicationUser usr)
         {
             usr.IsDeleted = false;
@@ -1642,7 +1676,7 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, records user logout/exit/quit to Cortex Application
         /// </summary>
-        /// <param name="usr"></param>
+        /// <param name="usr">The usr.</param>
         public void AuditTrailLogout(ApplicationUser usr)
         {
             usr.IsDeleted = false;
@@ -1660,8 +1694,8 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, records user vselecting and viewing a Deal
         /// </summary>
-        /// <param name="usr"></param>
-        /// <param name="d"></param>
+        /// <param name="usr">The usr.</param>
+        /// <param name="d">The d.</param>
         public void AuditTrailView(ApplicationUser usr, Deal d)
         {
             usr.IsDeleted = false;
@@ -1679,8 +1713,8 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, retrieves partial copy of Deal with the matching Status
         /// </summary>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="ds">The ds.</param>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealByStatus(DealStatus ds)
         {
             IQueryable<Deal> d = null;
@@ -1708,8 +1742,8 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, retrieves a list of Deals with the matching Strategy/Category
         /// </summary>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="c">The c.</param>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealsByCategory(Category c)
         {
             IQueryable<Deal> d = null;
@@ -1736,8 +1770,8 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, retrieves a list of Strategies/Categories with the matching Class name
         /// </summary>
-        /// <param name="className"></param>
-        /// <returns></returns>
+        /// <param name="className">Name of the class.</param>
+        /// <returns>List&lt;Category&gt;.</returns>
         public List<Category> getCategoriesByClass(String className)
         {
             IQueryable<Category> c = null;
@@ -1762,11 +1796,11 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// Passed Test Client check, retrieves a list of Deals 
+        /// Passed Test Client check, retrieves a list of Deals
         /// with the matching Strategies/Categories with the same Class name
         /// </summary>
-        /// <param name="m"></param>
-        /// <returns></returns>
+        /// <param name="className">Name of the class.</param>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealsByCategoryClass(String className)
         {
             List<Deal> dealArray = new List<Deal>();
@@ -1790,9 +1824,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check,retrieve last Company  inserted to the database
+        /// Passed Test Client check,retrieve last Company  inserted to the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Deal.</returns>
         public Deal getLastDeal()
         {
             Deal comp = new Deal(), compCopy = new Deal();
@@ -1818,8 +1852,8 @@ namespace CortexWebService
         /// <summary>
         /// Passed Test Client check, retrieves a list of Strategies/Categories with the matching Class name
         /// </summary>
-        /// <param name="Name"></param>
-        /// <returns></returns>
+        /// <param name="Name">The name.</param>
+        /// <returns>List&lt;Category&gt;.</returns>
         public List<Category> getCategoriesByName(String Name)
         {
             IQueryable<Category> c = null;
@@ -1844,10 +1878,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, retrieves partial copy of Deal Status 
+        /// Passed Test Client check, retrieves partial copy of Deal Status
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <returns>DealStatus.</returns>
         public DealStatus getDealStatusByName(String name)
         {
             DealStatus d = new DealStatus();
@@ -1874,8 +1908,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Security with matching Code or Name, null if not found in DB
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="code">The code.</param>
+        /// <returns>Security.</returns>
         public Security getSecurityByCode(String code)
         {
             Security sec = new Security(), secCopy = new Security();
@@ -1902,8 +1936,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Company with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="name">The name.</param>
+        /// <returns>Company.</returns>
         public Company getCompanyByName(String name)
         {
             Company c = new Company(), compCopy = new Company();
@@ -1929,10 +1963,14 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// Passed Test Client check, returns partial clone of Deal object by desription, null if not found in DB 
+        /// Passed Test Client check, returns partial clone of Deal object by desription, null if not found in DB
         /// </summary>
-        /// <param name="desc"></param>
-        /// <returns></returns>
+        /// <param name="desc">The desc.</param>
+        /// <param name="company1">The company1.</param>
+        /// <param name="status">The status.</param>
+        /// <param name="categoryClass">The category class.</param>
+        /// <param name="analyst">The analyst.</param>
+        /// <returns>List&lt;Deal&gt;.</returns>
         public List<Deal> getDealsByCriteria(String desc, int company1 = 0, int status = 0, 
             String categoryClass = "", String analyst = "")
         {
@@ -1976,7 +2014,7 @@ namespace CortexWebService
         /// </summary>
         /// <param name="analyst">Analyst name to filter by</param>
         /// <param name="d">List of Deals from Search Result</param>
-        /// <returns></returns>
+        /// <returns>List&lt;Deal&gt;.</returns>
         private List<Deal> filterDealResultsByAnalyst(String analyst, IEnumerable<Deal> d)
         {
             List<Deal> dealByAnalyst = new List<Deal>();
@@ -2012,9 +2050,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, returns complete list of Company objects in the database
+        /// Passed Test Client check, returns complete list of Company objects in the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List&lt;Company&gt;.</returns>
         public List<Company> getCompanies()
         {
             List<Company> CompanyList = new List<Company>(), listCopy = new List<Company>();
@@ -2038,9 +2076,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, returns complete list of Security objects in the database
+        /// Passed Test Client check, returns complete list of Security objects in the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List&lt;Security&gt;.</returns>
         public List<Security> getSecurities()
         {
             List<Security> SecurityList = new List<Security>(), listCopy = new List<Security>();
@@ -2064,9 +2102,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, returns complete list of Analyst objects in the database
+        /// Passed Test Client check, returns complete list of Analyst objects in the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List&lt;Analyst&gt;.</returns>
         public List<Analyst> getAnalysts()
         {
             List<Analyst> AnalystList = new List<Analyst>(), listCopy = new List<Analyst>();
@@ -2090,9 +2128,9 @@ namespace CortexWebService
         }
 
         /// <summary>
-        ///  Passed Test Client check, returns complete list of SecurityType objects in the database
+        /// Passed Test Client check, returns complete list of SecurityType objects in the database
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List&lt;SecurityType&gt;.</returns>
         public List<SecurityType> getSecurityTypes()
         {
             List<SecurityType> SecurityTypeList = new List<SecurityType>(), listCopy = new List<SecurityType>();
@@ -2118,8 +2156,8 @@ namespace CortexWebService
         /// <summary>
         /// Returns Merger Arb by ID, in old format, soon to be phased out
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>MergerArb.</returns>
         public MergerArb getMergerArb(int id)
         {
             MergerArb marb = new MergerArb();
@@ -2134,7 +2172,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, update MergerArb to database
         /// </summary>
-        /// <param name="mb"></param>
+        /// <param name="mb">The mb.</param>
         public void updateMergerArb(MergerArb mb)
         {
             var crtx = new CortexEntities();
@@ -2146,7 +2184,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds MergerArb to database
         /// </summary>
-        /// <param name="mb"></param>
+        /// <param name="mb">The mb.</param>
         public void addMergerArb(MergerArb mb)
         {
             var crtx = new CortexEntities();
@@ -2159,8 +2197,8 @@ namespace CortexWebService
         /// <summary>
         /// Returns Merger Arb by Deal ID, in old format, soon to be phased out
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>MergerArb.</returns>
         public MergerArb getMergerArbByDealId(int id)
         {
             MergerArb marb = new MergerArb();
@@ -2173,8 +2211,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a EventType with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>List&lt;EventType&gt;.</returns>
         public List<EventType> getEventTypes()
         {
             List<EventType> e = new List<EventType>(), eCopy = new List<EventType>();
@@ -2200,8 +2237,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Currency with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>List&lt;Currency&gt;.</returns>
         public List<Currency> getCurrencies()
         {
             List<Currency> e = new List<Currency>(), eCopy = new List<Currency>();
@@ -2227,8 +2263,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a DealStatus with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>List&lt;DealStatus&gt;.</returns>
         public List<DealStatus> getDealStatuses()
         {
             List<DealStatus> e = new List<DealStatus>(), eCopy = new List<DealStatus>();
@@ -2254,8 +2289,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Category with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>List&lt;Category&gt;.</returns>
         public List<Category> getCategories()
         {
             List<Category> e = new List<Category>(), eCopy = new List<Category>();
@@ -2281,8 +2315,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, return a partial copy of a Category with matching id, if not, null
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>List&lt;Category&gt;.</returns>
         public List<Category> getCategoryClasses()
         {
             List<Category> e = new List<Category>(), eCopy = new List<Category>();
@@ -2321,8 +2354,8 @@ namespace CortexWebService
         /// <summary>
         /// Returns Merger Arb by Deal ID
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>List&lt;MergerArbNew&gt;.</returns>
         public List<MergerArbNew> getMergerArbNewByDealId(int id)
         {
             List<MergerArbNew> marb = new List<MergerArbNew>();
@@ -2335,7 +2368,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, adds MergerArb to database
         /// </summary>
-        /// <param name="mb"></param>
+        /// <param name="mb">The mb.</param>
         public void addMergerArbNew(MergerArbNew mb)
         {
             var crtx = new CortexEntities();
@@ -2347,7 +2380,7 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, update MergerArb to database
         /// </summary>
-        /// <param name="mb"></param>
+        /// <param name="mb">The mb.</param>
         public void updateMergerArbNew(MergerArbNew mb)
         {
             var crtx = new CortexEntities();
@@ -2359,8 +2392,8 @@ namespace CortexWebService
         /// <summary>
         /// passed Unit Test, returns partial clone of SecurityGroup, null if not found in DB
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="sid">The sid.</param>
+        /// <returns>SecurityGroup.</returns>
         public SecurityGroup getSecurityGroupBySecurity1(int sid)
         {
             SecurityGroup sec = new SecurityGroup(), secCopy = new SecurityGroup();
@@ -2388,8 +2421,8 @@ namespace CortexWebService
         /// retrieves Deal IDs from matching Merger Arb data
         /// part of the Search All logic for Deals
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="value">The value.</param>
+        /// <returns>List&lt;MergerArbNew&gt;.</returns>
         public List<MergerArbNew> getMergerArbNewByValue(String value)
         {
             List<MergerArbNew> marb = new List<MergerArbNew>();

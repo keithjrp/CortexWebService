@@ -7,20 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+/// <summary>
+/// The CortexWebService namespace.
+/// </summary>
 namespace CortexWebService
 {
     using System;
     using System.Collections.Generic;
-    
+
+    /// <summary>
+    /// Class AnnualCompanyStatistic.
+    /// </summary>
     public partial class AnnualCompanyStatistic
     {
+        /// <summary>
+        /// Gets or sets the annual company statistic identifier.
+        /// </summary>
+        /// <value>The annual company statistic identifier.</value>
         public int AnnualCompanyStatisticID { get; set; }
+        /// <summary>
+        /// Gets or sets the company identifier.
+        /// </summary>
+        /// <value>The company identifier.</value>
         public int CompanyID { get; set; }
+        /// <summary>
+        /// Gets or sets the year.
+        /// </summary>
+        /// <value>The year.</value>
         public int Year { get; set; }
+        /// <summary>
+        /// Gets or sets the statistic type identifier.
+        /// </summary>
+        /// <value>The statistic type identifier.</value>
         public int StatisticTypeID { get; set; }
+        /// <summary>
+        /// Gets or sets the value.
+        /// </summary>
+        /// <value>The value.</value>
         public decimal Value { get; set; }
+        /// <summary>
+        /// Gets or sets the source.
+        /// </summary>
+        /// <value>The source.</value>
         public string Source { get; set; }
-    
+
+        /// <summary>
+        /// Gets or sets the type of the statistic.
+        /// </summary>
+        /// <value>The type of the statistic.</value>
         public virtual StatisticType StatisticType { get; set; }
     }
 }

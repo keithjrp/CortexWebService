@@ -7,22 +7,47 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+/// <summary>
+/// The CortexWebService namespace.
+/// </summary>
 namespace CortexWebService
 {
     using System;
     using System.Collections.Generic;
-    
+
+    /// <summary>
+    /// Class Analyst.
+    /// </summary>
     public partial class Analyst
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Analyst" /> class.
+        /// </summary>
         public Analyst()
         {
             this.MapDealAnalysts = new HashSet<MapDealAnalyst>();
         }
-    
+
+        /// <summary>
+        /// Gets or sets the login.
+        /// </summary>
+        /// <value>The login.</value>
         public string Login { get; set; }
+        /// <summary>
+        /// Gets or sets the password.
+        /// </summary>
+        /// <value>The password.</value>
         public string Password { get; set; }
+        /// <summary>
+        /// Gets or sets the analyst identifier.
+        /// </summary>
+        /// <value>The analyst identifier.</value>
         public int AnalystID { get; set; }
-    
+
+        /// <summary>
+        /// Gets or sets the map deal analysts.
+        /// </summary>
+        /// <value>The map deal analysts.</value>
         public virtual ICollection<MapDealAnalyst> MapDealAnalysts { get; set; }
     }
 }

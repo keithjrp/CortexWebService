@@ -1,17 +1,33 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : CortexWebService
+// Author           : ktam
+// Created          : 12-23-2014
+//
+// Last Modified By : ktam
+// Last Modified On : 01-23-2015
+// ***********************************************************************
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using CortexWebService;
 
+/// <summary>
+/// The CortexWebService namespace.
+/// </summary>
 namespace CortexWebService
 {
+    /// <summary>
+    /// Class CortexClone.
+    /// </summary>
     public static class CortexClone
     {
         /// <summary>
         /// Partial copy of a Deal
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Deal.</returns>
         public static Deal clone(Deal x)
         {
             try
@@ -63,7 +79,8 @@ namespace CortexWebService
         /// <summary>
         /// return partial Copy of a Event, else a null
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>DocumentGroup.</returns>
         public static DocumentGroup clone(DocumentGroup x)
         {
             try
@@ -89,7 +106,8 @@ namespace CortexWebService
         /// <summary>
         /// partial Copy of a Company
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Company.</returns>
         public static Company clone(Company x)
         {
             try
@@ -114,7 +132,8 @@ namespace CortexWebService
         /// <summary>
         /// partial Copy of a CompanyAssociation
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>CompanyAssociation.</returns>
         public static CompanyAssociation clone(CompanyAssociation x)
         {
             try
@@ -138,7 +157,8 @@ namespace CortexWebService
         /// <summary>
         /// return partial Copy of a Currency, else a null
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Currency.</returns>
         public static Currency clone(Currency x)
         {
             try
@@ -161,7 +181,8 @@ namespace CortexWebService
         /// <summary>
         /// return partial Copy of a Document, else a null
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Document.</returns>
         public static Document clone(Document x)
         {
             try
@@ -186,7 +207,8 @@ namespace CortexWebService
         /// <summary>
         /// return partial Copy of a Event, else a null
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Event.</returns>
         public static Event clone(Event x)
         {
             try
@@ -213,7 +235,8 @@ namespace CortexWebService
         /// <summary>
         /// return partial Copy of a EventType, else a null
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>EventType.</returns>
         public static EventType clone(EventType x)
         {
             try
@@ -238,7 +261,8 @@ namespace CortexWebService
         /// <summary>
         /// partial Copy of a Security
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Security.</returns>
         public static Security clone(Security x)
         {
             try
@@ -268,7 +292,8 @@ namespace CortexWebService
         /// <summary>
         /// partial Copy of a SecurityGroup
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>SecurityGroup.</returns>
         public static SecurityGroup clone(SecurityGroup x)
         {
             try
@@ -295,7 +320,8 @@ namespace CortexWebService
         /// <summary>
         /// partial Copy of a SecurityType
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>SecurityType.</returns>
         public static SecurityType clone(SecurityType x)
         {
             try
@@ -318,9 +344,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Clones the specified x.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>AnnualCompanyStatistic.</returns>
         public static AnnualCompanyStatistic clone(AnnualCompanyStatistic x)
         {
             try
@@ -344,9 +371,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Clones the specified x.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>DealType.</returns>
         public static DealType clone(DealType x)
         {
             try
@@ -368,9 +396,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Clones the specified x.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Price.</returns>
         public static Price clone(Price x)
         {
             try
@@ -394,9 +423,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Clones the specified x.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>StatisticType.</returns>
         public static StatisticType clone(StatisticType x)
         {
             try
@@ -419,10 +449,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Clones the specified x.
         /// </summary>
-        /// <param name="x"></param>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>DealStatus.</returns>
         public static DealStatus clone(DealStatus x)
         {
             try
@@ -444,10 +474,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Clones the specified x.
         /// </summary>
-        /// <param name="x"></param>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>MapDealAnalyst.</returns>
         public static MapDealAnalyst clone(MapDealAnalyst x)
         {
             try
@@ -469,10 +499,10 @@ namespace CortexWebService
         }
 
         /// <summary>
-        /// 
+        /// Clones the specified x.
         /// </summary>
-        /// <param name="x"></param>
-        /// <returns></returns>
+        /// <param name="x">The x.</param>
+        /// <returns>Category.</returns>
         public static Category clone(Category x)
         {
             try
@@ -492,6 +522,11 @@ namespace CortexWebService
             }
         }
 
+        /// <summary>
+        /// Clones the specified x.
+        /// </summary>
+        /// <param name="x">The x.</param>
+        /// <returns>Analyst.</returns>
         public static Analyst clone(Analyst x)
         {
             try

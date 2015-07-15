@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="08fe407a-c5f5-4a77-b1dd-16d3e03aa6c8" Title="CortexWebService Namespace" Url="html/465198914.htm">
+    <HelpTOCNode Id="a4fa4e63-137d-4bc1-b4bf-bc1bafe4e5b8" Title="Analyst Class" Url="html/404096581.htm">
+      <HelpTOCNode Title="Analyst Members" Url="html/730209839.htm" />
+      <HelpTOCNode Title="Analyst Constructor " Url="html/9437658.htm" />
+      <HelpTOCNode Title="Analyst Methods" Url="html/1342704032.htm" />
+      <HelpTOCNode Id="5c0e0760-f989-4c8c-b82e-1e5a3db4e618" Title="Analyst Properties" Url="html/1336229422.htm">
+        <HelpTOCNode Title="AnalystID Property " Url="html/1670150591.htm" />
+        <HelpTOCNode Title="Login Property " Url="html/1147645964.htm" />
+        <HelpTOCNode Title="MapDealAnalysts Property " Url="html/1551268505.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/1826690504.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="743a8a57-44a3-4072-a06d-cbcbfadedaae" Title="AnnualCompanyStatistic Class" Url="html/1700588010.htm">
+      <HelpTOCNode Title="AnnualCompanyStatistic Members" Url="html/750278569.htm" />
+      <HelpTOCNode Title="AnnualCompanyStatistic Methods" Url="html/275655623.htm" />
+      <HelpTOCNode Id="ae7ac6eb-e2b0-4734-99c2-bcc6efb1ad5e" Title="AnnualCompanyStatistic Properties" Url="html/1892436145.htm">
+        <HelpTOCNode Title="AnnualCompanyStatisticID Property " Url="html/867543672.htm" />
+        <HelpTOCNode Title="CompanyID Property " Url="html/1116409275.htm" />
+        <HelpTOCNode Title="Source Property " Url="html/1482236337.htm" />
+        <HelpTOCNode Title="StatisticType Property " Url="html/1627037035.htm" />
+        <HelpTOCNode Title="StatisticTypeID Property " Url="html/1320831457.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/926532953.htm" />
+        <HelpTOCNode Title="Year Property " Url="html/824769065.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bb08c9da-2acb-409c-ae8f-31f93086d1e9" Title="ApplicationUser Class" Url="html/1313819809.htm">
+      <HelpTOCNode Title="ApplicationUser Members" Url="html/2015328527.htm" />
+      <HelpTOCNode Title="ApplicationUser Methods" Url="html/1299184481.htm" />
+      <HelpTOCNode Id="5e822674-e928-44cb-b8d7-1cc5014a1b9c" Title="ApplicationUser Properties" Url="html/1207796910.htm">
+        <HelpTOCNode Title="Actions Property " Url="html/1510539623.htm" />
+        <HelpTOCNode Title="CreatedById Property " Url="html/1237631188.htm" />
+        <HelpTOCNode Title="CreatedDateTime Property " Url="html/1642653988.htm" />
+        <HelpTOCNode Title="DomainCredential Property " Url="html/359474663.htm" />
+        <HelpTOCNode Title="EditedById Property " Url="html/1587662684.htm" />
+        <HelpTOCNode Title="EditedDateTime Property " Url="html/1808560397.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/1852136310.htm" />
+        <HelpTOCNode Title="IsDeleted Property " Url="html/1493949354.htm" />
+        <HelpTOCNode Title="LastAccessDateTime Property " Url="html/1867359089.htm" />
+        <HelpTOCNode Title="MachineAddress Property " Url="html/1483689850.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/2095127.htm" />
+        <HelpTOCNode Title="Version Property " Url="html/1534430062.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="73a8cc99-52ce-48fc-aa7e-4d4f4577b6e6" Title="AuditTrailDB Class" Url="html/459413550.htm">
+      <HelpTOCNode Title="AuditTrailDB Methods" Url="html/1144705447.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ab5b5464-3d34-42a4-b707-7c861a83ddc9" Title="Category Class" Url="html/856668271.htm">
+      <HelpTOCNode Title="Category Members" Url="html/323940882.htm" />
+      <HelpTOCNode Title="Category Constructor " Url="html/1489851343.htm" />
+      <HelpTOCNode Title="Category Methods" Url="html/676773674.htm" />
+      <HelpTOCNode Id="e0cabdb4-8330-4bc6-a13a-9cffcf6fb5fa" Title="Category Properties" Url="html/483688833.htm">
+        <HelpTOCNode Title="CategoryID Property " Url="html/1996267349.htm" />
+        <HelpTOCNode Title="Class Property " Url="html/1895179423.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/633742528.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1096541222.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d20633b4-9012-4326-8071-491ad5e55696" Title="Company Class" Url="html/568619257.htm">
+      <HelpTOCNode Title="Company Members" Url="html/172273106.htm" />
+      <HelpTOCNode Title="Company Constructor " Url="html/1738661536.htm" />
+      <HelpTOCNode Title="Company Methods" Url="html/318078530.htm" />
+      <HelpTOCNode Id="381debe6-46e9-4e25-9d58-21256351cf5a" Title="Company Properties" Url="html/748865755.htm">
+        <HelpTOCNode Title="Code Property " Url="html/862452590.htm" />
+        <HelpTOCNode Title="CompanyAssociations Property " Url="html/897509799.htm" />
+        <HelpTOCNode Title="CompanyAssociations1 Property " Url="html/2015274113.htm" />
+        <HelpTOCNode Title="CompanyID Property " Url="html/1753362143.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1430645541.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/2012840881.htm" />
+        <HelpTOCNode Title="Deals2 Property " Url="html/2012840882.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/620248510.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/460323684.htm" />
+        <HelpTOCNode Title="Security Property " Url="html/620297783.htm" />
+        <HelpTOCNode Title="SecurityID Property " Url="html/1101481028.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2e84f74a-6aa8-45bb-8269-e782d5f4590c" Title="CompanyAssociation Class" Url="html/2010668315.htm">
+      <HelpTOCNode Title="CompanyAssociation Members" Url="html/406881728.htm" />
+      <HelpTOCNode Title="CompanyAssociation Methods" Url="html/1305463062.htm" />
+      <HelpTOCNode Id="a449ccf1-e050-49b2-bcca-b1e855e52eb2" Title="CompanyAssociation Properties" Url="html/192813675.htm">
+        <HelpTOCNode Title="AssociationType Property " Url="html/830919661.htm" />
+        <HelpTOCNode Title="Company Property " Url="html/446646000.htm" />
+        <HelpTOCNode Title="Company1 Property " Url="html/445662960.htm" />
+        <HelpTOCNode Title="Company1ID Property " Url="html/1039050063.htm" />
+        <HelpTOCNode Title="Company2ID Property " Url="html/1038853455.htm" />
+        <HelpTOCNode Title="CompanyAssociationID Property " Url="html/1424996436.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="66805cfa-345f-483e-85ed-87bf1c68d358" Title="CortexClone Class" Url="html/1896949888.htm">
+      <HelpTOCNode Title="CortexClone Members" Url="html/555687698.htm" />
+      <HelpTOCNode Id="3348f6d9-2cc5-449a-96cf-fd122302e5dc" Title="CortexClone Methods" Url="html/1873729457.htm">
+        <HelpTOCNode Id="83edae5c-2838-4b03-888d-3da27bf7458c" Title="clone Method " Url="html/538697204.htm">
+          <HelpTOCNode Title="clone Method (Deal)" Url="html/1081781149.htm" />
+          <HelpTOCNode Title="clone Method (DocumentGroup)" Url="html/1434136070.htm" />
+          <HelpTOCNode Title="clone Method (Company)" Url="html/491033525.htm" />
+          <HelpTOCNode Title="clone Method (CompanyAssociation)" Url="html/2051494631.htm" />
+          <HelpTOCNode Title="clone Method (Currency)" Url="html/1220771931.htm" />
+          <HelpTOCNode Title="clone Method (Document)" Url="html/769945028.htm" />
+          <HelpTOCNode Title="clone Method (Event)" Url="html/1431636824.htm" />
+          <HelpTOCNode Title="clone Method (EventType)" Url="html/1997284076.htm" />
+          <HelpTOCNode Title="clone Method (Security)" Url="html/939607808.htm" />
+          <HelpTOCNode Title="clone Method (SecurityGroup)" Url="html/994957922.htm" />
+          <HelpTOCNode Title="clone Method (SecurityType)" Url="html/987407575.htm" />
+          <HelpTOCNode Title="clone Method (AnnualCompanyStatistic)" Url="html/33572840.htm" />
+          <HelpTOCNode Title="clone Method (DealType)" Url="html/811793778.htm" />
+          <HelpTOCNode Title="clone Method (Price)" Url="html/747312281.htm" />
+          <HelpTOCNode Title="clone Method (StatisticType)" Url="html/771662457.htm" />
+          <HelpTOCNode Title="clone Method (DealStatus)" Url="html/158451293.htm" />
+          <HelpTOCNode Title="clone Method (MapDealAnalyst)" Url="html/892916650.htm" />
+          <HelpTOCNode Title="clone Method (Category)" Url="html/1539770463.htm" />
+          <HelpTOCNode Title="clone Method (Analyst)" Url="html/345200567.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="19a9ac57-57cc-4d9f-8e5a-df5d3fdd1289" Title="CortexEntities Class" Url="html/2000004238.htm">
+      <HelpTOCNode Title="CortexEntities Members" Url="html/1121758861.htm" />
+      <HelpTOCNode Title="CortexEntities Constructor " Url="html/1727749759.htm" />
+      <HelpTOCNode Id="5dc9c919-7bd4-4ad3-a687-57c1c496e9f0" Title="CortexEntities Methods" Url="html/1057823553.htm">
+        <HelpTOCNode Id="770c4ed1-ed75-4e29-a10d-64a6f17ae7df" Title="OnModelCreating Method " Url="html/552899530.htm">
+          <HelpTOCNode Title="OnModelCreating Method " Url="html/1315555211.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="sp_alterdiagram Method " Url="html/706046639.htm" />
+        <HelpTOCNode Title="sp_creatediagram Method " Url="html/335680659.htm" />
+        <HelpTOCNode Title="sp_dropdiagram Method " Url="html/367867136.htm" />
+        <HelpTOCNode Title="sp_helpdiagramdefinition Method " Url="html/1184690377.htm" />
+        <HelpTOCNode Title="sp_helpdiagrams Method " Url="html/361120421.htm" />
+        <HelpTOCNode Title="sp_renamediagram Method " Url="html/488818644.htm" />
+        <HelpTOCNode Title="sp_upgraddiagrams Method " Url="html/1854135376.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0af60f95-2b47-484a-8f23-343d00d5a991" Title="CortexEntities Properties" Url="html/480579858.htm">
+        <HelpTOCNode Title="Analysts Property " Url="html/1384181645.htm" />
+        <HelpTOCNode Title="AnnualCompanyStatistics Property " Url="html/32104124.htm" />
+        <HelpTOCNode Title="ApplicationUsers Property " Url="html/1783940661.htm" />
+        <HelpTOCNode Title="Categories Property " Url="html/732902988.htm" />
+        <HelpTOCNode Title="Companies Property " Url="html/693151192.htm" />
+        <HelpTOCNode Title="CompanyAssociations Property " Url="html/1107501456.htm" />
+        <HelpTOCNode Title="Currencies Property " Url="html/543857468.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/363158963.htm" />
+        <HelpTOCNode Title="DealStatuses Property " Url="html/1241855897.htm" />
+        <HelpTOCNode Title="DealTypes Property " Url="html/1238627693.htm" />
+        <HelpTOCNode Title="DocumentGroups Property " Url="html/553471433.htm" />
+        <HelpTOCNode Title="Documents Property " Url="html/347614728.htm" />
+        <HelpTOCNode Title="Events Property " Url="html/2128438615.htm" />
+        <HelpTOCNode Title="EventTypes Property " Url="html/1151192314.htm" />
+        <HelpTOCNode Title="MapDealAnalysts Property " Url="html/2064946309.htm" />
+        <HelpTOCNode Title="MergerArbNews Property " Url="html/1283124191.htm" />
+        <HelpTOCNode Title="MergerArbs Property " Url="html/503361896.htm" />
+        <HelpTOCNode Title="Prices Property " Url="html/495489593.htm" />
+        <HelpTOCNode Title="Securities Property " Url="html/658043762.htm" />
+        <HelpTOCNode Title="SecurityGroups Property " Url="html/343544805.htm" />
+        <HelpTOCNode Title="SecurityTypes Property " Url="html/1721092688.htm" />
+        <HelpTOCNode Title="StatisticTypes Property " Url="html/1874310239.htm" />
+        <HelpTOCNode Title="sysdiagrams Property " Url="html/1469200415.htm" />
+        <HelpTOCNode Title="vw_DealSecPrice Property " Url="html/188436895.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="96bc2242-0e49-4c78-9edf-3c8fb56696c1" Title="CortexWCFService Interface" Url="html/223401950.htm">
+      <HelpTOCNode Title="CortexWCFService Members" Url="html/1747478609.htm" />
+      <HelpTOCNode Id="84045d56-3c25-4006-82c9-40b761decb1f" Title="CortexWCFService Methods" Url="html/862704815.htm">
+        <HelpTOCNode Title="addAnnualCompanyStatistic Method " Url="html/2025334184.htm" />
+        <HelpTOCNode Title="addCompany Method " Url="html/675065429.htm" />
+        <HelpTOCNode Title="addCompanyAssociation Method " Url="html/559968866.htm" />
+        <HelpTOCNode Title="addCurrency Method " Url="html/1556229696.htm" />
+        <HelpTOCNode Title="addDeal Method " Url="html/1884100892.htm" />
+        <HelpTOCNode Title="addDealType Method " Url="html/1969160760.htm" />
+        <HelpTOCNode Title="addDocument Method " Url="html/1492737717.htm" />
+        <HelpTOCNode Title="addDocumentGroup Method " Url="html/1050094858.htm" />
+        <HelpTOCNode Title="addEvent Method " Url="html/2145007962.htm" />
+        <HelpTOCNode Title="addEventType Method " Url="html/195061423.htm" />
+        <HelpTOCNode Title="addMapDealAnalyst Method " Url="html/441015762.htm" />
+        <HelpTOCNode Title="addMergerArb Method " Url="html/569870961.htm" />
+        <HelpTOCNode Title="addMergerArbNew Method " Url="html/422403297.htm" />
+        <HelpTOCNode Title="addPrice Method " Url="html/96389653.htm" />
+        <HelpTOCNode Title="addSecurity Method " Url="html/159612120.htm" />
+        <HelpTOCNode Title="addSecurityGroup Method " Url="html/407440076.htm" />
+        <HelpTOCNode Title="addSecurityType Method " Url="html/1839527334.htm" />
+        <HelpTOCNode Title="addStatisticType Method " Url="html/694757067.htm" />
+        <HelpTOCNode Title="AuditTrailAdd Method " Url="html/1959444661.htm" />
+        <HelpTOCNode Title="AuditTrailDelete Method " Url="html/712529139.htm" />
+        <HelpTOCNode Title="AuditTrailLogin Method " Url="html/832231956.htm" />
+        <HelpTOCNode Title="AuditTrailLogout Method " Url="html/1961276074.htm" />
+        <HelpTOCNode Title="AuditTrailUpdate Method " Url="html/874325944.htm" />
+        <HelpTOCNode Title="AuditTrailView Method " Url="html/1962163420.htm" />
+        <HelpTOCNode Title="getAnalyst Method " Url="html/1100859122.htm" />
+        <HelpTOCNode Title="getAnalystByName Method " Url="html/519625122.htm" />
+        <HelpTOCNode Title="getAnalysts Method " Url="html/9014641.htm" />
+        <HelpTOCNode Title="getAnnualCompanyStatistic Method " Url="html/512047700.htm" />
+        <HelpTOCNode Title="getCategories Method " Url="html/288641500.htm" />
+        <HelpTOCNode Title="getCategoriesByClass Method " Url="html/576007821.htm" />
+        <HelpTOCNode Title="getCategoriesByName Method " Url="html/986493516.htm" />
+        <HelpTOCNode Title="getCategory Method " Url="html/612413475.htm" />
+        <HelpTOCNode Title="getCategoryClasses Method " Url="html/1686602589.htm" />
+        <HelpTOCNode Title="getCompanies Method " Url="html/815091309.htm" />
+        <HelpTOCNode Title="getCompany Method " Url="html/86781020.htm" />
+        <HelpTOCNode Title="getCompanyAssociation Method " Url="html/111982324.htm" />
+        <HelpTOCNode Title="getCompanyByName Method " Url="html/55431221.htm" />
+        <HelpTOCNode Title="getCurrencies Method " Url="html/1734688776.htm" />
+        <HelpTOCNode Title="getCurrency Method " Url="html/29724617.htm" />
+        <HelpTOCNode Title="getCurrencyByCodeOrName Method " Url="html/274192018.htm" />
+        <HelpTOCNode Title="GetCurrentDate Method " Url="html/826326228.htm" />
+        <HelpTOCNode Title="getDeal Method " Url="html/24197885.htm" />
+        <HelpTOCNode Title="getDealByAnalyst Method " Url="html/1548052503.htm" />
+        <HelpTOCNode Title="getDealByCompany Method " Url="html/1898720096.htm" />
+        <HelpTOCNode Title="getDealByDate Method " Url="html/1366547169.htm" />
+        <HelpTOCNode Title="getDealByStatus Method " Url="html/1097501291.htm" />
+        <HelpTOCNode Title="getDealList Method " Url="html/645444864.htm" />
+        <HelpTOCNode Title="getDeals Method " Url="html/523602392.htm" />
+        <HelpTOCNode Title="getDealsByCategory Method " Url="html/737217942.htm" />
+        <HelpTOCNode Title="getDealsByCategoryClass Method " Url="html/778122819.htm" />
+        <HelpTOCNode Title="getDealsByCriteria Method " Url="html/1717271317.htm" />
+        <HelpTOCNode Title="getDealsByDescription Method " Url="html/1176903204.htm" />
+        <HelpTOCNode Title="getDealStatus Method " Url="html/1261011617.htm" />
+        <HelpTOCNode Title="getDealStatusByName Method " Url="html/1198755560.htm" />
+        <HelpTOCNode Title="getDealStatuses Method " Url="html/414100879.htm" />
+        <HelpTOCNode Title="getDealTeam Method " Url="html/1345670071.htm" />
+        <HelpTOCNode Title="getDealType Method " Url="html/1208880498.htm" />
+        <HelpTOCNode Title="getDocument Method " Url="html/1300553277.htm" />
+        <HelpTOCNode Title="getDocumentByName Method " Url="html/2088353907.htm" />
+        <HelpTOCNode Title="getDocumentGroup Method " Url="html/1138612702.htm" />
+        <HelpTOCNode Title="getDocumentsByDeal Method " Url="html/273209033.htm" />
+        <HelpTOCNode Title="getEvent Method " Url="html/662630367.htm" />
+        <HelpTOCNode Title="getEventsByDeal Method " Url="html/1061166244.htm" />
+        <HelpTOCNode Title="getEventType Method " Url="html/966714039.htm" />
+        <HelpTOCNode Title="getEventTypes Method " Url="html/1619365057.htm" />
+        <HelpTOCNode Title="getLastCompany Method " Url="html/611227977.htm" />
+        <HelpTOCNode Title="getLastCompanyAssociation Method " Url="html/1319104622.htm" />
+        <HelpTOCNode Title="getLastDeal Method " Url="html/996801043.htm" />
+        <HelpTOCNode Title="getLastDocument Method " Url="html/273848531.htm" />
+        <HelpTOCNode Title="getLastDocumentGroup Method " Url="html/699673406.htm" />
+        <HelpTOCNode Title="getLastEvent Method " Url="html/1197335382.htm" />
+        <HelpTOCNode Title="getLastSecurity Method " Url="html/1317364810.htm" />
+        <HelpTOCNode Title="getLastSecurityGroup Method " Url="html/1930250124.htm" />
+        <HelpTOCNode Title="getMapDealAnalyst Method " Url="html/1515742670.htm" />
+        <HelpTOCNode Title="getMergerArb Method " Url="html/297423125.htm" />
+        <HelpTOCNode Title="getMergerArbByDealId Method " Url="html/968019021.htm" />
+        <HelpTOCNode Title="getMergerArbNewByDealId Method " Url="html/357633397.htm" />
+        <HelpTOCNode Title="getMergerArbNewByValue Method " Url="html/2103637245.htm" />
+        <HelpTOCNode Title="getPrice Method " Url="html/1437290272.htm" />
+        <HelpTOCNode Title="getSecurities Method " Url="html/718463698.htm" />
+        <HelpTOCNode Title="getSecurity Method " Url="html/820234995.htm" />
+        <HelpTOCNode Title="getSecurityByCode Method " Url="html/433625154.htm" />
+        <HelpTOCNode Title="getSecurityGroup Method " Url="html/942358651.htm" />
+        <HelpTOCNode Title="getSecurityGroupBySecurity1 Method " Url="html/1352800827.htm" />
+        <HelpTOCNode Title="getSecurityType Method " Url="html/1006600302.htm" />
+        <HelpTOCNode Title="getSecurityTypes Method " Url="html/1772788806.htm" />
+        <HelpTOCNode Title="getStatisticType Method " Url="html/1801754999.htm" />
+        <HelpTOCNode Title="removeCompany Method " Url="html/716134989.htm" />
+        <HelpTOCNode Title="removeCompanyAssociation Method " Url="html/42438015.htm" />
+        <HelpTOCNode Title="removeDeal Method " Url="html/1180185593.htm" />
+        <HelpTOCNode Title="removeDealByDescription Method " Url="html/1181909532.htm" />
+        <HelpTOCNode Title="removeDealById Method " Url="html/1695510228.htm" />
+        <HelpTOCNode Title="removeDocument Method " Url="html/452205448.htm" />
+        <HelpTOCNode Title="removeEvent Method " Url="html/236300245.htm" />
+        <HelpTOCNode Title="removeMapDealAnalyst Method " Url="html/12072226.htm" />
+        <HelpTOCNode Title="removeSecurity Method " Url="html/1665877141.htm" />
+        <HelpTOCNode Title="updateCompany Method " Url="html/83716713.htm" />
+        <HelpTOCNode Title="updateCompanyAssociation Method " Url="html/496382678.htm" />
+        <HelpTOCNode Title="updateDeal Method " Url="html/1074313461.htm" />
+        <HelpTOCNode Title="updateDocument Method " Url="html/1884292879.htm" />
+        <HelpTOCNode Title="updateDocumentGroup Method " Url="html/1917614652.htm" />
+        <HelpTOCNode Title="updateMapDealAnalyst Method " Url="html/112107141.htm" />
+        <HelpTOCNode Title="updateMergerArb Method " Url="html/1323848062.htm" />
+        <HelpTOCNode Title="updateMergerArbNew Method " Url="html/2056879617.htm" />
+        <HelpTOCNode Title="updateSecurity Method " Url="html/2027850581.htm" />
+        <HelpTOCNode Title="updateSecurityGroup Method " Url="html/230160956.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b90b4c5a-47a5-46e1-af85-bc7786f65034" Title="CortexWCFServices Class" Url="html/1211226078.htm">
+      <HelpTOCNode Title="CortexWCFServices Members" Url="html/1183551640.htm" />
+      <HelpTOCNode Id="5495ae67-150c-4db5-9286-c487cd47f0cd" Title="CortexWCFServices Methods" Url="html/28103855.htm">
+        <HelpTOCNode Title="addAnnualCompanyStatistic Method " Url="html/2018756622.htm" />
+        <HelpTOCNode Title="addCompany Method " Url="html/353740877.htm" />
+        <HelpTOCNode Title="addCompanyAssociation Method " Url="html/1991301374.htm" />
+        <HelpTOCNode Title="addCurrency Method " Url="html/1650390292.htm" />
+        <HelpTOCNode Title="addDeal Method " Url="html/2101888776.htm" />
+        <HelpTOCNode Title="addDealType Method " Url="html/1201143838.htm" />
+        <HelpTOCNode Title="addDocument Method " Url="html/1030781847.htm" />
+        <HelpTOCNode Title="addDocumentGroup Method " Url="html/972485254.htm" />
+        <HelpTOCNode Title="addEvent Method " Url="html/1402148177.htm" />
+        <HelpTOCNode Title="addEventType Method " Url="html/1927705107.htm" />
+        <HelpTOCNode Title="addMapDealAnalyst Method " Url="html/2017890740.htm" />
+        <HelpTOCNode Title="addMergerArb Method " Url="html/252357335.htm" />
+        <HelpTOCNode Title="addMergerArbNew Method " Url="html/582749414.htm" />
+        <HelpTOCNode Title="addPrice Method " Url="html/1638918469.htm" />
+        <HelpTOCNode Title="addSecurity Method " Url="html/322435235.htm" />
+        <HelpTOCNode Title="addSecurityGroup Method " Url="html/699542678.htm" />
+        <HelpTOCNode Title="addSecurityType Method " Url="html/1820855255.htm" />
+        <HelpTOCNode Title="addStatisticType Method " Url="html/138361105.htm" />
+        <HelpTOCNode Title="AuditTrailAdd Method " Url="html/2007399507.htm" />
+        <HelpTOCNode Title="AuditTrailDelete Method " Url="html/963453519.htm" />
+        <HelpTOCNode Title="AuditTrailLogin Method " Url="html/513921591.htm" />
+        <HelpTOCNode Title="AuditTrailLogout Method " Url="html/1698723923.htm" />
+        <HelpTOCNode Title="AuditTrailUpdate Method " Url="html/102028886.htm" />
+        <HelpTOCNode Title="AuditTrailView Method " Url="html/1308167294.htm" />
+        <HelpTOCNode Title="filterDealResultsByAnalyst Method " Url="html/1808356697.htm" />
+        <HelpTOCNode Title="getAnalyst Method " Url="html/651048575.htm" />
+        <HelpTOCNode Title="getAnalystByName Method " Url="html/502831712.htm" />
+        <HelpTOCNode Title="getAnalysts Method " Url="html/587963000.htm" />
+        <HelpTOCNode Title="getAnnualCompanyStatistic Method " Url="html/1220436566.htm" />
+        <HelpTOCNode Title="getCategories Method " Url="html/1559814405.htm" />
+        <HelpTOCNode Title="getCategoriesByClass Method " Url="html/1959864760.htm" />
+        <HelpTOCNode Title="getCategoriesByName Method " Url="html/959888022.htm" />
+        <HelpTOCNode Title="getCategory Method " Url="html/65819232.htm" />
+        <HelpTOCNode Title="getCategoryClasses Method " Url="html/1834968354.htm" />
+        <HelpTOCNode Title="getCompanies Method " Url="html/248174919.htm" />
+        <HelpTOCNode Title="getCompany Method " Url="html/105098514.htm" />
+        <HelpTOCNode Title="getCompanyAssociation Method " Url="html/1528425534.htm" />
+        <HelpTOCNode Title="getCompanyByName Method " Url="html/1005186495.htm" />
+        <HelpTOCNode Title="getCurrencies Method " Url="html/1173931924.htm" />
+        <HelpTOCNode Title="getCurrency Method " Url="html/1625367964.htm" />
+        <HelpTOCNode Title="getCurrencyByCodeOrName Method " Url="html/1470295555.htm" />
+        <HelpTOCNode Title="GetCurrentDate Method " Url="html/43885033.htm" />
+        <HelpTOCNode Title="getDeal Method " Url="html/247364519.htm" />
+        <HelpTOCNode Title="getDealByAnalyst Method " Url="html/756835518.htm" />
+        <HelpTOCNode Title="getDealByCompany Method " Url="html/672022595.htm" />
+        <HelpTOCNode Title="getDealByDate Method " Url="html/789505207.htm" />
+        <HelpTOCNode Title="getDealByStatus Method " Url="html/1047928816.htm" />
+        <HelpTOCNode Title="getDealList Method " Url="html/573037165.htm" />
+        <HelpTOCNode Title="getDeals Method " Url="html/395001889.htm" />
+        <HelpTOCNode Title="getDealsByCategory Method " Url="html/602720000.htm" />
+        <HelpTOCNode Title="getDealsByCategoryClass Method " Url="html/1135313713.htm" />
+        <HelpTOCNode Title="getDealsByCriteria Method " Url="html/566093999.htm" />
+        <HelpTOCNode Title="getDealsByDescription Method " Url="html/929330615.htm" />
+        <HelpTOCNode Title="getDealStatus Method " Url="html/1326131820.htm" />
+        <HelpTOCNode Title="getDealStatusByName Method " Url="html/1353029485.htm" />
+        <HelpTOCNode Title="getDealStatuses Method " Url="html/918440326.htm" />
+        <HelpTOCNode Title="getDealTeam Method " Url="html/2022905343.htm" />
+        <HelpTOCNode Title="getDealType Method " Url="html/526754727.htm" />
+        <HelpTOCNode Title="getDocument Method " Url="html/769505375.htm" />
+        <HelpTOCNode Title="getDocumentByName Method " Url="html/2061065728.htm" />
+        <HelpTOCNode Title="getDocumentGroup Method " Url="html/272056271.htm" />
+        <HelpTOCNode Title="getDocumentsByDeal Method " Url="html/1000552495.htm" />
+        <HelpTOCNode Title="getEvent Method " Url="html/286295878.htm" />
+        <HelpTOCNode Title="getEventsByDeal Method " Url="html/2087343800.htm" />
+        <HelpTOCNode Title="getEventType Method " Url="html/1630942135.htm" />
+        <HelpTOCNode Title="getEventTypes Method " Url="html/1601830562.htm" />
+        <HelpTOCNode Title="getLastCompany Method " Url="html/415316776.htm" />
+        <HelpTOCNode Title="getLastCompanyAssociation Method " Url="html/792041068.htm" />
+        <HelpTOCNode Title="getLastDeal Method " Url="html/684147271.htm" />
+        <HelpTOCNode Title="getLastDocument Method " Url="html/896060754.htm" />
+        <HelpTOCNode Title="getLastDocumentGroup Method " Url="html/1110317214.htm" />
+        <HelpTOCNode Title="getLastEvent Method " Url="html/751318095.htm" />
+        <HelpTOCNode Title="getLastSecurity Method " Url="html/431000002.htm" />
+        <HelpTOCNode Title="getLastSecurityGroup Method " Url="html/1617883375.htm" />
+        <HelpTOCNode Title="getMapDealAnalyst Method " Url="html/1266014292.htm" />
+        <HelpTOCNode Title="getMergerArb Method " Url="html/2102217220.htm" />
+        <HelpTOCNode Title="getMergerArbByDealId Method " Url="html/1305662805.htm" />
+        <HelpTOCNode Title="getMergerArbNewByDealId Method " Url="html/1398529294.htm" />
+        <HelpTOCNode Title="getMergerArbNewByValue Method " Url="html/131437265.htm" />
+        <HelpTOCNode Title="getPrice Method " Url="html/188939393.htm" />
+        <HelpTOCNode Title="getSecurities Method " Url="html/50949453.htm" />
+        <HelpTOCNode Title="getSecurity Method " Url="html/1746762297.htm" />
+        <HelpTOCNode Title="getSecurityByCode Method " Url="html/154995670.htm" />
+        <HelpTOCNode Title="getSecurityGroup Method " Url="html/452025787.htm" />
+        <HelpTOCNode Title="getSecurityGroupBySecurity1 Method " Url="html/713071655.htm" />
+        <HelpTOCNode Title="getSecurityType Method " Url="html/819136381.htm" />
+        <HelpTOCNode Title="getSecurityTypes Method " Url="html/1418573964.htm" />
+        <HelpTOCNode Title="getStatisticType Method " Url="html/180303012.htm" />
+        <HelpTOCNode Title="removeCompany Method " Url="html/465930981.htm" />
+        <HelpTOCNode Title="removeCompanyAssociation Method " Url="html/416525343.htm" />
+        <HelpTOCNode Title="removeDeal Method " Url="html/501902930.htm" />
+        <HelpTOCNode Title="removeDealByDescription Method " Url="html/297768868.htm" />
+        <HelpTOCNode Title="removeDealById Method " Url="html/1055810518.htm" />
+        <HelpTOCNode Title="removeDocument Method " Url="html/602588277.htm" />
+        <HelpTOCNode Title="removeEvent Method " Url="html/259311219.htm" />
+        <HelpTOCNode Title="removeMapDealAnalyst Method " Url="html/1228944067.htm" />
+        <HelpTOCNode Title="removeSecurity Method " Url="html/704676735.htm" />
+        <HelpTOCNode Title="updateCompany Method " Url="html/319871046.htm" />
+        <HelpTOCNode Title="updateCompanyAssociation Method " Url="html/1078123073.htm" />
+        <HelpTOCNode Title="updateDeal Method " Url="html/43306352.htm" />
+        <HelpTOCNode Title="updateDocument Method " Url="html/1112432386.htm" />
+        <HelpTOCNode Title="updateDocumentGroup Method " Url="html/459508610.htm" />
+        <HelpTOCNode Title="updateMapDealAnalyst Method " Url="html/503181288.htm" />
+        <HelpTOCNode Title="updateMergerArb Method " Url="html/222578372.htm" />
+        <HelpTOCNode Title="updateMergerArbNew Method " Url="html/1063590310.htm" />
+        <HelpTOCNode Title="updateSecurity Method " Url="html/110092464.htm" />
+        <HelpTOCNode Title="updateSecurityGroup Method " Url="html/504728626.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e16d69f1-a852-46cc-9e9a-bc430f361192" Title="Currency Class" Url="html/1904875451.htm">
+      <HelpTOCNode Title="Currency Members" Url="html/366224883.htm" />
+      <HelpTOCNode Title="Currency Constructor " Url="html/1833981886.htm" />
+      <HelpTOCNode Title="Currency Methods" Url="html/1775556172.htm" />
+      <HelpTOCNode Id="804c86ea-16e1-4c17-bec3-42107d03a42c" Title="Currency Properties" Url="html/577214590.htm">
+        <HelpTOCNode Title="CurrencyCode Property " Url="html/1262619304.htm" />
+        <HelpTOCNode Title="CurrencyID Property " Url="html/2817706.htm" />
+        <HelpTOCNode Title="CurrencyName Property " Url="html/1110689062.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/719048637.htm" />
+        <HelpTOCNode Title="Securities Property " Url="html/1332261347.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e4adc9d1-1b9b-4bba-9b2a-87738bd411f5" Title="Deal Class" Url="html/1444488380.htm">
+      <HelpTOCNode Title="Deal Members" Url="html/759303089.htm" />
+      <HelpTOCNode Title="Deal Constructor " Url="html/350349771.htm" />
+      <HelpTOCNode Title="Deal Methods" Url="html/414850661.htm" />
+      <HelpTOCNode Id="614e370e-ca4b-4675-be9c-8b79a8aa2078" Title="Deal Properties" Url="html/1922657249.htm">
+        <HelpTOCNode Title="AcquirerShareholderMeetingEventID Property " Url="html/2075312450.htm" />
+        <HelpTOCNode Title="Background Property " Url="html/82608778.htm" />
+        <HelpTOCNode Title="Catalyst Property " Url="html/2101765904.htm" />
+        <HelpTOCNode Title="Category Property " Url="html/1483678800.htm" />
+        <HelpTOCNode Title="CategoryID Property " Url="html/565891422.htm" />
+        <HelpTOCNode Title="Company Property " Url="html/775944452.htm" />
+        <HelpTOCNode Title="Company1 Property " Url="html/55900420.htm" />
+        <HelpTOCNode Title="Company2 Property " Url="html/1629878532.htm" />
+        <HelpTOCNode Title="CompanyID1 Property " Url="html/762993451.htm" />
+        <HelpTOCNode Title="CompanyID2 Property " Url="html/763190059.htm" />
+        <HelpTOCNode Title="CompanyID3 Property " Url="html/763124523.htm" />
+        <HelpTOCNode Title="Comps Property " Url="html/426106191.htm" />
+        <HelpTOCNode Title="Currency Property " Url="html/1108333219.htm" />
+        <HelpTOCNode Title="CurrencyID Property " Url="html/1099202831.htm" />
+        <HelpTOCNode Title="CurrentValuation Property " Url="html/259591279.htm" />
+        <HelpTOCNode Title="Deal1 Property " Url="html/409381940.htm" />
+        <HelpTOCNode Title="DealCurrencyID Property " Url="html/802120337.htm" />
+        <HelpTOCNode Title="DealID Property " Url="html/405449740.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/408398834.htm" />
+        <HelpTOCNode Title="DealStatus Property " Url="html/1794114517.htm" />
+        <HelpTOCNode Title="DealStatusID Property " Url="html/1425822462.htm" />
+        <HelpTOCNode Title="DealType Property " Url="html/1340614643.htm" />
+        <HelpTOCNode Title="DealType1 Property " Url="html/212844825.htm" />
+        <HelpTOCNode Title="DealTypeID Property " Url="html/216776897.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1395070725.htm" />
+        <HelpTOCNode Title="DocumentGroup Property " Url="html/458053479.htm" />
+        <HelpTOCNode Title="DocumentGroupID Property " Url="html/641463152.htm" />
+        <HelpTOCNode Title="Documents Property " Url="html/151911928.htm" />
+        <HelpTOCNode Title="DownsidePrice Property " Url="html/179556705.htm" />
+        <HelpTOCNode Title="DownsidePriceValuation Property " Url="html/676591715.htm" />
+        <HelpTOCNode Title="DropDeadEventID Property " Url="html/1403767703.htm" />
+        <HelpTOCNode Title="Event Property " Url="html/1145209214.htm" />
+        <HelpTOCNode Title="Event1 Property " Url="html/1142129022.htm" />
+        <HelpTOCNode Title="Event2 Property " Url="html/1142194558.htm" />
+        <HelpTOCNode Title="Event3 Property " Url="html/1142260094.htm" />
+        <HelpTOCNode Title="Events Property " Url="html/1146454398.htm" />
+        <HelpTOCNode Title="ExpirationDate Property " Url="html/1426156234.htm" />
+        <HelpTOCNode Title="InvestmentThesis Property " Url="html/1464252117.htm" />
+        <HelpTOCNode Title="KeyRisks Property " Url="html/114712710.htm" />
+        <HelpTOCNode Title="MapDealAnalysts Property " Url="html/692797092.htm" />
+        <HelpTOCNode Title="MergerAgreementEventID Property " Url="html/1768869456.htm" />
+        <HelpTOCNode Title="Recommendation Property " Url="html/608706030.htm" />
+        <HelpTOCNode Title="SecurityGroup Property " Url="html/1340242546.htm" />
+        <HelpTOCNode Title="SecurityGroupID Property " Url="html/1421391203.htm" />
+        <HelpTOCNode Title="TargetPrice Property " Url="html/892728430.htm" />
+        <HelpTOCNode Title="TargetPriceValuation Property " Url="html/2063766446.htm" />
+        <HelpTOCNode Title="TargetShareholderMeetingEventID Property " Url="html/503216488.htm" />
+        <HelpTOCNode Title="ValuationMethodology Property " Url="html/108611931.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4c9946d4-1eb7-46d8-af8b-ad96b9c30146" Title="DealStatus Class" Url="html/449085583.htm">
+      <HelpTOCNode Title="DealStatus Members" Url="html/772021868.htm" />
+      <HelpTOCNode Title="DealStatus Constructor " Url="html/948984293.htm" />
+      <HelpTOCNode Title="DealStatus Methods" Url="html/1231837047.htm" />
+      <HelpTOCNode Id="2b90c742-a440-4dca-add1-47ce772b1383" Title="DealStatus Properties" Url="html/1043810580.htm">
+        <HelpTOCNode Title="Code Property " Url="html/369450194.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1802561861.htm" />
+        <HelpTOCNode Title="DealStatusID Property " Url="html/351830825.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1521620420.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8f4667de-8af9-4e43-a83d-e54b33a19171" Title="DealType Class" Url="html/1738189150.htm">
+      <HelpTOCNode Title="DealType Members" Url="html/925539395.htm" />
+      <HelpTOCNode Title="DealType Constructor " Url="html/796298028.htm" />
+      <HelpTOCNode Title="DealType Methods" Url="html/1039146489.htm" />
+      <HelpTOCNode Id="229b05d7-4dbb-434c-bd3b-f403eb905af1" Title="DealType Properties" Url="html/854737410.htm">
+        <HelpTOCNode Title="Code Property " Url="html/270408664.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1266922034.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/1270002226.htm" />
+        <HelpTOCNode Title="DealTypeID Property " Url="html/15191574.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1652561002.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ddc9fe04-b517-496a-9527-5bd04bd1af0d" Title="Document Class" Url="html/648427074.htm">
+      <HelpTOCNode Title="Document Members" Url="html/1020845642.htm" />
+      <HelpTOCNode Title="Document Constructor " Url="html/1313800761.htm" />
+      <HelpTOCNode Title="Document Methods" Url="html/726586355.htm" />
+      <HelpTOCNode Id="846dda19-a1d2-4157-adbf-8ffc1270bc76" Title="Document Properties" Url="html/66626757.htm">
+        <HelpTOCNode Title="Deal Property " Url="html/2010777984.htm" />
+        <HelpTOCNode Title="DealId Property " Url="html/39762877.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/728698315.htm" />
+        <HelpTOCNode Title="DocumentGroups Property " Url="html/1911028857.htm" />
+        <HelpTOCNode Title="DocumentGroups1 Property " Url="html/922068874.htm" />
+        <HelpTOCNode Title="DocumentGroups2 Property " Url="html/518784347.htm" />
+        <HelpTOCNode Title="DocumentID Property " Url="html/1922782035.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/243822010.htm" />
+        <HelpTOCNode Title="URI Property " Url="html/493484025.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="48275353-0c5a-425f-adaf-3b6c2976070b" Title="DocumentGroup Class" Url="html/144010338.htm">
+      <HelpTOCNode Title="DocumentGroup Members" Url="html/880319365.htm" />
+      <HelpTOCNode Title="DocumentGroup Constructor " Url="html/935594949.htm" />
+      <HelpTOCNode Title="DocumentGroup Methods" Url="html/1999004925.htm" />
+      <HelpTOCNode Id="ddc2c052-7814-46b1-9e24-5fcef9c488e9" Title="DocumentGroup Properties" Url="html/851309353.htm">
+        <HelpTOCNode Title="Deals Property " Url="html/898911046.htm" />
+        <HelpTOCNode Title="Document Property " Url="html/1892533049.htm" />
+        <HelpTOCNode Title="Document1 Property " Url="html/1893516089.htm" />
+        <HelpTOCNode Title="Document2 Property " Url="html/1893712697.htm" />
+        <HelpTOCNode Title="DocumentGroupID Property " Url="html/1303201768.htm" />
+        <HelpTOCNode Title="DocumentID1 Property " Url="html/613043792.htm" />
+        <HelpTOCNode Title="DocumentID2 Property " Url="html/2107945392.htm" />
+        <HelpTOCNode Title="DocumentID3 Property " Url="html/230706768.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="49c4777b-9878-4d2d-9688-31749f8b69ed" Title="Event Class" Url="html/1351945727.htm">
+      <HelpTOCNode Title="Event Members" Url="html/1817600660.htm" />
+      <HelpTOCNode Title="Event Constructor " Url="html/662256823.htm" />
+      <HelpTOCNode Title="Event Methods" Url="html/743311240.htm" />
+      <HelpTOCNode Id="d9d7f416-f0da-4881-a427-4ae4f29e02e2" Title="Event Properties" Url="html/1756309406.htm">
+        <HelpTOCNode Title="Deal Property " Url="html/934959410.htm" />
+        <HelpTOCNode Title="DealID Property " Url="html/442570633.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/929650994.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/1537457544.htm" />
+        <HelpTOCNode Title="Deals2 Property " Url="html/1940742071.htm" />
+        <HelpTOCNode Title="Deals3 Property " Url="html/374658130.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1362937402.htm" />
+        <HelpTOCNode Title="EventDate Property " Url="html/2121064121.htm" />
+        <HelpTOCNode Title="EventID Property " Url="html/1879684087.htm" />
+        <HelpTOCNode Title="EventType Property " Url="html/120744691.htm" />
+        <HelpTOCNode Title="EventTypeID Property " Url="html/773910128.htm" />
+        <HelpTOCNode Title="Note Property " Url="html/1718525337.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a9434228-25b1-415e-b095-bc7f2ec2684b" Title="EventType Class" Url="html/1335599407.htm">
+      <HelpTOCNode Title="EventType Members" Url="html/1225066434.htm" />
+      <HelpTOCNode Title="EventType Constructor " Url="html/26455944.htm" />
+      <HelpTOCNode Title="EventType Methods" Url="html/754452088.htm" />
+      <HelpTOCNode Id="0a2ce91b-ef96-42c0-838a-a734244e5c04" Title="EventType Properties" Url="html/1348867894.htm">
+        <HelpTOCNode Title="Code Property " Url="html/1959201465.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1813886728.htm" />
+        <HelpTOCNode Title="Events Property " Url="html/980428962.htm" />
+        <HelpTOCNode Title="EventTypeID Property " Url="html/1926504493.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/890928299.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="34cc8c89-4ccb-43ff-881d-31b111c2610c" Title="IAuditable Interface" Url="html/1389675151.htm">
+      <HelpTOCNode Title="IAuditable Members" Url="html/183333378.htm" />
+      <HelpTOCNode Title="IAuditable Methods" Url="html/782896084.htm" />
+      <HelpTOCNode Id="ce9571ae-2dc9-4100-bc5e-05e48532a77e" Title="IAuditable Properties" Url="html/1575717532.htm">
+        <HelpTOCNode Title="CreatedById Property " Url="html/1764140576.htm" />
+        <HelpTOCNode Title="CreatedDateTime Property " Url="html/1376764232.htm" />
+        <HelpTOCNode Title="EditedById Property " Url="html/463140833.htm" />
+        <HelpTOCNode Title="EditedDateTime Property " Url="html/643392363.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="02dfe782-fb3a-4af7-a10e-729aa2fa9bd4" Title="IDeletable Interface" Url="html/644067712.htm">
+      <HelpTOCNode Title="IDeletable Members" Url="html/1990388294.htm" />
+      <HelpTOCNode Title="IDeletable Methods" Url="html/1565630290.htm" />
+      <HelpTOCNode Id="6b25673c-1d2d-4f83-9da2-263f62eed1a4" Title="IDeletable Properties" Url="html/813600040.htm">
+        <HelpTOCNode Title="IsDeleted Property " Url="html/1414399410.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fb61852b-271f-4e53-aa3b-b48787e458f2" Title="IId Interface" Url="html/1681855443.htm">
+      <HelpTOCNode Title="IId Members" Url="html/1181486677.htm" />
+      <HelpTOCNode Title="IId Methods" Url="html/287414629.htm" />
+      <HelpTOCNode Id="af7f0519-9bc2-4a9e-94c6-809b20aea3df" Title="IId Properties" Url="html/101102309.htm">
+        <HelpTOCNode Title="Id Property " Url="html/481619176.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4200071e-0bc8-4d2d-9eb3-a9c8bf86f5a5" Title="IVersionable Interface" Url="html/268933536.htm">
+      <HelpTOCNode Title="IVersionable Members" Url="html/1657817596.htm" />
+      <HelpTOCNode Title="IVersionable Methods" Url="html/1332048646.htm" />
+      <HelpTOCNode Id="9679a2ee-ff7d-453d-b3b1-a38cc97653de" Title="IVersionable Properties" Url="html/618581920.htm">
+        <HelpTOCNode Title="Version Property " Url="html/56445039.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dc5997bb-6991-4178-ae53-841e1245a895" Title="MapDealAnalyst Class" Url="html/1137468672.htm">
+      <HelpTOCNode Title="MapDealAnalyst Members" Url="html/1347131064.htm" />
+      <HelpTOCNode Title="MapDealAnalyst Methods" Url="html/843184763.htm" />
+      <HelpTOCNode Id="be42d282-1d3f-4f0d-ab43-17e839f2205b" Title="MapDealAnalyst Properties" Url="html/2068500189.htm">
+        <HelpTOCNode Title="Analyst Property " Url="html/332979346.htm" />
+        <HelpTOCNode Title="AnalystID Property " Url="html/1403136637.htm" />
+        <HelpTOCNode Title="Deal Property " Url="html/1185173025.htm" />
+        <HelpTOCNode Title="DealID Property " Url="html/1633200480.htm" />
+        <HelpTOCNode Title="IsLeadAnalyst Property " Url="html/1067409432.htm" />
+        <HelpTOCNode Title="MapDealAnalystID Property " Url="html/496044815.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="39d151de-d0e6-410c-881b-3380487fee77" Title="MergerArb Class" Url="html/2114929159.htm">
+      <HelpTOCNode Title="MergerArb Members" Url="html/891505091.htm" />
+      <HelpTOCNode Title="MergerArb Methods" Url="html/1369249200.htm" />
+      <HelpTOCNode Id="57cda31e-9f39-43fd-b780-a37dfa22d7d5" Title="MergerArb Properties" Url="html/1246120053.htm">
+        <HelpTOCNode Title="C000_DealId__Required_ Property " Url="html/1632861304.htm" />
+        <HelpTOCNode Title="C001_Deal_Name__Required_ Property " Url="html/1535552636.htm" />
+        <HelpTOCNode Title="C002_Target_Ticker__Required_ Property " Url="html/426972036.htm" />
+        <HelpTOCNode Title="C003_Target_Name__Required_ Property " Url="html/937094679.htm" />
+        <HelpTOCNode Title="C004_Acquirer_Ticker__Required_ Property " Url="html/550598240.htm" />
+        <HelpTOCNode Title="C005_Acquirer_Name__Required_ Property " Url="html/655126004.htm" />
+        <HelpTOCNode Title="C006_File_Name_Path__Required_ Property " Url="html/1699294488.htm" />
+        <HelpTOCNode Title="C008_Target_Shares_Owned__Required_ Property " Url="html/325180566.htm" />
+        <HelpTOCNode Title="C009_Acquirer_Shares_Owned__Required_ Property " Url="html/12206073.htm" />
+        <HelpTOCNode Title="C011_Key_Notes_1__Required_ Property " Url="html/1820606434.htm" />
+        <HelpTOCNode Title="C012_Key_Notes_2__Required_ Property " Url="html/2058753892.htm" />
+        <HelpTOCNode Title="C013_Key_Notes_3__Required_ Property " Url="html/1553266266.htm" />
+        <HelpTOCNode Title="C014_Pricing_Period__Required_ Property " Url="html/1716445227.htm" />
+        <HelpTOCNode Title="C015_Target_Earnings_Date__Required_ Property " Url="html/1176590422.htm" />
+        <HelpTOCNode Title="C016_Acquirer_Earnings_Date__Required_ Property " Url="html/1077579262.htm" />
+        <HelpTOCNode Title="C017_Key_Dates__Required_ Property " Url="html/1989818502.htm" />
+        <HelpTOCNode Title="C019_Stated_Cash_Terms__Optional_ Property " Url="html/657695560.htm" />
+        <HelpTOCNode Title="C020_Stated_Stock_Exchange_Ratio__Optional_ Property " Url="html/2125190039.htm" />
+        <HelpTOCNode Title="C021_Cash_Prorate__Optional_ Property " Url="html/1034916518.htm" />
+        <HelpTOCNode Title="C022_Stock_Prorate__Optional_ Property " Url="html/2117061883.htm" />
+        <HelpTOCNode Title="C023_Hedge_Ratio__Required_ Property " Url="html/329510787.htm" />
+        <HelpTOCNode Title="C024_Cash_Terms__Required_ Property " Url="html/2033532970.htm" />
+        <HelpTOCNode Title="C025_Stock_Exchange_Ratio__Required_ Property " Url="html/1625273995.htm" />
+        <HelpTOCNode Title="C027_Target_Price_in_Local_Currency__Required_ Property " Url="html/1813862644.htm" />
+        <HelpTOCNode Title="C028_Acquirer_Price_in_Local_Currency__Required_ Property " Url="html/1342946643.htm" />
+        <HelpTOCNode Title="C029_Target_Price_in_Deal_Currency__Required_ Property " Url="html/1547091306.htm" />
+        <HelpTOCNode Title="C030_Acquirer_Price_in_Deal_Currency__Required_ Property " Url="html/1345377767.htm" />
+        <HelpTOCNode Title="C032_Target_Currency__Required_ Property " Url="html/1803790849.htm" />
+        <HelpTOCNode Title="C033_Acquirer_Currency__Required_ Property " Url="html/1088853279.htm" />
+        <HelpTOCNode Title="C034_Deal_Currency__Required_ Property " Url="html/654880350.htm" />
+        <HelpTOCNode Title="C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_ Property " Url="html/542889154.htm" />
+        <HelpTOCNode Title="C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_ Property " Url="html/1169235682.htm" />
+        <HelpTOCNode Title="C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_ Property " Url="html/1810084290.htm" />
+        <HelpTOCNode Title="C039_Today__Optional_ Property " Url="html/1918407439.htm" />
+        <HelpTOCNode Title="C040_Announced_Date__Required_ Property " Url="html/1608575829.htm" />
+        <HelpTOCNode Title="C041_Estimated_Close_Date__Optional_ Property " Url="html/867555527.htm" />
+        <HelpTOCNode Title="C042_Potential_Days_Delayed__Optional_ Property " Url="html/305007803.htm" />
+        <HelpTOCNode Title="C043_Days_to_Close__Optional_ Property " Url="html/1412249978.htm" />
+        <HelpTOCNode Title="C044_Close_Date__Required_ Property " Url="html/1630396400.htm" />
+        <HelpTOCNode Title="C046_Total_Consideration__Optional_ Property " Url="html/1072866761.htm" />
+        <HelpTOCNode Title="C047_Gross_Spread__Required_ Property " Url="html/669972967.htm" />
+        <HelpTOCNode Title="C048_Net_Spread_before_Leverage__Required_ Property " Url="html/898421431.htm" />
+        <HelpTOCNode Title="C049_Cost_of_Leverage__Optional_ Property " Url="html/1674385234.htm" />
+        <HelpTOCNode Title="C050_Net_Dividends__Required_ Property " Url="html/17092290.htm" />
+        <HelpTOCNode Title="C051_Short_Rebates__Optional_ Property " Url="html/1526890617.htm" />
+        <HelpTOCNode Title="C052_Net_Spread__Required_ Property " Url="html/2023791012.htm" />
+        <HelpTOCNode Title="C053_Hypothetical_Targeted_Net_Spread__Required_ Property " Url="html/1834217752.htm" />
+        <HelpTOCNode Title="C054_Hypothetical_Unwind_Net_Spread__Required_ Property " Url="html/1671575811.htm" />
+        <HelpTOCNode Title="C055_Theoretical_Spread_collar__Required_ Property " Url="html/176510306.htm" />
+        <HelpTOCNode Title="C057_Gross_Return__Optional_ Property " Url="html/1746944875.htm" />
+        <HelpTOCNode Title="C058_Annualized_ROR__Required_ Property " Url="html/843527020.htm" />
+        <HelpTOCNode Title="C059_Hypothetical_Targeted_Annualized_Return__Required_ Property " Url="html/714240548.htm" />
+        <HelpTOCNode Title="C060_Hypothetical_Unwind_Annualized_Return__Required_ Property " Url="html/165550229.htm" />
+        <HelpTOCNode Title="C061_Theoretical_Annualized_Return_collar__Required_ Property " Url="html/1194367301.htm" />
+        <HelpTOCNode Title="C063_Commission_Cost_per_Share__Optional_ Property " Url="html/1927914079.htm" />
+        <HelpTOCNode Title="C064_Long_Financing_Rate__Optional_ Property " Url="html/458006756.htm" />
+        <HelpTOCNode Title="C065_Short_Rebate__Optional_ Property " Url="html/1943013834.htm" />
+        <HelpTOCNode Title="C066_Long_Margin_Required__Optional_ Property " Url="html/2118128865.htm" />
+        <HelpTOCNode Title="C067_Short_Margin_Required__Optional_ Property " Url="html/940415458.htm" />
+        <HelpTOCNode Title="C069_Target_Ex_Dividend_Date__Required_ Property " Url="html/1129761362.htm" />
+        <HelpTOCNode Title="C070_Aquirer_Ex_Dividend_Date__Required_ Property " Url="html/1742763016.htm" />
+        <HelpTOCNode Title="C071_Target_Dividend_Projected_or_Declared__Required_ Property " Url="html/1570389081.htm" />
+        <HelpTOCNode Title="C072_Acquirer_Dividend_Projected_or_Declared__Required_ Property " Url="html/822803591.htm" />
+        <HelpTOCNode Title="C073_Number_of_Target_Dividends__Required_ Property " Url="html/431037161.htm" />
+        <HelpTOCNode Title="C074_Number_of_Acquirer_Dividends__Required_ Property " Url="html/160042178.htm" />
+        <HelpTOCNode Title="C075_Target_Dividend_Quarterly_Amount__Required_ Property " Url="html/835489721.htm" />
+        <HelpTOCNode Title="C076_Acquirer_Dividend_Quarterly_Amount__Required_ Property " Url="html/1515889998.htm" />
+        <HelpTOCNode Title="C077_Total_Target_Dividends__Required_ Property " Url="html/843374518.htm" />
+        <HelpTOCNode Title="C078_Total_Acquirer_Dividends__Required_ Property " Url="html/2025464271.htm" />
+        <HelpTOCNode Title="C080_Target_Break_Price__Required_ Property " Url="html/205750827.htm" />
+        <HelpTOCNode Title="C081_Acquirer_Break_Price__Required_ Property " Url="html/1487557573.htm" />
+        <HelpTOCNode Title="C082_Expected_USD_Return_prob_wtd__Required_ Property " Url="html/702620771.htm" />
+        <HelpTOCNode Title="C083_RiskReward__Required_ Property " Url="html/1096444567.htm" />
+        <HelpTOCNode Title="C084_Notional_Long_USD_MV__Required_ Property " Url="html/913325665.htm" />
+        <HelpTOCNode Title="C085_Net_USD_Profit_at_Close__Required_ Property " Url="html/2139148131.htm" />
+        <HelpTOCNode Title="C086_Net_USD_Profit_at_Break__Required_ Property " Url="html/1898659682.htm" />
+        <HelpTOCNode Title="C087_Probability_of_Break__Required_ Property " Url="html/85920387.htm" />
+        <HelpTOCNode Title="C088_Tgt_13D_Num_shs_remaining__Optional_ Property " Url="html/212691827.htm" />
+        <HelpTOCNode Title="C090_Prorate_Value_of_Stock__Optional_ Property " Url="html/805160558.htm" />
+        <HelpTOCNode Title="C091_Prorate_Value_of_Cash__Optional_ Property " Url="html/1795008552.htm" />
+        <HelpTOCNode Title="C092_Prorate_Comment_1__Optional_ Property " Url="html/42922605.htm" />
+        <HelpTOCNode Title="C093_Prorate_Comment_2__Optional_ Property " Url="html/501358784.htm" />
+        <HelpTOCNode Title="C095_Collar_Flag_Yes_No__Optional_ Property " Url="html/696233705.htm" />
+        <HelpTOCNode Title="C096_Collar_Flag_Normal_Inverted__Optional_ Property " Url="html/806494441.htm" />
+        <HelpTOCNode Title="C097_Collar_Num_of_Segments__Optional_ Property " Url="html/1464791222.htm" />
+        <HelpTOCNode Title="C098_Collar_Num_of_Breakpoints__Optional_ Property " Url="html/1095005324.htm" />
+        <HelpTOCNode Title="C099_Collar___Optional_ Property " Url="html/1403679404.htm" />
+        <HelpTOCNode Title="C100_Collar_High_Breakpoint__Optional_ Property " Url="html/726837738.htm" />
+        <HelpTOCNode Title="C101_Collar_Position__Optional_ Property " Url="html/1679902477.htm" />
+        <HelpTOCNode Title="C102_Collar_Walk__Optional_ Property " Url="html/840611195.htm" />
+        <HelpTOCNode Title="C103_Collar_Cure_Low_Breakpoint__Optional_ Property " Url="html/406206725.htm" />
+        <HelpTOCNode Title="C104_Collar_Cure_High_Breakpoint__Optional_ Property " Url="html/1106200669.htm" />
+        <HelpTOCNode Title="C105_Collar_Value_of_Collar__Optional_ Property " Url="html/511387050.htm" />
+        <HelpTOCNode Title="C106_Collar_Note_Description__Optional_ Property " Url="html/1209883189.htm" />
+        <HelpTOCNode Title="C108_Pricing_Period_Start_Date__Optional_ Property " Url="html/1802612848.htm" />
+        <HelpTOCNode Title="C109_Pricing_Period_End_Date__Optional_ Property " Url="html/1182394118.htm" />
+        <HelpTOCNode Title="C110_Pricing_Period_Length_days__Optional_ Property " Url="html/1669594214.htm" />
+        <HelpTOCNode Title="C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_ Property " Url="html/1902011796.htm" />
+        <HelpTOCNode Title="C112_Pricing_Period_Prc_Complete__Optional_ Property " Url="html/1551837383.htm" />
+        <HelpTOCNode Title="C113_Pricing_Period_Prc_Remaining__Optional_ Property " Url="html/493278845.htm" />
+        <HelpTOCNode Title="C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_ Property " Url="html/221041048.htm" />
+        <HelpTOCNode Title="C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_ Property " Url="html/1502813553.htm" />
+        <HelpTOCNode Title="C116_Pricing_Period_Weighted_Price__Optional_ Property " Url="html/2014442621.htm" />
+        <HelpTOCNode Title="C118_Bloomberg_Corporate_Action_ID__Optional_ Property " Url="html/1310291946.htm" />
+        <HelpTOCNode Title="C119_Bloomberg_Target_Company_Description__Optional_ Property " Url="html/183383184.htm" />
+        <HelpTOCNode Title="C120_Bloomberg_Acquirer_Company_Description__Optional_ Property " Url="html/1200408789.htm" />
+        <HelpTOCNode Title="C121_Bloomberg_Deal_Description__Optional_ Property " Url="html/2106419364.htm" />
+        <HelpTOCNode Title="C122_Bloomberg_Target_Legal_Advisors__Optional_ Property " Url="html/1271275945.htm" />
+        <HelpTOCNode Title="C123_Bloomberg_Target_Financial_Advisors__Optional_ Property " Url="html/348107724.htm" />
+        <HelpTOCNode Title="C124_Bloomberg_Acquirer_Legal_Advisors__Optional_ Property " Url="html/579535713.htm" />
+        <HelpTOCNode Title="C125_Bloomberg_Acquirer_Financial_Advisors__Optional_ Property " Url="html/752710829.htm" />
+        <HelpTOCNode Title="C126_Bloomberg_Pending_Approvals__Optional_ Property " Url="html/443222507.htm" />
+        <HelpTOCNode Title="C127_Bloomberg_Approved_Approvals__Optional_ Property " Url="html/558912294.htm" />
+        <HelpTOCNode Title="C128_Bloomberg_Expired_Approvals__Optional_ Property " Url="html/1218406917.htm" />
+        <HelpTOCNode Title="C129_Bloomberg_Entended_Approvals__Optional_ Property " Url="html/583627663.htm" />
+        <HelpTOCNode Title="C130_Bloomberg_Announced_Date__Optional_ Property " Url="html/1742484429.htm" />
+        <HelpTOCNode Title="C131_Bloomberg_Amendment_Date__Optional_ Property " Url="html/1602542726.htm" />
+        <HelpTOCNode Title="C132_Bloomberg_Expected_Completion_Date__Optional_ Property " Url="html/2068623181.htm" />
+        <HelpTOCNode Title="C133_Bloomberg_Completed_Termination_Date__Optional_ Property " Url="html/1961432737.htm" />
+        <HelpTOCNode Title="C134_Bloomberg_Merger_Agreement_Date__Optional_ Property " Url="html/1445194464.htm" />
+        <HelpTOCNode Title="C135_Bloomberg_Drop_Dead_Date__Optional_ Property " Url="html/2129860995.htm" />
+        <HelpTOCNode Title="C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_ Property " Url="html/1938279781.htm" />
+        <HelpTOCNode Title="C137_Bloomberg_Go_Shop_Period_End_Date__Optional_ Property " Url="html/290772411.htm" />
+        <HelpTOCNode Title="MergerArbID Property " Url="html/497213798.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c37a35c7-a7ea-4ec1-9220-13415af5129e" Title="MergerArbNew Class" Url="html/709735703.htm">
+      <HelpTOCNode Title="MergerArbNew Members" Url="html/23906328.htm" />
+      <HelpTOCNode Title="MergerArbNew Methods" Url="html/61427595.htm" />
+      <HelpTOCNode Id="a24dcf87-106c-4c7c-a889-e36d44ce4b12" Title="MergerArbNew Properties" Url="html/41427415.htm">
+        <HelpTOCNode Title="Calendar_Comment Property " Url="html/1133380875.htm" />
+        <HelpTOCNode Title="Calendar_Flag Property " Url="html/762958405.htm" />
+        <HelpTOCNode Title="Calendar_Time Property " Url="html/737839936.htm" />
+        <HelpTOCNode Title="DealId Property " Url="html/1959125412.htm" />
+        <HelpTOCNode Title="Field_Name Property " Url="html/1986273196.htm" />
+        <HelpTOCNode Title="Field_Type Property " Url="html/1606551705.htm" />
+        <HelpTOCNode Title="Field_Updated Property " Url="html/2077994688.htm" />
+        <HelpTOCNode Title="Field_Value Property " Url="html/1071575429.htm" />
+        <HelpTOCNode Title="ID Property " Url="html/1060578091.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3aceaa57-228c-4e9d-a941-5f81f117c8ef" Title="PredicateBuilder Class" Url="html/1946948727.htm">
+      <HelpTOCNode Title="PredicateBuilder Members" Url="html/1135180468.htm" />
+      <HelpTOCNode Id="c12c3ccc-7b83-4492-901e-3aef1f8e0f97" Title="PredicateBuilder Methods" Url="html/1173378614.htm">
+        <HelpTOCNode Title="And(T) Method " Url="html/1762321477.htm" />
+        <HelpTOCNode Title="False(T) Method " Url="html/1389348049.htm" />
+        <HelpTOCNode Title="Or(T) Method " Url="html/98170646.htm" />
+        <HelpTOCNode Title="True(T) Method " Url="html/1114015278.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="49f1e707-fb17-42e6-bca8-4fb2aad85053" Title="Price Class" Url="html/144265166.htm">
+      <HelpTOCNode Title="Price Members" Url="html/962943052.htm" />
+      <HelpTOCNode Title="Price Methods" Url="html/759611517.htm" />
+      <HelpTOCNode Id="69077eca-945d-442b-8a0b-63d7ba6844bf" Title="Price Properties" Url="html/117167034.htm">
+        <HelpTOCNode Title="Price1 Property " Url="html/660209545.htm" />
+        <HelpTOCNode Title="PriceDateTime Property " Url="html/1743171707.htm" />
+        <HelpTOCNode Title="PriceID Property " Url="html/1759233873.htm" />
+        <HelpTOCNode Title="PriceSource Property " Url="html/1612511649.htm" />
+        <HelpTOCNode Title="Security Property " Url="html/978951610.htm" />
+        <HelpTOCNode Title="SecurityID Property " Url="html/1577989511.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="85c536da-6acd-4374-b204-b6107aa73be6" Title="Security Class" Url="html/329134919.htm">
+      <HelpTOCNode Title="Security Members" Url="html/650847076.htm" />
+      <HelpTOCNode Title="Security Constructor " Url="html/120121920.htm" />
+      <HelpTOCNode Title="Security Methods" Url="html/338481756.htm" />
+      <HelpTOCNode Id="48be03b9-f9ff-48a9-a192-c7bce827bb6f" Title="Security Properties" Url="html/1133683737.htm">
+        <HelpTOCNode Title="Code Property " Url="html/1952984107.htm" />
+        <HelpTOCNode Title="Companies Property " Url="html/574455305.htm" />
+        <HelpTOCNode Title="Currency Property " Url="html/2083486421.htm" />
+        <HelpTOCNode Title="CurrencyID Property " Url="html/188457458.htm" />
+        <HelpTOCNode Title="Cusip Property " Url="html/1900387154.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1928667223.htm" />
+        <HelpTOCNode Title="Isin Property " Url="html/1555461642.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/420586397.htm" />
+        <HelpTOCNode Title="Prices Property " Url="html/1515202210.htm" />
+        <HelpTOCNode Title="SecurityGroups Property " Url="html/625737279.htm" />
+        <HelpTOCNode Title="SecurityGroups1 Property " Url="html/1038451380.htm" />
+        <HelpTOCNode Title="SecurityGroups2 Property " Url="html/635166853.htm" />
+        <HelpTOCNode Title="SecurityGroups3 Property " Url="html/2093716502.htm" />
+        <HelpTOCNode Title="SecurityGroups4 Property " Url="html/1441735907.htm" />
+        <HelpTOCNode Title="SecurityID Property " Url="html/104467855.htm" />
+        <HelpTOCNode Title="SecurityType Property " Url="html/791739175.htm" />
+        <HelpTOCNode Title="SecurityTypeID Property " Url="html/1324231750.htm" />
+        <HelpTOCNode Title="Sedol Property " Url="html/1834517597.htm" />
+        <HelpTOCNode Title="Ticker Property " Url="html/2106793544.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fd467a7c-359a-49c5-b07c-09375a9305da" Title="SecurityGroup Class" Url="html/166249075.htm">
+      <HelpTOCNode Title="SecurityGroup Members" Url="html/775175538.htm" />
+      <HelpTOCNode Title="SecurityGroup Constructor " Url="html/773695549.htm" />
+      <HelpTOCNode Title="SecurityGroup Methods" Url="html/1913177438.htm" />
+      <HelpTOCNode Id="9a1088d1-2581-4b5e-9589-a8461ebaddfb" Title="SecurityGroup Properties" Url="html/2014843483.htm">
+        <HelpTOCNode Title="Deals Property " Url="html/1345204390.htm" />
+        <HelpTOCNode Title="Security Property " Url="html/1928130624.htm" />
+        <HelpTOCNode Title="Security1 Property " Url="html/1925050432.htm" />
+        <HelpTOCNode Title="Security2 Property " Url="html/1924853824.htm" />
+        <HelpTOCNode Title="Security3 Property " Url="html/1924919360.htm" />
+        <HelpTOCNode Title="Security4 Property " Url="html/1925247040.htm" />
+        <HelpTOCNode Title="SecurityGroupID Property " Url="html/1051615682.htm" />
+        <HelpTOCNode Title="SecurityID1 Property " Url="html/1563282567.htm" />
+        <HelpTOCNode Title="SecurityID2 Property " Url="html/393032569.htm" />
+        <HelpTOCNode Title="SecurityID3 Property " Url="html/1945619591.htm" />
+        <HelpTOCNode Title="SecurityID4 Property " Url="html/1540043641.htm" />
+        <HelpTOCNode Title="SecurityID5 Property " Url="html/798608519.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f822622e-cb93-4fb0-81e9-a20b06351ba9" Title="SecurityType Class" Url="html/1059096386.htm">
+      <HelpTOCNode Title="SecurityType Members" Url="html/1012873647.htm" />
+      <HelpTOCNode Title="SecurityType Constructor " Url="html/1884198568.htm" />
+      <HelpTOCNode Title="SecurityType Methods" Url="html/285085461.htm" />
+      <HelpTOCNode Id="c68e6ef6-4009-4aea-9af4-b7ca5fb304c7" Title="SecurityType Properties" Url="html/500153713.htm">
+        <HelpTOCNode Title="Code Property " Url="html/725036672.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1171165228.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1647747390.htm" />
+        <HelpTOCNode Title="Securities Property " Url="html/1447016399.htm" />
+        <HelpTOCNode Title="SecurityTypeID Property " Url="html/1834009833.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c05eb5ee-1373-49ca-985a-dc0f26ede9cc" Title="sp_helpdiagramdefinition_Result Class" Url="html/1262855410.htm">
+      <HelpTOCNode Title="sp_helpdiagramdefinition_Result Members" Url="html/325823618.htm" />
+      <HelpTOCNode Title="sp_helpdiagramdefinition_Result Methods" Url="html/378867059.htm" />
+      <HelpTOCNode Id="0487256d-a02e-4249-998f-4ad6d6e82510" Title="sp_helpdiagramdefinition_Result Properties" Url="html/820730720.htm">
+        <HelpTOCNode Title="definition Property " Url="html/544956381.htm" />
+        <HelpTOCNode Title="version Property " Url="html/1641341824.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="84ab48de-53bc-40d5-b2d7-3505d7ab086e" Title="sp_helpdiagrams_Result Class" Url="html/1886394563.htm">
+      <HelpTOCNode Title="sp_helpdiagrams_Result Members" Url="html/1512113042.htm" />
+      <HelpTOCNode Title="sp_helpdiagrams_Result Methods" Url="html/2116508038.htm" />
+      <HelpTOCNode Id="828e8697-b945-4254-a8fe-46680388ed25" Title="sp_helpdiagrams_Result Properties" Url="html/1809409865.htm">
+        <HelpTOCNode Title="Database Property " Url="html/1598277727.htm" />
+        <HelpTOCNode Title="ID Property " Url="html/554847374.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1876684086.htm" />
+        <HelpTOCNode Title="Owner Property " Url="html/1850815874.htm" />
+        <HelpTOCNode Title="OwnerID Property " Url="html/281042919.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0f446a95-20a4-44e5-8429-9cc7bf95d709" Title="StatisticType Class" Url="html/1361914458.htm">
+      <HelpTOCNode Title="StatisticType Members" Url="html/1371690150.htm" />
+      <HelpTOCNode Title="StatisticType Constructor " Url="html/181925637.htm" />
+      <HelpTOCNode Title="StatisticType Methods" Url="html/452960427.htm" />
+      <HelpTOCNode Id="613fd5d7-36b0-487b-b64f-2c1bf70a939f" Title="StatisticType Properties" Url="html/2136819752.htm">
+        <HelpTOCNode Title="AnnualCompanyStatistics Property " Url="html/1063017328.htm" />
+        <HelpTOCNode Title="Code Property " Url="html/1761102371.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1014456557.htm" />
+        <HelpTOCNode Title="StatisticTypeID Property " Url="html/626863344.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="738107ac-c9a8-4e42-825d-44b7b87dbb65" Title="sysdiagram Class" Url="html/1131608497.htm">
+      <HelpTOCNode Title="sysdiagram Members" Url="html/1872860755.htm" />
+      <HelpTOCNode Title="sysdiagram Methods" Url="html/750158040.htm" />
+      <HelpTOCNode Id="f1f29460-fb79-4aae-9f7a-afedab674274" Title="sysdiagram Properties" Url="html/274293335.htm">
+        <HelpTOCNode Title="definition Property " Url="html/183168331.htm" />
+        <HelpTOCNode Title="diagram_id Property " Url="html/1438172190.htm" />
+        <HelpTOCNode Title="name Property " Url="html/1092548611.htm" />
+        <HelpTOCNode Title="principal_id Property " Url="html/570024047.htm" />
+        <HelpTOCNode Title="version Property " Url="html/1851837992.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="169d4146-2edf-46e0-ac74-f597b9d48a9c" Title="vw_DealSecPrice Class" Url="html/1715755232.htm">
+      <HelpTOCNode Title="vw_DealSecPrice Members" Url="html/2048083446.htm" />
+      <HelpTOCNode Title="vw_DealSecPrice Methods" Url="html/1181078682.htm" />
+      <HelpTOCNode Id="31a69261-c3f2-4acb-aad4-568d36bb6362" Title="vw_DealSecPrice Properties" Url="html/214622909.htm">
+        <HelpTOCNode Title="Code Property " Url="html/823605069.htm" />
+        <HelpTOCNode Title="Comps Property " Url="html/1165375484.htm" />
+        <HelpTOCNode Title="CurrentPrice Property " Url="html/757033310.htm" />
+        <HelpTOCNode Title="DealID Property " Url="html/486718172.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1193488995.htm" />
+        <HelpTOCNode Title="DownsidePrice Property " Url="html/1238815493.htm" />
+        <HelpTOCNode Title="ExpirationDate Property " Url="html/1446748947.htm" />
+        <HelpTOCNode Title="PricSec Property " Url="html/2115330017.htm" />
+        <HelpTOCNode Title="SecGrp Property " Url="html/1378672801.htm" />
+        <HelpTOCNode Title="SecurityGroupID Property " Url="html/1377936959.htm" />
+        <HelpTOCNode Title="SecurityID Property " Url="html/768879237.htm" />
+        <HelpTOCNode Title="SecurityID1 Property " Url="html/771959429.htm" />
+        <HelpTOCNode Title="TargetPrice Property " Url="html/1509425295.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="04dcaf39-6279-46b8-9841-6032a6031bb0" Title="CortexWebService.Properties Namespace" Url="html/36715298.htm">
+    <HelpTOCNode Id="dde80598-f616-43a3-bbd0-ba078ff6ef18" Title="Settings Class" Url="html/1854441034.htm">
+      <HelpTOCNode Title="Settings Members" Url="html/116480935.htm" />
+      <HelpTOCNode Id="93355bf2-404b-48d1-9d7c-34274b18fbf0" Title="Settings Fields" Url="html/1320999369.htm">
+        <HelpTOCNode Title="defaultInstance Field" Url="html/391971750.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Settings Methods" Url="html/721401461.htm" />
+      <HelpTOCNode Id="91ec2dc9-4d9a-421c-bdea-03579f26cdca" Title="Settings Properties" Url="html/631463996.htm">
+        <HelpTOCNode Title="Default Property " Url="html/1918607317.htm" />
+        <HelpTOCNode Title="SQLConnection Property " Url="html/79127704.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Settings Events" Url="html/1240036559.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

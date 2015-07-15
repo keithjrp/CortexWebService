@@ -1,0 +1,2024 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AcquirerShareholderMeetingEventID property" Url="html/2075312450.htm" />
+  <HelpKINode Title="Actions property" Url="html/1510539623.htm" />
+  <HelpKINode Title="addAnnualCompanyStatistic method">
+    <HelpKINode Title="addAnnualCompanyStatistic Method " Url="html/2025334184.htm" />
+    <HelpKINode Title="addAnnualCompanyStatistic Method " Url="html/2018756622.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addCompany method">
+    <HelpKINode Title="addCompany Method " Url="html/675065429.htm" />
+    <HelpKINode Title="addCompany Method " Url="html/353740877.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addCompanyAssociation method">
+    <HelpKINode Title="addCompanyAssociation Method " Url="html/559968866.htm" />
+    <HelpKINode Title="addCompanyAssociation Method " Url="html/1991301374.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addCurrency method">
+    <HelpKINode Title="addCurrency Method " Url="html/1556229696.htm" />
+    <HelpKINode Title="addCurrency Method " Url="html/1650390292.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addDeal method">
+    <HelpKINode Title="addDeal Method " Url="html/2101888776.htm" />
+    <HelpKINode Title="addDeal Method " Url="html/1884100892.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addDealType method">
+    <HelpKINode Title="addDealType Method " Url="html/1201143838.htm" />
+    <HelpKINode Title="addDealType Method " Url="html/1969160760.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addDocument method">
+    <HelpKINode Title="addDocument Method " Url="html/1030781847.htm" />
+    <HelpKINode Title="addDocument Method " Url="html/1492737717.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addDocumentGroup method">
+    <HelpKINode Title="addDocumentGroup Method " Url="html/972485254.htm" />
+    <HelpKINode Title="addDocumentGroup Method " Url="html/1050094858.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addEvent method">
+    <HelpKINode Title="addEvent Method " Url="html/1402148177.htm" />
+    <HelpKINode Title="addEvent Method " Url="html/2145007962.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addEventType method">
+    <HelpKINode Title="addEventType Method " Url="html/195061423.htm" />
+    <HelpKINode Title="addEventType Method " Url="html/1927705107.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addMapDealAnalyst method">
+    <HelpKINode Title="addMapDealAnalyst Method " Url="html/2017890740.htm" />
+    <HelpKINode Title="addMapDealAnalyst Method " Url="html/441015762.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addMergerArb method">
+    <HelpKINode Title="addMergerArb Method " Url="html/569870961.htm" />
+    <HelpKINode Title="addMergerArb Method " Url="html/252357335.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addMergerArbNew method">
+    <HelpKINode Title="addMergerArbNew Method " Url="html/422403297.htm" />
+    <HelpKINode Title="addMergerArbNew Method " Url="html/582749414.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addPrice method">
+    <HelpKINode Title="addPrice Method " Url="html/96389653.htm" />
+    <HelpKINode Title="addPrice Method " Url="html/1638918469.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addSecurity method">
+    <HelpKINode Title="addSecurity Method " Url="html/159612120.htm" />
+    <HelpKINode Title="addSecurity Method " Url="html/322435235.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addSecurityGroup method">
+    <HelpKINode Title="addSecurityGroup Method " Url="html/699542678.htm" />
+    <HelpKINode Title="addSecurityGroup Method " Url="html/407440076.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addSecurityType method">
+    <HelpKINode Title="addSecurityType Method " Url="html/1820855255.htm" />
+    <HelpKINode Title="addSecurityType Method " Url="html/1839527334.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addStatisticType method">
+    <HelpKINode Title="addStatisticType Method " Url="html/138361105.htm" />
+    <HelpKINode Title="addStatisticType Method " Url="html/694757067.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Analyst class">
+    <HelpKINode Title="Analyst Class" Url="html/404096581.htm" />
+    <HelpKINode Title="Analyst Members" Url="html/730209839.htm" />
+    <HelpKINode Title="about Analyst class" Url="html/404096581.htm" />
+    <HelpKINode Title="all members" Url="html/730209839.htm" />
+    <HelpKINode Title="constructor" Url="html/9437658.htm" />
+    <HelpKINode Title="methods" Url="html/1342704032.htm" />
+    <HelpKINode Title="properties" Url="html/1336229422.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Analyst property" Url="html/332979346.htm" />
+  <HelpKINode Title="Analyst.Analyst constructor" Url="html/9437658.htm" />
+  <HelpKINode Title="Analyst.AnalystID property" Url="html/1670150591.htm" />
+  <HelpKINode Title="Analyst.Login property" Url="html/1147645964.htm" />
+  <HelpKINode Title="Analyst.MapDealAnalysts property" Url="html/1551268505.htm" />
+  <HelpKINode Title="Analyst.Password property" Url="html/1826690504.htm" />
+  <HelpKINode Title="AnalystID property">
+    <HelpKINode Title="AnalystID Property " Url="html/1403136637.htm" />
+    <HelpKINode Title="AnalystID Property " Url="html/1670150591.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Analysts property" Url="html/1384181645.htm" />
+  <HelpKINode Title="And(Of T) method" Url="html/1762321477.htm" />
+  <HelpKINode Title="And&lt;T&gt; method" Url="html/1762321477.htm" />
+  <HelpKINode Title="AnnualCompanyStatistic class">
+    <HelpKINode Title="AnnualCompanyStatistic Class" Url="html/1700588010.htm" />
+    <HelpKINode Title="AnnualCompanyStatistic Members" Url="html/750278569.htm" />
+    <HelpKINode Title="about AnnualCompanyStatistic class" Url="html/1700588010.htm" />
+    <HelpKINode Title="all members" Url="html/750278569.htm" />
+    <HelpKINode Title="methods" Url="html/275655623.htm" />
+    <HelpKINode Title="properties" Url="html/1892436145.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnualCompanyStatistic.AnnualCompanyStatisticID property" Url="html/867543672.htm" />
+  <HelpKINode Title="AnnualCompanyStatistic.CompanyID property" Url="html/1116409275.htm" />
+  <HelpKINode Title="AnnualCompanyStatistic.Source property" Url="html/1482236337.htm" />
+  <HelpKINode Title="AnnualCompanyStatistic.StatisticType property" Url="html/1627037035.htm" />
+  <HelpKINode Title="AnnualCompanyStatistic.StatisticTypeID property" Url="html/1320831457.htm" />
+  <HelpKINode Title="AnnualCompanyStatistic.Value property" Url="html/926532953.htm" />
+  <HelpKINode Title="AnnualCompanyStatistic.Year property" Url="html/824769065.htm" />
+  <HelpKINode Title="AnnualCompanyStatisticID property" Url="html/867543672.htm" />
+  <HelpKINode Title="AnnualCompanyStatistics property">
+    <HelpKINode Title="AnnualCompanyStatistics Property " Url="html/32104124.htm" />
+    <HelpKINode Title="AnnualCompanyStatistics Property " Url="html/1063017328.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApplicationUser class">
+    <HelpKINode Title="ApplicationUser Class" Url="html/1313819809.htm" />
+    <HelpKINode Title="ApplicationUser Members" Url="html/2015328527.htm" />
+    <HelpKINode Title="about ApplicationUser class" Url="html/1313819809.htm" />
+    <HelpKINode Title="all members" Url="html/2015328527.htm" />
+    <HelpKINode Title="methods" Url="html/1299184481.htm" />
+    <HelpKINode Title="properties" Url="html/1207796910.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApplicationUser.Actions property" Url="html/1510539623.htm" />
+  <HelpKINode Title="ApplicationUser.CreatedById property" Url="html/1237631188.htm" />
+  <HelpKINode Title="ApplicationUser.CreatedDateTime property" Url="html/1642653988.htm" />
+  <HelpKINode Title="ApplicationUser.DomainCredential property" Url="html/359474663.htm" />
+  <HelpKINode Title="ApplicationUser.EditedById property" Url="html/1587662684.htm" />
+  <HelpKINode Title="ApplicationUser.EditedDateTime property" Url="html/1808560397.htm" />
+  <HelpKINode Title="ApplicationUser.Id property" Url="html/1852136310.htm" />
+  <HelpKINode Title="ApplicationUser.IsDeleted property" Url="html/1493949354.htm" />
+  <HelpKINode Title="ApplicationUser.LastAccessDateTime property" Url="html/1867359089.htm" />
+  <HelpKINode Title="ApplicationUser.MachineAddress property" Url="html/1483689850.htm" />
+  <HelpKINode Title="ApplicationUser.Name property" Url="html/2095127.htm" />
+  <HelpKINode Title="ApplicationUser.Version property" Url="html/1534430062.htm" />
+  <HelpKINode Title="ApplicationUsers property" Url="html/1783940661.htm" />
+  <HelpKINode Title="AssociationType property" Url="html/830919661.htm" />
+  <HelpKINode Title="AuditTrailAdd method">
+    <HelpKINode Title="AuditTrailAdd Method " Url="html/1959444661.htm" />
+    <HelpKINode Title="AuditTrailAdd Method " Url="html/2007399507.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuditTrailDB class">
+    <HelpKINode Title="AuditTrailDB Class" Url="html/459413550.htm" />
+    <HelpKINode Title="AuditTrailDB Members" Url="html/954086082.htm" />
+    <HelpKINode Title="about AuditTrailDB class" Url="html/459413550.htm" />
+    <HelpKINode Title="all members" Url="html/954086082.htm" />
+    <HelpKINode Title="methods" Url="html/1144705447.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuditTrailDelete method">
+    <HelpKINode Title="AuditTrailDelete Method " Url="html/712529139.htm" />
+    <HelpKINode Title="AuditTrailDelete Method " Url="html/963453519.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuditTrailLogin method">
+    <HelpKINode Title="AuditTrailLogin Method " Url="html/832231956.htm" />
+    <HelpKINode Title="AuditTrailLogin Method " Url="html/513921591.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuditTrailLogout method">
+    <HelpKINode Title="AuditTrailLogout Method " Url="html/1961276074.htm" />
+    <HelpKINode Title="AuditTrailLogout Method " Url="html/1698723923.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuditTrailUpdate method">
+    <HelpKINode Title="AuditTrailUpdate Method " Url="html/102028886.htm" />
+    <HelpKINode Title="AuditTrailUpdate Method " Url="html/874325944.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuditTrailView method">
+    <HelpKINode Title="AuditTrailView Method " Url="html/1308167294.htm" />
+    <HelpKINode Title="AuditTrailView Method " Url="html/1962163420.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Background property" Url="html/82608778.htm" />
+  <HelpKINode Title="C000_DealId__Required_ property" Url="html/1632861304.htm" />
+  <HelpKINode Title="C001_Deal_Name__Required_ property" Url="html/1535552636.htm" />
+  <HelpKINode Title="C002_Target_Ticker__Required_ property" Url="html/426972036.htm" />
+  <HelpKINode Title="C003_Target_Name__Required_ property" Url="html/937094679.htm" />
+  <HelpKINode Title="C004_Acquirer_Ticker__Required_ property" Url="html/550598240.htm" />
+  <HelpKINode Title="C005_Acquirer_Name__Required_ property" Url="html/655126004.htm" />
+  <HelpKINode Title="C006_File_Name_Path__Required_ property" Url="html/1699294488.htm" />
+  <HelpKINode Title="C008_Target_Shares_Owned__Required_ property" Url="html/325180566.htm" />
+  <HelpKINode Title="C009_Acquirer_Shares_Owned__Required_ property" Url="html/12206073.htm" />
+  <HelpKINode Title="C011_Key_Notes_1__Required_ property" Url="html/1820606434.htm" />
+  <HelpKINode Title="C012_Key_Notes_2__Required_ property" Url="html/2058753892.htm" />
+  <HelpKINode Title="C013_Key_Notes_3__Required_ property" Url="html/1553266266.htm" />
+  <HelpKINode Title="C014_Pricing_Period__Required_ property" Url="html/1716445227.htm" />
+  <HelpKINode Title="C015_Target_Earnings_Date__Required_ property" Url="html/1176590422.htm" />
+  <HelpKINode Title="C016_Acquirer_Earnings_Date__Required_ property" Url="html/1077579262.htm" />
+  <HelpKINode Title="C017_Key_Dates__Required_ property" Url="html/1989818502.htm" />
+  <HelpKINode Title="C019_Stated_Cash_Terms__Optional_ property" Url="html/657695560.htm" />
+  <HelpKINode Title="C020_Stated_Stock_Exchange_Ratio__Optional_ property" Url="html/2125190039.htm" />
+  <HelpKINode Title="C021_Cash_Prorate__Optional_ property" Url="html/1034916518.htm" />
+  <HelpKINode Title="C022_Stock_Prorate__Optional_ property" Url="html/2117061883.htm" />
+  <HelpKINode Title="C023_Hedge_Ratio__Required_ property" Url="html/329510787.htm" />
+  <HelpKINode Title="C024_Cash_Terms__Required_ property" Url="html/2033532970.htm" />
+  <HelpKINode Title="C025_Stock_Exchange_Ratio__Required_ property" Url="html/1625273995.htm" />
+  <HelpKINode Title="C027_Target_Price_in_Local_Currency__Required_ property" Url="html/1813862644.htm" />
+  <HelpKINode Title="C028_Acquirer_Price_in_Local_Currency__Required_ property" Url="html/1342946643.htm" />
+  <HelpKINode Title="C029_Target_Price_in_Deal_Currency__Required_ property" Url="html/1547091306.htm" />
+  <HelpKINode Title="C030_Acquirer_Price_in_Deal_Currency__Required_ property" Url="html/1345377767.htm" />
+  <HelpKINode Title="C032_Target_Currency__Required_ property" Url="html/1803790849.htm" />
+  <HelpKINode Title="C033_Acquirer_Currency__Required_ property" Url="html/1088853279.htm" />
+  <HelpKINode Title="C034_Deal_Currency__Required_ property" Url="html/654880350.htm" />
+  <HelpKINode Title="C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_ property" Url="html/542889154.htm" />
+  <HelpKINode Title="C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_ property" Url="html/1169235682.htm" />
+  <HelpKINode Title="C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_ property" Url="html/1810084290.htm" />
+  <HelpKINode Title="C039_Today__Optional_ property" Url="html/1918407439.htm" />
+  <HelpKINode Title="C040_Announced_Date__Required_ property" Url="html/1608575829.htm" />
+  <HelpKINode Title="C041_Estimated_Close_Date__Optional_ property" Url="html/867555527.htm" />
+  <HelpKINode Title="C042_Potential_Days_Delayed__Optional_ property" Url="html/305007803.htm" />
+  <HelpKINode Title="C043_Days_to_Close__Optional_ property" Url="html/1412249978.htm" />
+  <HelpKINode Title="C044_Close_Date__Required_ property" Url="html/1630396400.htm" />
+  <HelpKINode Title="C046_Total_Consideration__Optional_ property" Url="html/1072866761.htm" />
+  <HelpKINode Title="C047_Gross_Spread__Required_ property" Url="html/669972967.htm" />
+  <HelpKINode Title="C048_Net_Spread_before_Leverage__Required_ property" Url="html/898421431.htm" />
+  <HelpKINode Title="C049_Cost_of_Leverage__Optional_ property" Url="html/1674385234.htm" />
+  <HelpKINode Title="C050_Net_Dividends__Required_ property" Url="html/17092290.htm" />
+  <HelpKINode Title="C051_Short_Rebates__Optional_ property" Url="html/1526890617.htm" />
+  <HelpKINode Title="C052_Net_Spread__Required_ property" Url="html/2023791012.htm" />
+  <HelpKINode Title="C053_Hypothetical_Targeted_Net_Spread__Required_ property" Url="html/1834217752.htm" />
+  <HelpKINode Title="C054_Hypothetical_Unwind_Net_Spread__Required_ property" Url="html/1671575811.htm" />
+  <HelpKINode Title="C055_Theoretical_Spread_collar__Required_ property" Url="html/176510306.htm" />
+  <HelpKINode Title="C057_Gross_Return__Optional_ property" Url="html/1746944875.htm" />
+  <HelpKINode Title="C058_Annualized_ROR__Required_ property" Url="html/843527020.htm" />
+  <HelpKINode Title="C059_Hypothetical_Targeted_Annualized_Return__Required_ property" Url="html/714240548.htm" />
+  <HelpKINode Title="C060_Hypothetical_Unwind_Annualized_Return__Required_ property" Url="html/165550229.htm" />
+  <HelpKINode Title="C061_Theoretical_Annualized_Return_collar__Required_ property" Url="html/1194367301.htm" />
+  <HelpKINode Title="C063_Commission_Cost_per_Share__Optional_ property" Url="html/1927914079.htm" />
+  <HelpKINode Title="C064_Long_Financing_Rate__Optional_ property" Url="html/458006756.htm" />
+  <HelpKINode Title="C065_Short_Rebate__Optional_ property" Url="html/1943013834.htm" />
+  <HelpKINode Title="C066_Long_Margin_Required__Optional_ property" Url="html/2118128865.htm" />
+  <HelpKINode Title="C067_Short_Margin_Required__Optional_ property" Url="html/940415458.htm" />
+  <HelpKINode Title="C069_Target_Ex_Dividend_Date__Required_ property" Url="html/1129761362.htm" />
+  <HelpKINode Title="C070_Aquirer_Ex_Dividend_Date__Required_ property" Url="html/1742763016.htm" />
+  <HelpKINode Title="C071_Target_Dividend_Projected_or_Declared__Required_ property" Url="html/1570389081.htm" />
+  <HelpKINode Title="C072_Acquirer_Dividend_Projected_or_Declared__Required_ property" Url="html/822803591.htm" />
+  <HelpKINode Title="C073_Number_of_Target_Dividends__Required_ property" Url="html/431037161.htm" />
+  <HelpKINode Title="C074_Number_of_Acquirer_Dividends__Required_ property" Url="html/160042178.htm" />
+  <HelpKINode Title="C075_Target_Dividend_Quarterly_Amount__Required_ property" Url="html/835489721.htm" />
+  <HelpKINode Title="C076_Acquirer_Dividend_Quarterly_Amount__Required_ property" Url="html/1515889998.htm" />
+  <HelpKINode Title="C077_Total_Target_Dividends__Required_ property" Url="html/843374518.htm" />
+  <HelpKINode Title="C078_Total_Acquirer_Dividends__Required_ property" Url="html/2025464271.htm" />
+  <HelpKINode Title="C080_Target_Break_Price__Required_ property" Url="html/205750827.htm" />
+  <HelpKINode Title="C081_Acquirer_Break_Price__Required_ property" Url="html/1487557573.htm" />
+  <HelpKINode Title="C082_Expected_USD_Return_prob_wtd__Required_ property" Url="html/702620771.htm" />
+  <HelpKINode Title="C083_RiskReward__Required_ property" Url="html/1096444567.htm" />
+  <HelpKINode Title="C084_Notional_Long_USD_MV__Required_ property" Url="html/913325665.htm" />
+  <HelpKINode Title="C085_Net_USD_Profit_at_Close__Required_ property" Url="html/2139148131.htm" />
+  <HelpKINode Title="C086_Net_USD_Profit_at_Break__Required_ property" Url="html/1898659682.htm" />
+  <HelpKINode Title="C087_Probability_of_Break__Required_ property" Url="html/85920387.htm" />
+  <HelpKINode Title="C088_Tgt_13D_Num_shs_remaining__Optional_ property" Url="html/212691827.htm" />
+  <HelpKINode Title="C090_Prorate_Value_of_Stock__Optional_ property" Url="html/805160558.htm" />
+  <HelpKINode Title="C091_Prorate_Value_of_Cash__Optional_ property" Url="html/1795008552.htm" />
+  <HelpKINode Title="C092_Prorate_Comment_1__Optional_ property" Url="html/42922605.htm" />
+  <HelpKINode Title="C093_Prorate_Comment_2__Optional_ property" Url="html/501358784.htm" />
+  <HelpKINode Title="C095_Collar_Flag_Yes_No__Optional_ property" Url="html/696233705.htm" />
+  <HelpKINode Title="C096_Collar_Flag_Normal_Inverted__Optional_ property" Url="html/806494441.htm" />
+  <HelpKINode Title="C097_Collar_Num_of_Segments__Optional_ property" Url="html/1464791222.htm" />
+  <HelpKINode Title="C098_Collar_Num_of_Breakpoints__Optional_ property" Url="html/1095005324.htm" />
+  <HelpKINode Title="C099_Collar___Optional_ property" Url="html/1403679404.htm" />
+  <HelpKINode Title="C100_Collar_High_Breakpoint__Optional_ property" Url="html/726837738.htm" />
+  <HelpKINode Title="C101_Collar_Position__Optional_ property" Url="html/1679902477.htm" />
+  <HelpKINode Title="C102_Collar_Walk__Optional_ property" Url="html/840611195.htm" />
+  <HelpKINode Title="C103_Collar_Cure_Low_Breakpoint__Optional_ property" Url="html/406206725.htm" />
+  <HelpKINode Title="C104_Collar_Cure_High_Breakpoint__Optional_ property" Url="html/1106200669.htm" />
+  <HelpKINode Title="C105_Collar_Value_of_Collar__Optional_ property" Url="html/511387050.htm" />
+  <HelpKINode Title="C106_Collar_Note_Description__Optional_ property" Url="html/1209883189.htm" />
+  <HelpKINode Title="C108_Pricing_Period_Start_Date__Optional_ property" Url="html/1802612848.htm" />
+  <HelpKINode Title="C109_Pricing_Period_End_Date__Optional_ property" Url="html/1182394118.htm" />
+  <HelpKINode Title="C110_Pricing_Period_Length_days__Optional_ property" Url="html/1669594214.htm" />
+  <HelpKINode Title="C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_ property" Url="html/1902011796.htm" />
+  <HelpKINode Title="C112_Pricing_Period_Prc_Complete__Optional_ property" Url="html/1551837383.htm" />
+  <HelpKINode Title="C113_Pricing_Period_Prc_Remaining__Optional_ property" Url="html/493278845.htm" />
+  <HelpKINode Title="C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_ property" Url="html/221041048.htm" />
+  <HelpKINode Title="C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_ property" Url="html/1502813553.htm" />
+  <HelpKINode Title="C116_Pricing_Period_Weighted_Price__Optional_ property" Url="html/2014442621.htm" />
+  <HelpKINode Title="C118_Bloomberg_Corporate_Action_ID__Optional_ property" Url="html/1310291946.htm" />
+  <HelpKINode Title="C119_Bloomberg_Target_Company_Description__Optional_ property" Url="html/183383184.htm" />
+  <HelpKINode Title="C120_Bloomberg_Acquirer_Company_Description__Optional_ property" Url="html/1200408789.htm" />
+  <HelpKINode Title="C121_Bloomberg_Deal_Description__Optional_ property" Url="html/2106419364.htm" />
+  <HelpKINode Title="C122_Bloomberg_Target_Legal_Advisors__Optional_ property" Url="html/1271275945.htm" />
+  <HelpKINode Title="C123_Bloomberg_Target_Financial_Advisors__Optional_ property" Url="html/348107724.htm" />
+  <HelpKINode Title="C124_Bloomberg_Acquirer_Legal_Advisors__Optional_ property" Url="html/579535713.htm" />
+  <HelpKINode Title="C125_Bloomberg_Acquirer_Financial_Advisors__Optional_ property" Url="html/752710829.htm" />
+  <HelpKINode Title="C126_Bloomberg_Pending_Approvals__Optional_ property" Url="html/443222507.htm" />
+  <HelpKINode Title="C127_Bloomberg_Approved_Approvals__Optional_ property" Url="html/558912294.htm" />
+  <HelpKINode Title="C128_Bloomberg_Expired_Approvals__Optional_ property" Url="html/1218406917.htm" />
+  <HelpKINode Title="C129_Bloomberg_Entended_Approvals__Optional_ property" Url="html/583627663.htm" />
+  <HelpKINode Title="C130_Bloomberg_Announced_Date__Optional_ property" Url="html/1742484429.htm" />
+  <HelpKINode Title="C131_Bloomberg_Amendment_Date__Optional_ property" Url="html/1602542726.htm" />
+  <HelpKINode Title="C132_Bloomberg_Expected_Completion_Date__Optional_ property" Url="html/2068623181.htm" />
+  <HelpKINode Title="C133_Bloomberg_Completed_Termination_Date__Optional_ property" Url="html/1961432737.htm" />
+  <HelpKINode Title="C134_Bloomberg_Merger_Agreement_Date__Optional_ property" Url="html/1445194464.htm" />
+  <HelpKINode Title="C135_Bloomberg_Drop_Dead_Date__Optional_ property" Url="html/2129860995.htm" />
+  <HelpKINode Title="C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_ property" Url="html/1938279781.htm" />
+  <HelpKINode Title="C137_Bloomberg_Go_Shop_Period_End_Date__Optional_ property" Url="html/290772411.htm" />
+  <HelpKINode Title="Calendar_Comment property" Url="html/1133380875.htm" />
+  <HelpKINode Title="Calendar_Flag property" Url="html/762958405.htm" />
+  <HelpKINode Title="Calendar_Time property" Url="html/737839936.htm" />
+  <HelpKINode Title="Catalyst property" Url="html/2101765904.htm" />
+  <HelpKINode Title="Categories property" Url="html/732902988.htm" />
+  <HelpKINode Title="Category class">
+    <HelpKINode Title="Category Class" Url="html/856668271.htm" />
+    <HelpKINode Title="Category Members" Url="html/323940882.htm" />
+    <HelpKINode Title="about Category class" Url="html/856668271.htm" />
+    <HelpKINode Title="all members" Url="html/323940882.htm" />
+    <HelpKINode Title="constructor" Url="html/1489851343.htm" />
+    <HelpKINode Title="methods" Url="html/676773674.htm" />
+    <HelpKINode Title="properties" Url="html/483688833.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Category property" Url="html/1483678800.htm" />
+  <HelpKINode Title="Category.Category constructor" Url="html/1489851343.htm" />
+  <HelpKINode Title="Category.CategoryID property" Url="html/1996267349.htm" />
+  <HelpKINode Title="Category.Class property" Url="html/1895179423.htm" />
+  <HelpKINode Title="Category.Deals property" Url="html/633742528.htm" />
+  <HelpKINode Title="Category.Name property" Url="html/1096541222.htm" />
+  <HelpKINode Title="CategoryID property">
+    <HelpKINode Title="CategoryID Property " Url="html/565891422.htm" />
+    <HelpKINode Title="CategoryID Property " Url="html/1996267349.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Class property" Url="html/1895179423.htm" />
+  <HelpKINode Title="clone method" Url="html/538697204.htm" />
+  <HelpKINode Title="Code property">
+    <HelpKINode Title="Code Property " Url="html/725036672.htm" />
+    <HelpKINode Title="Code Property " Url="html/823605069.htm" />
+    <HelpKINode Title="Code Property " Url="html/270408664.htm" />
+    <HelpKINode Title="Code Property " Url="html/1959201465.htm" />
+    <HelpKINode Title="Code Property " Url="html/1952984107.htm" />
+    <HelpKINode Title="Code Property " Url="html/862452590.htm" />
+    <HelpKINode Title="Code Property " Url="html/369450194.htm" />
+    <HelpKINode Title="Code Property " Url="html/1761102371.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Companies property">
+    <HelpKINode Title="Companies Property " Url="html/693151192.htm" />
+    <HelpKINode Title="Companies Property " Url="html/574455305.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Company class">
+    <HelpKINode Title="Company Class" Url="html/568619257.htm" />
+    <HelpKINode Title="Company Members" Url="html/172273106.htm" />
+    <HelpKINode Title="about Company class" Url="html/568619257.htm" />
+    <HelpKINode Title="all members" Url="html/172273106.htm" />
+    <HelpKINode Title="constructor" Url="html/1738661536.htm" />
+    <HelpKINode Title="methods" Url="html/318078530.htm" />
+    <HelpKINode Title="properties" Url="html/748865755.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Company property">
+    <HelpKINode Title="Company Property " Url="html/775944452.htm" />
+    <HelpKINode Title="Company Property " Url="html/446646000.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Company.Code property" Url="html/862452590.htm" />
+  <HelpKINode Title="Company.Company constructor" Url="html/1738661536.htm" />
+  <HelpKINode Title="Company.CompanyAssociations property" Url="html/897509799.htm" />
+  <HelpKINode Title="Company.CompanyAssociations1 property" Url="html/2015274113.htm" />
+  <HelpKINode Title="Company.CompanyID property" Url="html/1753362143.htm" />
+  <HelpKINode Title="Company.Deals property" Url="html/1430645541.htm" />
+  <HelpKINode Title="Company.Deals1 property" Url="html/2012840881.htm" />
+  <HelpKINode Title="Company.Deals2 property" Url="html/2012840882.htm" />
+  <HelpKINode Title="Company.Description property" Url="html/620248510.htm" />
+  <HelpKINode Title="Company.Name property" Url="html/460323684.htm" />
+  <HelpKINode Title="Company.Security property" Url="html/620297783.htm" />
+  <HelpKINode Title="Company.SecurityID property" Url="html/1101481028.htm" />
+  <HelpKINode Title="Company1 property">
+    <HelpKINode Title="Company1 Property " Url="html/55900420.htm" />
+    <HelpKINode Title="Company1 Property " Url="html/445662960.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Company1ID property" Url="html/1039050063.htm" />
+  <HelpKINode Title="Company2 property" Url="html/1629878532.htm" />
+  <HelpKINode Title="Company2ID property" Url="html/1038853455.htm" />
+  <HelpKINode Title="CompanyAssociation class">
+    <HelpKINode Title="CompanyAssociation Class" Url="html/2010668315.htm" />
+    <HelpKINode Title="CompanyAssociation Members" Url="html/406881728.htm" />
+    <HelpKINode Title="about CompanyAssociation class" Url="html/2010668315.htm" />
+    <HelpKINode Title="all members" Url="html/406881728.htm" />
+    <HelpKINode Title="methods" Url="html/1305463062.htm" />
+    <HelpKINode Title="properties" Url="html/192813675.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CompanyAssociation.AssociationType property" Url="html/830919661.htm" />
+  <HelpKINode Title="CompanyAssociation.Company property" Url="html/446646000.htm" />
+  <HelpKINode Title="CompanyAssociation.Company1 property" Url="html/445662960.htm" />
+  <HelpKINode Title="CompanyAssociation.Company1ID property" Url="html/1039050063.htm" />
+  <HelpKINode Title="CompanyAssociation.Company2ID property" Url="html/1038853455.htm" />
+  <HelpKINode Title="CompanyAssociation.CompanyAssociationID property" Url="html/1424996436.htm" />
+  <HelpKINode Title="CompanyAssociationID property" Url="html/1424996436.htm" />
+  <HelpKINode Title="CompanyAssociations property">
+    <HelpKINode Title="CompanyAssociations Property " Url="html/897509799.htm" />
+    <HelpKINode Title="CompanyAssociations Property " Url="html/1107501456.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CompanyAssociations1 property" Url="html/2015274113.htm" />
+  <HelpKINode Title="CompanyID property">
+    <HelpKINode Title="CompanyID Property " Url="html/1116409275.htm" />
+    <HelpKINode Title="CompanyID Property " Url="html/1753362143.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CompanyID1 property" Url="html/762993451.htm" />
+  <HelpKINode Title="CompanyID2 property" Url="html/763190059.htm" />
+  <HelpKINode Title="CompanyID3 property" Url="html/763124523.htm" />
+  <HelpKINode Title="Comps property">
+    <HelpKINode Title="Comps Property " Url="html/1165375484.htm" />
+    <HelpKINode Title="Comps Property " Url="html/426106191.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexClone class">
+    <HelpKINode Title="CortexClone Class" Url="html/1896949888.htm" />
+    <HelpKINode Title="CortexClone Members" Url="html/555687698.htm" />
+    <HelpKINode Title="about CortexClone class" Url="html/1896949888.htm" />
+    <HelpKINode Title="all members" Url="html/555687698.htm" />
+    <HelpKINode Title="methods" Url="html/1873729457.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexClone.clone method" Url="html/538697204.htm" />
+  <HelpKINode Title="CortexEntities class">
+    <HelpKINode Title="CortexEntities Class" Url="html/2000004238.htm" />
+    <HelpKINode Title="CortexEntities Members" Url="html/1121758861.htm" />
+    <HelpKINode Title="about CortexEntities class" Url="html/2000004238.htm" />
+    <HelpKINode Title="all members" Url="html/1121758861.htm" />
+    <HelpKINode Title="constructor" Url="html/1727749759.htm" />
+    <HelpKINode Title="methods" Url="html/1057823553.htm" />
+    <HelpKINode Title="properties" Url="html/480579858.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexEntities.Analysts property" Url="html/1384181645.htm" />
+  <HelpKINode Title="CortexEntities.AnnualCompanyStatistics property" Url="html/32104124.htm" />
+  <HelpKINode Title="CortexEntities.ApplicationUsers property" Url="html/1783940661.htm" />
+  <HelpKINode Title="CortexEntities.Categories property" Url="html/732902988.htm" />
+  <HelpKINode Title="CortexEntities.Companies property" Url="html/693151192.htm" />
+  <HelpKINode Title="CortexEntities.CompanyAssociations property" Url="html/1107501456.htm" />
+  <HelpKINode Title="CortexEntities.CortexEntities constructor" Url="html/1727749759.htm" />
+  <HelpKINode Title="CortexEntities.Currencies property" Url="html/543857468.htm" />
+  <HelpKINode Title="CortexEntities.Deals property" Url="html/363158963.htm" />
+  <HelpKINode Title="CortexEntities.DealStatuses property" Url="html/1241855897.htm" />
+  <HelpKINode Title="CortexEntities.DealTypes property" Url="html/1238627693.htm" />
+  <HelpKINode Title="CortexEntities.DocumentGroups property" Url="html/553471433.htm" />
+  <HelpKINode Title="CortexEntities.Documents property" Url="html/347614728.htm" />
+  <HelpKINode Title="CortexEntities.Events property" Url="html/2128438615.htm" />
+  <HelpKINode Title="CortexEntities.EventTypes property" Url="html/1151192314.htm" />
+  <HelpKINode Title="CortexEntities.MapDealAnalysts property" Url="html/2064946309.htm" />
+  <HelpKINode Title="CortexEntities.MergerArbNews property" Url="html/1283124191.htm" />
+  <HelpKINode Title="CortexEntities.MergerArbs property" Url="html/503361896.htm" />
+  <HelpKINode Title="CortexEntities.OnModelCreating method">
+    <HelpKINode Title="OnModelCreating Method " Url="html/552899530.htm" />
+    <HelpKINode Title="OnModelCreating Method " Url="html/1315555211.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexEntities.Prices property" Url="html/495489593.htm" />
+  <HelpKINode Title="CortexEntities.Securities property" Url="html/658043762.htm" />
+  <HelpKINode Title="CortexEntities.SecurityGroups property" Url="html/343544805.htm" />
+  <HelpKINode Title="CortexEntities.SecurityTypes property" Url="html/1721092688.htm" />
+  <HelpKINode Title="CortexEntities.sp_alterdiagram method" Url="html/706046639.htm" />
+  <HelpKINode Title="CortexEntities.sp_creatediagram method" Url="html/335680659.htm" />
+  <HelpKINode Title="CortexEntities.sp_dropdiagram method" Url="html/367867136.htm" />
+  <HelpKINode Title="CortexEntities.sp_helpdiagramdefinition method" Url="html/1184690377.htm" />
+  <HelpKINode Title="CortexEntities.sp_helpdiagrams method" Url="html/361120421.htm" />
+  <HelpKINode Title="CortexEntities.sp_renamediagram method" Url="html/488818644.htm" />
+  <HelpKINode Title="CortexEntities.sp_upgraddiagrams method" Url="html/1854135376.htm" />
+  <HelpKINode Title="CortexEntities.StatisticTypes property" Url="html/1874310239.htm" />
+  <HelpKINode Title="CortexEntities.sysdiagrams property" Url="html/1469200415.htm" />
+  <HelpKINode Title="CortexEntities.vw_DealSecPrice property" Url="html/188436895.htm" />
+  <HelpKINode Title="CortexWCFService interface">
+    <HelpKINode Title="CortexWCFService Interface" Url="html/223401950.htm" />
+    <HelpKINode Title="CortexWCFService Members" Url="html/1747478609.htm" />
+    <HelpKINode Title="about CortexWCFService interface" Url="html/223401950.htm" />
+    <HelpKINode Title="all members" Url="html/1747478609.htm" />
+    <HelpKINode Title="methods" Url="html/862704815.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWCFService.addAnnualCompanyStatistic method" Url="html/2025334184.htm" />
+  <HelpKINode Title="CortexWCFService.addCompany method" Url="html/675065429.htm" />
+  <HelpKINode Title="CortexWCFService.addCompanyAssociation method" Url="html/559968866.htm" />
+  <HelpKINode Title="CortexWCFService.addCurrency method" Url="html/1556229696.htm" />
+  <HelpKINode Title="CortexWCFService.addDeal method" Url="html/1884100892.htm" />
+  <HelpKINode Title="CortexWCFService.addDealType method" Url="html/1969160760.htm" />
+  <HelpKINode Title="CortexWCFService.addDocument method" Url="html/1492737717.htm" />
+  <HelpKINode Title="CortexWCFService.addDocumentGroup method" Url="html/1050094858.htm" />
+  <HelpKINode Title="CortexWCFService.addEvent method" Url="html/2145007962.htm" />
+  <HelpKINode Title="CortexWCFService.addEventType method" Url="html/195061423.htm" />
+  <HelpKINode Title="CortexWCFService.addMapDealAnalyst method" Url="html/441015762.htm" />
+  <HelpKINode Title="CortexWCFService.addMergerArb method" Url="html/569870961.htm" />
+  <HelpKINode Title="CortexWCFService.addMergerArbNew method" Url="html/422403297.htm" />
+  <HelpKINode Title="CortexWCFService.addPrice method" Url="html/96389653.htm" />
+  <HelpKINode Title="CortexWCFService.addSecurity method" Url="html/159612120.htm" />
+  <HelpKINode Title="CortexWCFService.addSecurityGroup method" Url="html/407440076.htm" />
+  <HelpKINode Title="CortexWCFService.addSecurityType method" Url="html/1839527334.htm" />
+  <HelpKINode Title="CortexWCFService.addStatisticType method" Url="html/694757067.htm" />
+  <HelpKINode Title="CortexWCFService.AuditTrailAdd method" Url="html/1959444661.htm" />
+  <HelpKINode Title="CortexWCFService.AuditTrailDelete method" Url="html/712529139.htm" />
+  <HelpKINode Title="CortexWCFService.AuditTrailLogin method" Url="html/832231956.htm" />
+  <HelpKINode Title="CortexWCFService.AuditTrailLogout method" Url="html/1961276074.htm" />
+  <HelpKINode Title="CortexWCFService.AuditTrailUpdate method" Url="html/874325944.htm" />
+  <HelpKINode Title="CortexWCFService.AuditTrailView method" Url="html/1962163420.htm" />
+  <HelpKINode Title="CortexWCFService.getAnalyst method" Url="html/1100859122.htm" />
+  <HelpKINode Title="CortexWCFService.getAnalystByName method" Url="html/519625122.htm" />
+  <HelpKINode Title="CortexWCFService.getAnalysts method" Url="html/9014641.htm" />
+  <HelpKINode Title="CortexWCFService.getAnnualCompanyStatistic method" Url="html/512047700.htm" />
+  <HelpKINode Title="CortexWCFService.getCategories method" Url="html/288641500.htm" />
+  <HelpKINode Title="CortexWCFService.getCategoriesByClass method" Url="html/576007821.htm" />
+  <HelpKINode Title="CortexWCFService.getCategoriesByName method" Url="html/986493516.htm" />
+  <HelpKINode Title="CortexWCFService.getCategory method" Url="html/612413475.htm" />
+  <HelpKINode Title="CortexWCFService.getCategoryClasses method" Url="html/1686602589.htm" />
+  <HelpKINode Title="CortexWCFService.getCompanies method" Url="html/815091309.htm" />
+  <HelpKINode Title="CortexWCFService.getCompany method" Url="html/86781020.htm" />
+  <HelpKINode Title="CortexWCFService.getCompanyAssociation method" Url="html/111982324.htm" />
+  <HelpKINode Title="CortexWCFService.getCompanyByName method" Url="html/55431221.htm" />
+  <HelpKINode Title="CortexWCFService.getCurrencies method" Url="html/1734688776.htm" />
+  <HelpKINode Title="CortexWCFService.getCurrency method" Url="html/29724617.htm" />
+  <HelpKINode Title="CortexWCFService.getCurrencyByCodeOrName method" Url="html/274192018.htm" />
+  <HelpKINode Title="CortexWCFService.GetCurrentDate method" Url="html/826326228.htm" />
+  <HelpKINode Title="CortexWCFService.getDeal method" Url="html/24197885.htm" />
+  <HelpKINode Title="CortexWCFService.getDealByAnalyst method" Url="html/1548052503.htm" />
+  <HelpKINode Title="CortexWCFService.getDealByCompany method" Url="html/1898720096.htm" />
+  <HelpKINode Title="CortexWCFService.getDealByDate method" Url="html/1366547169.htm" />
+  <HelpKINode Title="CortexWCFService.getDealByStatus method" Url="html/1097501291.htm" />
+  <HelpKINode Title="CortexWCFService.getDealList method" Url="html/645444864.htm" />
+  <HelpKINode Title="CortexWCFService.getDeals method" Url="html/523602392.htm" />
+  <HelpKINode Title="CortexWCFService.getDealsByCategory method" Url="html/737217942.htm" />
+  <HelpKINode Title="CortexWCFService.getDealsByCategoryClass method" Url="html/778122819.htm" />
+  <HelpKINode Title="CortexWCFService.getDealsByCriteria method" Url="html/1717271317.htm" />
+  <HelpKINode Title="CortexWCFService.getDealsByDescription method" Url="html/1176903204.htm" />
+  <HelpKINode Title="CortexWCFService.getDealStatus method" Url="html/1261011617.htm" />
+  <HelpKINode Title="CortexWCFService.getDealStatusByName method" Url="html/1198755560.htm" />
+  <HelpKINode Title="CortexWCFService.getDealStatuses method" Url="html/414100879.htm" />
+  <HelpKINode Title="CortexWCFService.getDealTeam method" Url="html/1345670071.htm" />
+  <HelpKINode Title="CortexWCFService.getDealType method" Url="html/1208880498.htm" />
+  <HelpKINode Title="CortexWCFService.getDocument method" Url="html/1300553277.htm" />
+  <HelpKINode Title="CortexWCFService.getDocumentByName method" Url="html/2088353907.htm" />
+  <HelpKINode Title="CortexWCFService.getDocumentGroup method" Url="html/1138612702.htm" />
+  <HelpKINode Title="CortexWCFService.getDocumentsByDeal method" Url="html/273209033.htm" />
+  <HelpKINode Title="CortexWCFService.getEvent method" Url="html/662630367.htm" />
+  <HelpKINode Title="CortexWCFService.getEventsByDeal method" Url="html/1061166244.htm" />
+  <HelpKINode Title="CortexWCFService.getEventType method" Url="html/966714039.htm" />
+  <HelpKINode Title="CortexWCFService.getEventTypes method" Url="html/1619365057.htm" />
+  <HelpKINode Title="CortexWCFService.getLastCompany method" Url="html/611227977.htm" />
+  <HelpKINode Title="CortexWCFService.getLastCompanyAssociation method" Url="html/1319104622.htm" />
+  <HelpKINode Title="CortexWCFService.getLastDeal method" Url="html/996801043.htm" />
+  <HelpKINode Title="CortexWCFService.getLastDocument method" Url="html/273848531.htm" />
+  <HelpKINode Title="CortexWCFService.getLastDocumentGroup method" Url="html/699673406.htm" />
+  <HelpKINode Title="CortexWCFService.getLastEvent method" Url="html/1197335382.htm" />
+  <HelpKINode Title="CortexWCFService.getLastSecurity method" Url="html/1317364810.htm" />
+  <HelpKINode Title="CortexWCFService.getLastSecurityGroup method" Url="html/1930250124.htm" />
+  <HelpKINode Title="CortexWCFService.getMapDealAnalyst method" Url="html/1515742670.htm" />
+  <HelpKINode Title="CortexWCFService.getMergerArb method" Url="html/297423125.htm" />
+  <HelpKINode Title="CortexWCFService.getMergerArbByDealId method" Url="html/968019021.htm" />
+  <HelpKINode Title="CortexWCFService.getMergerArbNewByDealId method" Url="html/357633397.htm" />
+  <HelpKINode Title="CortexWCFService.getMergerArbNewByValue method" Url="html/2103637245.htm" />
+  <HelpKINode Title="CortexWCFService.getPrice method" Url="html/1437290272.htm" />
+  <HelpKINode Title="CortexWCFService.getSecurities method" Url="html/718463698.htm" />
+  <HelpKINode Title="CortexWCFService.getSecurity method" Url="html/820234995.htm" />
+  <HelpKINode Title="CortexWCFService.getSecurityByCode method" Url="html/433625154.htm" />
+  <HelpKINode Title="CortexWCFService.getSecurityGroup method" Url="html/942358651.htm" />
+  <HelpKINode Title="CortexWCFService.getSecurityGroupBySecurity1 method" Url="html/1352800827.htm" />
+  <HelpKINode Title="CortexWCFService.getSecurityType method" Url="html/1006600302.htm" />
+  <HelpKINode Title="CortexWCFService.getSecurityTypes method" Url="html/1772788806.htm" />
+  <HelpKINode Title="CortexWCFService.getStatisticType method" Url="html/1801754999.htm" />
+  <HelpKINode Title="CortexWCFService.removeCompany method" Url="html/716134989.htm" />
+  <HelpKINode Title="CortexWCFService.removeCompanyAssociation method" Url="html/42438015.htm" />
+  <HelpKINode Title="CortexWCFService.removeDeal method" Url="html/1180185593.htm" />
+  <HelpKINode Title="CortexWCFService.removeDealByDescription method" Url="html/1181909532.htm" />
+  <HelpKINode Title="CortexWCFService.removeDealById method" Url="html/1695510228.htm" />
+  <HelpKINode Title="CortexWCFService.removeDocument method" Url="html/452205448.htm" />
+  <HelpKINode Title="CortexWCFService.removeEvent method" Url="html/236300245.htm" />
+  <HelpKINode Title="CortexWCFService.removeMapDealAnalyst method" Url="html/12072226.htm" />
+  <HelpKINode Title="CortexWCFService.removeSecurity method" Url="html/1665877141.htm" />
+  <HelpKINode Title="CortexWCFService.updateCompany method" Url="html/83716713.htm" />
+  <HelpKINode Title="CortexWCFService.updateCompanyAssociation method" Url="html/496382678.htm" />
+  <HelpKINode Title="CortexWCFService.updateDeal method" Url="html/1074313461.htm" />
+  <HelpKINode Title="CortexWCFService.updateDocument method" Url="html/1884292879.htm" />
+  <HelpKINode Title="CortexWCFService.updateDocumentGroup method" Url="html/1917614652.htm" />
+  <HelpKINode Title="CortexWCFService.updateMapDealAnalyst method" Url="html/112107141.htm" />
+  <HelpKINode Title="CortexWCFService.updateMergerArb method" Url="html/1323848062.htm" />
+  <HelpKINode Title="CortexWCFService.updateMergerArbNew method" Url="html/2056879617.htm" />
+  <HelpKINode Title="CortexWCFService.updateSecurity method" Url="html/2027850581.htm" />
+  <HelpKINode Title="CortexWCFService.updateSecurityGroup method" Url="html/230160956.htm" />
+  <HelpKINode Title="CortexWCFServices class">
+    <HelpKINode Title="CortexWCFServices Class" Url="html/1211226078.htm" />
+    <HelpKINode Title="CortexWCFServices Members" Url="html/1183551640.htm" />
+    <HelpKINode Title="about CortexWCFServices class" Url="html/1211226078.htm" />
+    <HelpKINode Title="all members" Url="html/1183551640.htm" />
+    <HelpKINode Title="methods" Url="html/28103855.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWCFServices.addAnnualCompanyStatistic method" Url="html/2018756622.htm" />
+  <HelpKINode Title="CortexWCFServices.addCompany method" Url="html/353740877.htm" />
+  <HelpKINode Title="CortexWCFServices.addCompanyAssociation method" Url="html/1991301374.htm" />
+  <HelpKINode Title="CortexWCFServices.addCurrency method" Url="html/1650390292.htm" />
+  <HelpKINode Title="CortexWCFServices.addDeal method" Url="html/2101888776.htm" />
+  <HelpKINode Title="CortexWCFServices.addDealType method" Url="html/1201143838.htm" />
+  <HelpKINode Title="CortexWCFServices.addDocument method" Url="html/1030781847.htm" />
+  <HelpKINode Title="CortexWCFServices.addDocumentGroup method" Url="html/972485254.htm" />
+  <HelpKINode Title="CortexWCFServices.addEvent method" Url="html/1402148177.htm" />
+  <HelpKINode Title="CortexWCFServices.addEventType method" Url="html/1927705107.htm" />
+  <HelpKINode Title="CortexWCFServices.addMapDealAnalyst method" Url="html/2017890740.htm" />
+  <HelpKINode Title="CortexWCFServices.addMergerArb method" Url="html/252357335.htm" />
+  <HelpKINode Title="CortexWCFServices.addMergerArbNew method" Url="html/582749414.htm" />
+  <HelpKINode Title="CortexWCFServices.addPrice method" Url="html/1638918469.htm" />
+  <HelpKINode Title="CortexWCFServices.addSecurity method" Url="html/322435235.htm" />
+  <HelpKINode Title="CortexWCFServices.addSecurityGroup method" Url="html/699542678.htm" />
+  <HelpKINode Title="CortexWCFServices.addSecurityType method" Url="html/1820855255.htm" />
+  <HelpKINode Title="CortexWCFServices.addStatisticType method" Url="html/138361105.htm" />
+  <HelpKINode Title="CortexWCFServices.AuditTrailAdd method" Url="html/2007399507.htm" />
+  <HelpKINode Title="CortexWCFServices.AuditTrailDelete method" Url="html/963453519.htm" />
+  <HelpKINode Title="CortexWCFServices.AuditTrailLogin method" Url="html/513921591.htm" />
+  <HelpKINode Title="CortexWCFServices.AuditTrailLogout method" Url="html/1698723923.htm" />
+  <HelpKINode Title="CortexWCFServices.AuditTrailUpdate method" Url="html/102028886.htm" />
+  <HelpKINode Title="CortexWCFServices.AuditTrailView method" Url="html/1308167294.htm" />
+  <HelpKINode Title="CortexWCFServices.filterDealResultsByAnalyst method" Url="html/1808356697.htm" />
+  <HelpKINode Title="CortexWCFServices.getAnalyst method" Url="html/651048575.htm" />
+  <HelpKINode Title="CortexWCFServices.getAnalystByName method" Url="html/502831712.htm" />
+  <HelpKINode Title="CortexWCFServices.getAnalysts method" Url="html/587963000.htm" />
+  <HelpKINode Title="CortexWCFServices.getAnnualCompanyStatistic method" Url="html/1220436566.htm" />
+  <HelpKINode Title="CortexWCFServices.getCategories method" Url="html/1559814405.htm" />
+  <HelpKINode Title="CortexWCFServices.getCategoriesByClass method" Url="html/1959864760.htm" />
+  <HelpKINode Title="CortexWCFServices.getCategoriesByName method" Url="html/959888022.htm" />
+  <HelpKINode Title="CortexWCFServices.getCategory method" Url="html/65819232.htm" />
+  <HelpKINode Title="CortexWCFServices.getCategoryClasses method" Url="html/1834968354.htm" />
+  <HelpKINode Title="CortexWCFServices.getCompanies method" Url="html/248174919.htm" />
+  <HelpKINode Title="CortexWCFServices.getCompany method" Url="html/105098514.htm" />
+  <HelpKINode Title="CortexWCFServices.getCompanyAssociation method" Url="html/1528425534.htm" />
+  <HelpKINode Title="CortexWCFServices.getCompanyByName method" Url="html/1005186495.htm" />
+  <HelpKINode Title="CortexWCFServices.getCurrencies method" Url="html/1173931924.htm" />
+  <HelpKINode Title="CortexWCFServices.getCurrency method" Url="html/1625367964.htm" />
+  <HelpKINode Title="CortexWCFServices.getCurrencyByCodeOrName method" Url="html/1470295555.htm" />
+  <HelpKINode Title="CortexWCFServices.GetCurrentDate method" Url="html/43885033.htm" />
+  <HelpKINode Title="CortexWCFServices.getDeal method" Url="html/247364519.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealByAnalyst method" Url="html/756835518.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealByCompany method" Url="html/672022595.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealByDate method" Url="html/789505207.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealByStatus method" Url="html/1047928816.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealList method" Url="html/573037165.htm" />
+  <HelpKINode Title="CortexWCFServices.getDeals method" Url="html/395001889.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealsByCategory method" Url="html/602720000.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealsByCategoryClass method" Url="html/1135313713.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealsByCriteria method" Url="html/566093999.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealsByDescription method" Url="html/929330615.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealStatus method" Url="html/1326131820.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealStatusByName method" Url="html/1353029485.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealStatuses method" Url="html/918440326.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealTeam method" Url="html/2022905343.htm" />
+  <HelpKINode Title="CortexWCFServices.getDealType method" Url="html/526754727.htm" />
+  <HelpKINode Title="CortexWCFServices.getDocument method" Url="html/769505375.htm" />
+  <HelpKINode Title="CortexWCFServices.getDocumentByName method" Url="html/2061065728.htm" />
+  <HelpKINode Title="CortexWCFServices.getDocumentGroup method" Url="html/272056271.htm" />
+  <HelpKINode Title="CortexWCFServices.getDocumentsByDeal method" Url="html/1000552495.htm" />
+  <HelpKINode Title="CortexWCFServices.getEvent method" Url="html/286295878.htm" />
+  <HelpKINode Title="CortexWCFServices.getEventsByDeal method" Url="html/2087343800.htm" />
+  <HelpKINode Title="CortexWCFServices.getEventType method" Url="html/1630942135.htm" />
+  <HelpKINode Title="CortexWCFServices.getEventTypes method" Url="html/1601830562.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastCompany method" Url="html/415316776.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastCompanyAssociation method" Url="html/792041068.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastDeal method" Url="html/684147271.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastDocument method" Url="html/896060754.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastDocumentGroup method" Url="html/1110317214.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastEvent method" Url="html/751318095.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastSecurity method" Url="html/431000002.htm" />
+  <HelpKINode Title="CortexWCFServices.getLastSecurityGroup method" Url="html/1617883375.htm" />
+  <HelpKINode Title="CortexWCFServices.getMapDealAnalyst method" Url="html/1266014292.htm" />
+  <HelpKINode Title="CortexWCFServices.getMergerArb method" Url="html/2102217220.htm" />
+  <HelpKINode Title="CortexWCFServices.getMergerArbByDealId method" Url="html/1305662805.htm" />
+  <HelpKINode Title="CortexWCFServices.getMergerArbNewByDealId method" Url="html/1398529294.htm" />
+  <HelpKINode Title="CortexWCFServices.getMergerArbNewByValue method" Url="html/131437265.htm" />
+  <HelpKINode Title="CortexWCFServices.getPrice method" Url="html/188939393.htm" />
+  <HelpKINode Title="CortexWCFServices.getSecurities method" Url="html/50949453.htm" />
+  <HelpKINode Title="CortexWCFServices.getSecurity method" Url="html/1746762297.htm" />
+  <HelpKINode Title="CortexWCFServices.getSecurityByCode method" Url="html/154995670.htm" />
+  <HelpKINode Title="CortexWCFServices.getSecurityGroup method" Url="html/452025787.htm" />
+  <HelpKINode Title="CortexWCFServices.getSecurityGroupBySecurity1 method" Url="html/713071655.htm" />
+  <HelpKINode Title="CortexWCFServices.getSecurityType method" Url="html/819136381.htm" />
+  <HelpKINode Title="CortexWCFServices.getSecurityTypes method" Url="html/1418573964.htm" />
+  <HelpKINode Title="CortexWCFServices.getStatisticType method" Url="html/180303012.htm" />
+  <HelpKINode Title="CortexWCFServices.removeCompany method" Url="html/465930981.htm" />
+  <HelpKINode Title="CortexWCFServices.removeCompanyAssociation method" Url="html/416525343.htm" />
+  <HelpKINode Title="CortexWCFServices.removeDeal method" Url="html/501902930.htm" />
+  <HelpKINode Title="CortexWCFServices.removeDealByDescription method" Url="html/297768868.htm" />
+  <HelpKINode Title="CortexWCFServices.removeDealById method" Url="html/1055810518.htm" />
+  <HelpKINode Title="CortexWCFServices.removeDocument method" Url="html/602588277.htm" />
+  <HelpKINode Title="CortexWCFServices.removeEvent method" Url="html/259311219.htm" />
+  <HelpKINode Title="CortexWCFServices.removeMapDealAnalyst method" Url="html/1228944067.htm" />
+  <HelpKINode Title="CortexWCFServices.removeSecurity method" Url="html/704676735.htm" />
+  <HelpKINode Title="CortexWCFServices.updateCompany method" Url="html/319871046.htm" />
+  <HelpKINode Title="CortexWCFServices.updateCompanyAssociation method" Url="html/1078123073.htm" />
+  <HelpKINode Title="CortexWCFServices.updateDeal method" Url="html/43306352.htm" />
+  <HelpKINode Title="CortexWCFServices.updateDocument method" Url="html/1112432386.htm" />
+  <HelpKINode Title="CortexWCFServices.updateDocumentGroup method" Url="html/459508610.htm" />
+  <HelpKINode Title="CortexWCFServices.updateMapDealAnalyst method" Url="html/503181288.htm" />
+  <HelpKINode Title="CortexWCFServices.updateMergerArb method" Url="html/222578372.htm" />
+  <HelpKINode Title="CortexWCFServices.updateMergerArbNew method" Url="html/1063590310.htm" />
+  <HelpKINode Title="CortexWCFServices.updateSecurity method" Url="html/110092464.htm" />
+  <HelpKINode Title="CortexWCFServices.updateSecurityGroup method" Url="html/504728626.htm" />
+  <HelpKINode Title="CortexWebService namespace" Url="html/465198914.htm" />
+  <HelpKINode Title="CortexWebService.Analyst class">
+    <HelpKINode Title="Analyst Class" Url="html/404096581.htm" />
+    <HelpKINode Title="Analyst Members" Url="html/730209839.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.AnnualCompanyStatistic class">
+    <HelpKINode Title="AnnualCompanyStatistic Class" Url="html/1700588010.htm" />
+    <HelpKINode Title="AnnualCompanyStatistic Members" Url="html/750278569.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.ApplicationUser class">
+    <HelpKINode Title="ApplicationUser Class" Url="html/1313819809.htm" />
+    <HelpKINode Title="ApplicationUser Members" Url="html/2015328527.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.AuditTrailDB class">
+    <HelpKINode Title="AuditTrailDB Class" Url="html/459413550.htm" />
+    <HelpKINode Title="AuditTrailDB Members" Url="html/954086082.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Category class">
+    <HelpKINode Title="Category Class" Url="html/856668271.htm" />
+    <HelpKINode Title="Category Members" Url="html/323940882.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Company class">
+    <HelpKINode Title="Company Class" Url="html/568619257.htm" />
+    <HelpKINode Title="Company Members" Url="html/172273106.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.CompanyAssociation class">
+    <HelpKINode Title="CompanyAssociation Class" Url="html/2010668315.htm" />
+    <HelpKINode Title="CompanyAssociation Members" Url="html/406881728.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.CortexClone class">
+    <HelpKINode Title="CortexClone Class" Url="html/1896949888.htm" />
+    <HelpKINode Title="CortexClone Members" Url="html/555687698.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.CortexEntities class">
+    <HelpKINode Title="CortexEntities Class" Url="html/2000004238.htm" />
+    <HelpKINode Title="CortexEntities Members" Url="html/1121758861.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.CortexWCFService interface">
+    <HelpKINode Title="CortexWCFService Interface" Url="html/223401950.htm" />
+    <HelpKINode Title="CortexWCFService Members" Url="html/1747478609.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.CortexWCFServices class">
+    <HelpKINode Title="CortexWCFServices Class" Url="html/1211226078.htm" />
+    <HelpKINode Title="CortexWCFServices Members" Url="html/1183551640.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Currency class">
+    <HelpKINode Title="Currency Class" Url="html/1904875451.htm" />
+    <HelpKINode Title="Currency Members" Url="html/366224883.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Deal class">
+    <HelpKINode Title="Deal Class" Url="html/1444488380.htm" />
+    <HelpKINode Title="Deal Members" Url="html/759303089.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.DealStatus class">
+    <HelpKINode Title="DealStatus Class" Url="html/449085583.htm" />
+    <HelpKINode Title="DealStatus Members" Url="html/772021868.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.DealType class">
+    <HelpKINode Title="DealType Class" Url="html/1738189150.htm" />
+    <HelpKINode Title="DealType Members" Url="html/925539395.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Document class">
+    <HelpKINode Title="Document Class" Url="html/648427074.htm" />
+    <HelpKINode Title="Document Members" Url="html/1020845642.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.DocumentGroup class">
+    <HelpKINode Title="DocumentGroup Class" Url="html/144010338.htm" />
+    <HelpKINode Title="DocumentGroup Members" Url="html/880319365.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Event class">
+    <HelpKINode Title="Event Class" Url="html/1351945727.htm" />
+    <HelpKINode Title="Event Members" Url="html/1817600660.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.EventType class">
+    <HelpKINode Title="EventType Class" Url="html/1335599407.htm" />
+    <HelpKINode Title="EventType Members" Url="html/1225066434.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.IAuditable interface">
+    <HelpKINode Title="IAuditable Interface" Url="html/1389675151.htm" />
+    <HelpKINode Title="IAuditable Members" Url="html/183333378.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.IDeletable interface">
+    <HelpKINode Title="IDeletable Interface" Url="html/644067712.htm" />
+    <HelpKINode Title="IDeletable Members" Url="html/1990388294.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.IId interface">
+    <HelpKINode Title="IId Interface" Url="html/1681855443.htm" />
+    <HelpKINode Title="IId Members" Url="html/1181486677.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.IVersionable interface">
+    <HelpKINode Title="IVersionable Interface" Url="html/268933536.htm" />
+    <HelpKINode Title="IVersionable Members" Url="html/1657817596.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.MapDealAnalyst class">
+    <HelpKINode Title="MapDealAnalyst Class" Url="html/1137468672.htm" />
+    <HelpKINode Title="MapDealAnalyst Members" Url="html/1347131064.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.MergerArb class">
+    <HelpKINode Title="MergerArb Class" Url="html/2114929159.htm" />
+    <HelpKINode Title="MergerArb Members" Url="html/891505091.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.MergerArbNew class">
+    <HelpKINode Title="MergerArbNew Class" Url="html/709735703.htm" />
+    <HelpKINode Title="MergerArbNew Members" Url="html/23906328.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.PredicateBuilder class">
+    <HelpKINode Title="PredicateBuilder Class" Url="html/1946948727.htm" />
+    <HelpKINode Title="PredicateBuilder Members" Url="html/1135180468.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Price class">
+    <HelpKINode Title="Price Class" Url="html/144265166.htm" />
+    <HelpKINode Title="Price Members" Url="html/962943052.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Properties namespace" Url="html/36715298.htm" />
+  <HelpKINode Title="CortexWebService.Properties.Settings class">
+    <HelpKINode Title="Settings Class" Url="html/1854441034.htm" />
+    <HelpKINode Title="Settings Members" Url="html/116480935.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.Security class">
+    <HelpKINode Title="Security Class" Url="html/329134919.htm" />
+    <HelpKINode Title="Security Members" Url="html/650847076.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.SecurityGroup class">
+    <HelpKINode Title="SecurityGroup Class" Url="html/166249075.htm" />
+    <HelpKINode Title="SecurityGroup Members" Url="html/775175538.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.SecurityType class">
+    <HelpKINode Title="SecurityType Class" Url="html/1059096386.htm" />
+    <HelpKINode Title="SecurityType Members" Url="html/1012873647.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.sp_helpdiagramdefinition_Result class">
+    <HelpKINode Title="sp_helpdiagramdefinition_Result Class" Url="html/1262855410.htm" />
+    <HelpKINode Title="sp_helpdiagramdefinition_Result Members" Url="html/325823618.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.sp_helpdiagrams_Result class">
+    <HelpKINode Title="sp_helpdiagrams_Result Class" Url="html/1886394563.htm" />
+    <HelpKINode Title="sp_helpdiagrams_Result Members" Url="html/1512113042.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.StatisticType class">
+    <HelpKINode Title="StatisticType Class" Url="html/1361914458.htm" />
+    <HelpKINode Title="StatisticType Members" Url="html/1371690150.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.sysdiagram class">
+    <HelpKINode Title="sysdiagram Class" Url="html/1131608497.htm" />
+    <HelpKINode Title="sysdiagram Members" Url="html/1872860755.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CortexWebService.vw_DealSecPrice class">
+    <HelpKINode Title="vw_DealSecPrice Class" Url="html/1715755232.htm" />
+    <HelpKINode Title="vw_DealSecPrice Members" Url="html/2048083446.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreatedById property">
+    <HelpKINode Title="CreatedById Property " Url="html/1237631188.htm" />
+    <HelpKINode Title="CreatedById Property " Url="html/1764140576.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreatedDateTime property">
+    <HelpKINode Title="CreatedDateTime Property " Url="html/1642653988.htm" />
+    <HelpKINode Title="CreatedDateTime Property " Url="html/1376764232.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Currencies property" Url="html/543857468.htm" />
+  <HelpKINode Title="Currency class">
+    <HelpKINode Title="Currency Class" Url="html/1904875451.htm" />
+    <HelpKINode Title="Currency Members" Url="html/366224883.htm" />
+    <HelpKINode Title="about Currency class" Url="html/1904875451.htm" />
+    <HelpKINode Title="all members" Url="html/366224883.htm" />
+    <HelpKINode Title="constructor" Url="html/1833981886.htm" />
+    <HelpKINode Title="methods" Url="html/1775556172.htm" />
+    <HelpKINode Title="properties" Url="html/577214590.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Currency property">
+    <HelpKINode Title="Currency Property " Url="html/2083486421.htm" />
+    <HelpKINode Title="Currency Property " Url="html/1108333219.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Currency.Currency constructor" Url="html/1833981886.htm" />
+  <HelpKINode Title="Currency.CurrencyCode property" Url="html/1262619304.htm" />
+  <HelpKINode Title="Currency.CurrencyID property" Url="html/2817706.htm" />
+  <HelpKINode Title="Currency.CurrencyName property" Url="html/1110689062.htm" />
+  <HelpKINode Title="Currency.Deals property" Url="html/719048637.htm" />
+  <HelpKINode Title="Currency.Securities property" Url="html/1332261347.htm" />
+  <HelpKINode Title="CurrencyCode property" Url="html/1262619304.htm" />
+  <HelpKINode Title="CurrencyID property">
+    <HelpKINode Title="CurrencyID Property " Url="html/188457458.htm" />
+    <HelpKINode Title="CurrencyID Property " Url="html/2817706.htm" />
+    <HelpKINode Title="CurrencyID Property " Url="html/1099202831.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CurrencyName property" Url="html/1110689062.htm" />
+  <HelpKINode Title="CurrentPrice property" Url="html/757033310.htm" />
+  <HelpKINode Title="CurrentValuation property" Url="html/259591279.htm" />
+  <HelpKINode Title="Cusip property" Url="html/1900387154.htm" />
+  <HelpKINode Title="Database property" Url="html/1598277727.htm" />
+  <HelpKINode Title="Deal class">
+    <HelpKINode Title="Deal Class" Url="html/1444488380.htm" />
+    <HelpKINode Title="Deal Members" Url="html/759303089.htm" />
+    <HelpKINode Title="about Deal class" Url="html/1444488380.htm" />
+    <HelpKINode Title="all members" Url="html/759303089.htm" />
+    <HelpKINode Title="constructor" Url="html/350349771.htm" />
+    <HelpKINode Title="methods" Url="html/414850661.htm" />
+    <HelpKINode Title="properties" Url="html/1922657249.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Deal property">
+    <HelpKINode Title="Deal Property " Url="html/2010777984.htm" />
+    <HelpKINode Title="Deal Property " Url="html/934959410.htm" />
+    <HelpKINode Title="Deal Property " Url="html/1185173025.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Deal.AcquirerShareholderMeetingEventID property" Url="html/2075312450.htm" />
+  <HelpKINode Title="Deal.Background property" Url="html/82608778.htm" />
+  <HelpKINode Title="Deal.Catalyst property" Url="html/2101765904.htm" />
+  <HelpKINode Title="Deal.Category property" Url="html/1483678800.htm" />
+  <HelpKINode Title="Deal.CategoryID property" Url="html/565891422.htm" />
+  <HelpKINode Title="Deal.Company property" Url="html/775944452.htm" />
+  <HelpKINode Title="Deal.Company1 property" Url="html/55900420.htm" />
+  <HelpKINode Title="Deal.Company2 property" Url="html/1629878532.htm" />
+  <HelpKINode Title="Deal.CompanyID1 property" Url="html/762993451.htm" />
+  <HelpKINode Title="Deal.CompanyID2 property" Url="html/763190059.htm" />
+  <HelpKINode Title="Deal.CompanyID3 property" Url="html/763124523.htm" />
+  <HelpKINode Title="Deal.Comps property" Url="html/426106191.htm" />
+  <HelpKINode Title="Deal.Currency property" Url="html/1108333219.htm" />
+  <HelpKINode Title="Deal.CurrencyID property" Url="html/1099202831.htm" />
+  <HelpKINode Title="Deal.CurrentValuation property" Url="html/259591279.htm" />
+  <HelpKINode Title="Deal.Deal constructor" Url="html/350349771.htm" />
+  <HelpKINode Title="Deal.Deal1 property" Url="html/409381940.htm" />
+  <HelpKINode Title="Deal.DealCurrencyID property" Url="html/802120337.htm" />
+  <HelpKINode Title="Deal.DealID property" Url="html/405449740.htm" />
+  <HelpKINode Title="Deal.Deals1 property" Url="html/408398834.htm" />
+  <HelpKINode Title="Deal.DealStatus property" Url="html/1794114517.htm" />
+  <HelpKINode Title="Deal.DealStatusID property" Url="html/1425822462.htm" />
+  <HelpKINode Title="Deal.DealType property" Url="html/1340614643.htm" />
+  <HelpKINode Title="Deal.DealType1 property" Url="html/212844825.htm" />
+  <HelpKINode Title="Deal.DealTypeID property" Url="html/216776897.htm" />
+  <HelpKINode Title="Deal.Description property" Url="html/1395070725.htm" />
+  <HelpKINode Title="Deal.DocumentGroup property" Url="html/458053479.htm" />
+  <HelpKINode Title="Deal.DocumentGroupID property" Url="html/641463152.htm" />
+  <HelpKINode Title="Deal.Documents property" Url="html/151911928.htm" />
+  <HelpKINode Title="Deal.DownsidePrice property" Url="html/179556705.htm" />
+  <HelpKINode Title="Deal.DownsidePriceValuation property" Url="html/676591715.htm" />
+  <HelpKINode Title="Deal.DropDeadEventID property" Url="html/1403767703.htm" />
+  <HelpKINode Title="Deal.Event property" Url="html/1145209214.htm" />
+  <HelpKINode Title="Deal.Event1 property" Url="html/1142129022.htm" />
+  <HelpKINode Title="Deal.Event2 property" Url="html/1142194558.htm" />
+  <HelpKINode Title="Deal.Event3 property" Url="html/1142260094.htm" />
+  <HelpKINode Title="Deal.Events property" Url="html/1146454398.htm" />
+  <HelpKINode Title="Deal.ExpirationDate property" Url="html/1426156234.htm" />
+  <HelpKINode Title="Deal.InvestmentThesis property" Url="html/1464252117.htm" />
+  <HelpKINode Title="Deal.KeyRisks property" Url="html/114712710.htm" />
+  <HelpKINode Title="Deal.MapDealAnalysts property" Url="html/692797092.htm" />
+  <HelpKINode Title="Deal.MergerAgreementEventID property" Url="html/1768869456.htm" />
+  <HelpKINode Title="Deal.Recommendation property" Url="html/608706030.htm" />
+  <HelpKINode Title="Deal.SecurityGroup property" Url="html/1340242546.htm" />
+  <HelpKINode Title="Deal.SecurityGroupID property" Url="html/1421391203.htm" />
+  <HelpKINode Title="Deal.TargetPrice property" Url="html/892728430.htm" />
+  <HelpKINode Title="Deal.TargetPriceValuation property" Url="html/2063766446.htm" />
+  <HelpKINode Title="Deal.TargetShareholderMeetingEventID property" Url="html/503216488.htm" />
+  <HelpKINode Title="Deal.ValuationMethodology property" Url="html/108611931.htm" />
+  <HelpKINode Title="Deal1 property" Url="html/409381940.htm" />
+  <HelpKINode Title="DealCurrencyID property" Url="html/802120337.htm" />
+  <HelpKINode Title="DealID property">
+    <HelpKINode Title="DealID Property " Url="html/486718172.htm" />
+    <HelpKINode Title="DealID Property " Url="html/442570633.htm" />
+    <HelpKINode Title="DealID Property " Url="html/1633200480.htm" />
+    <HelpKINode Title="DealID Property " Url="html/405449740.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DealId property">
+    <HelpKINode Title="DealId Property " Url="html/39762877.htm" />
+    <HelpKINode Title="DealId Property " Url="html/1959125412.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Deals property">
+    <HelpKINode Title="Deals Property " Url="html/898911046.htm" />
+    <HelpKINode Title="Deals Property " Url="html/633742528.htm" />
+    <HelpKINode Title="Deals Property " Url="html/1802561861.htm" />
+    <HelpKINode Title="Deals Property " Url="html/929650994.htm" />
+    <HelpKINode Title="Deals Property " Url="html/363158963.htm" />
+    <HelpKINode Title="Deals Property " Url="html/719048637.htm" />
+    <HelpKINode Title="Deals Property " Url="html/1430645541.htm" />
+    <HelpKINode Title="Deals Property " Url="html/1266922034.htm" />
+    <HelpKINode Title="Deals Property " Url="html/1345204390.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Deals1 property">
+    <HelpKINode Title="Deals1 Property " Url="html/2012840881.htm" />
+    <HelpKINode Title="Deals1 Property " Url="html/1270002226.htm" />
+    <HelpKINode Title="Deals1 Property " Url="html/1537457544.htm" />
+    <HelpKINode Title="Deals1 Property " Url="html/408398834.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Deals2 property">
+    <HelpKINode Title="Deals2 Property " Url="html/1940742071.htm" />
+    <HelpKINode Title="Deals2 Property " Url="html/2012840882.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Deals3 property" Url="html/374658130.htm" />
+  <HelpKINode Title="DealStatus class">
+    <HelpKINode Title="DealStatus Class" Url="html/449085583.htm" />
+    <HelpKINode Title="DealStatus Members" Url="html/772021868.htm" />
+    <HelpKINode Title="about DealStatus class" Url="html/449085583.htm" />
+    <HelpKINode Title="all members" Url="html/772021868.htm" />
+    <HelpKINode Title="constructor" Url="html/948984293.htm" />
+    <HelpKINode Title="methods" Url="html/1231837047.htm" />
+    <HelpKINode Title="properties" Url="html/1043810580.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DealStatus property" Url="html/1794114517.htm" />
+  <HelpKINode Title="DealStatus.Code property" Url="html/369450194.htm" />
+  <HelpKINode Title="DealStatus.Deals property" Url="html/1802561861.htm" />
+  <HelpKINode Title="DealStatus.DealStatus constructor" Url="html/948984293.htm" />
+  <HelpKINode Title="DealStatus.DealStatusID property" Url="html/351830825.htm" />
+  <HelpKINode Title="DealStatus.Name property" Url="html/1521620420.htm" />
+  <HelpKINode Title="DealStatuses property" Url="html/1241855897.htm" />
+  <HelpKINode Title="DealStatusID property">
+    <HelpKINode Title="DealStatusID Property " Url="html/1425822462.htm" />
+    <HelpKINode Title="DealStatusID Property " Url="html/351830825.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DealType class">
+    <HelpKINode Title="DealType Class" Url="html/1738189150.htm" />
+    <HelpKINode Title="DealType Members" Url="html/925539395.htm" />
+    <HelpKINode Title="about DealType class" Url="html/1738189150.htm" />
+    <HelpKINode Title="all members" Url="html/925539395.htm" />
+    <HelpKINode Title="constructor" Url="html/796298028.htm" />
+    <HelpKINode Title="methods" Url="html/1039146489.htm" />
+    <HelpKINode Title="properties" Url="html/854737410.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DealType property" Url="html/1340614643.htm" />
+  <HelpKINode Title="DealType.Code property" Url="html/270408664.htm" />
+  <HelpKINode Title="DealType.Deals property" Url="html/1266922034.htm" />
+  <HelpKINode Title="DealType.Deals1 property" Url="html/1270002226.htm" />
+  <HelpKINode Title="DealType.DealType constructor" Url="html/796298028.htm" />
+  <HelpKINode Title="DealType.DealTypeID property" Url="html/15191574.htm" />
+  <HelpKINode Title="DealType.Name property" Url="html/1652561002.htm" />
+  <HelpKINode Title="DealType1 property" Url="html/212844825.htm" />
+  <HelpKINode Title="DealTypeID property">
+    <HelpKINode Title="DealTypeID Property " Url="html/216776897.htm" />
+    <HelpKINode Title="DealTypeID Property " Url="html/15191574.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DealTypes property" Url="html/1238627693.htm" />
+  <HelpKINode Title="Default property" Url="html/1918607317.htm" />
+  <HelpKINode Title="defaultInstance field" Url="html/391971750.htm" />
+  <HelpKINode Title="definition property">
+    <HelpKINode Title="definition Property " Url="html/544956381.htm" />
+    <HelpKINode Title="definition Property " Url="html/183168331.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Description property">
+    <HelpKINode Title="Description Property " Url="html/728698315.htm" />
+    <HelpKINode Title="Description Property " Url="html/1362937402.htm" />
+    <HelpKINode Title="Description Property " Url="html/1171165228.htm" />
+    <HelpKINode Title="Description Property " Url="html/1395070725.htm" />
+    <HelpKINode Title="Description Property " Url="html/1193488995.htm" />
+    <HelpKINode Title="Description Property " Url="html/1928667223.htm" />
+    <HelpKINode Title="Description Property " Url="html/620248510.htm" />
+    <HelpKINode Title="Description Property " Url="html/1813886728.htm" />
+  </HelpKINode>
+  <HelpKINode Title="diagram_id property" Url="html/1438172190.htm" />
+  <HelpKINode Title="Document class">
+    <HelpKINode Title="Document Class" Url="html/648427074.htm" />
+    <HelpKINode Title="Document Members" Url="html/1020845642.htm" />
+    <HelpKINode Title="about Document class" Url="html/648427074.htm" />
+    <HelpKINode Title="all members" Url="html/1020845642.htm" />
+    <HelpKINode Title="constructor" Url="html/1313800761.htm" />
+    <HelpKINode Title="methods" Url="html/726586355.htm" />
+    <HelpKINode Title="properties" Url="html/66626757.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Document property" Url="html/1892533049.htm" />
+  <HelpKINode Title="Document.Deal property" Url="html/2010777984.htm" />
+  <HelpKINode Title="Document.DealId property" Url="html/39762877.htm" />
+  <HelpKINode Title="Document.Description property" Url="html/728698315.htm" />
+  <HelpKINode Title="Document.Document constructor" Url="html/1313800761.htm" />
+  <HelpKINode Title="Document.DocumentGroups property" Url="html/1911028857.htm" />
+  <HelpKINode Title="Document.DocumentGroups1 property" Url="html/922068874.htm" />
+  <HelpKINode Title="Document.DocumentGroups2 property" Url="html/518784347.htm" />
+  <HelpKINode Title="Document.DocumentID property" Url="html/1922782035.htm" />
+  <HelpKINode Title="Document.Name property" Url="html/243822010.htm" />
+  <HelpKINode Title="Document.URI property" Url="html/493484025.htm" />
+  <HelpKINode Title="Document1 property" Url="html/1893516089.htm" />
+  <HelpKINode Title="Document2 property" Url="html/1893712697.htm" />
+  <HelpKINode Title="DocumentGroup class">
+    <HelpKINode Title="DocumentGroup Class" Url="html/144010338.htm" />
+    <HelpKINode Title="DocumentGroup Members" Url="html/880319365.htm" />
+    <HelpKINode Title="about DocumentGroup class" Url="html/144010338.htm" />
+    <HelpKINode Title="all members" Url="html/880319365.htm" />
+    <HelpKINode Title="constructor" Url="html/935594949.htm" />
+    <HelpKINode Title="methods" Url="html/1999004925.htm" />
+    <HelpKINode Title="properties" Url="html/851309353.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DocumentGroup property" Url="html/458053479.htm" />
+  <HelpKINode Title="DocumentGroup.Deals property" Url="html/898911046.htm" />
+  <HelpKINode Title="DocumentGroup.Document property" Url="html/1892533049.htm" />
+  <HelpKINode Title="DocumentGroup.Document1 property" Url="html/1893516089.htm" />
+  <HelpKINode Title="DocumentGroup.Document2 property" Url="html/1893712697.htm" />
+  <HelpKINode Title="DocumentGroup.DocumentGroup constructor" Url="html/935594949.htm" />
+  <HelpKINode Title="DocumentGroup.DocumentGroupID property" Url="html/1303201768.htm" />
+  <HelpKINode Title="DocumentGroup.DocumentID1 property" Url="html/613043792.htm" />
+  <HelpKINode Title="DocumentGroup.DocumentID2 property" Url="html/2107945392.htm" />
+  <HelpKINode Title="DocumentGroup.DocumentID3 property" Url="html/230706768.htm" />
+  <HelpKINode Title="DocumentGroupID property">
+    <HelpKINode Title="DocumentGroupID Property " Url="html/1303201768.htm" />
+    <HelpKINode Title="DocumentGroupID Property " Url="html/641463152.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DocumentGroups property">
+    <HelpKINode Title="DocumentGroups Property " Url="html/553471433.htm" />
+    <HelpKINode Title="DocumentGroups Property " Url="html/1911028857.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DocumentGroups1 property" Url="html/922068874.htm" />
+  <HelpKINode Title="DocumentGroups2 property" Url="html/518784347.htm" />
+  <HelpKINode Title="DocumentID property" Url="html/1922782035.htm" />
+  <HelpKINode Title="DocumentID1 property" Url="html/613043792.htm" />
+  <HelpKINode Title="DocumentID2 property" Url="html/2107945392.htm" />
+  <HelpKINode Title="DocumentID3 property" Url="html/230706768.htm" />
+  <HelpKINode Title="Documents property">
+    <HelpKINode Title="Documents Property " Url="html/151911928.htm" />
+    <HelpKINode Title="Documents Property " Url="html/347614728.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DomainCredential property" Url="html/359474663.htm" />
+  <HelpKINode Title="DownsidePrice property">
+    <HelpKINode Title="DownsidePrice Property " Url="html/1238815493.htm" />
+    <HelpKINode Title="DownsidePrice Property " Url="html/179556705.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DownsidePriceValuation property" Url="html/676591715.htm" />
+  <HelpKINode Title="DropDeadEventID property" Url="html/1403767703.htm" />
+  <HelpKINode Title="EditedById property">
+    <HelpKINode Title="EditedById Property " Url="html/463140833.htm" />
+    <HelpKINode Title="EditedById Property " Url="html/1587662684.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EditedDateTime property">
+    <HelpKINode Title="EditedDateTime Property " Url="html/643392363.htm" />
+    <HelpKINode Title="EditedDateTime Property " Url="html/1808560397.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Event class">
+    <HelpKINode Title="Event Class" Url="html/1351945727.htm" />
+    <HelpKINode Title="Event Members" Url="html/1817600660.htm" />
+    <HelpKINode Title="about Event class" Url="html/1351945727.htm" />
+    <HelpKINode Title="all members" Url="html/1817600660.htm" />
+    <HelpKINode Title="constructor" Url="html/662256823.htm" />
+    <HelpKINode Title="methods" Url="html/743311240.htm" />
+    <HelpKINode Title="properties" Url="html/1756309406.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Event property" Url="html/1145209214.htm" />
+  <HelpKINode Title="Event.Deal property" Url="html/934959410.htm" />
+  <HelpKINode Title="Event.DealID property" Url="html/442570633.htm" />
+  <HelpKINode Title="Event.Deals property" Url="html/929650994.htm" />
+  <HelpKINode Title="Event.Deals1 property" Url="html/1537457544.htm" />
+  <HelpKINode Title="Event.Deals2 property" Url="html/1940742071.htm" />
+  <HelpKINode Title="Event.Deals3 property" Url="html/374658130.htm" />
+  <HelpKINode Title="Event.Description property" Url="html/1362937402.htm" />
+  <HelpKINode Title="Event.Event constructor" Url="html/662256823.htm" />
+  <HelpKINode Title="Event.EventDate property" Url="html/2121064121.htm" />
+  <HelpKINode Title="Event.EventID property" Url="html/1879684087.htm" />
+  <HelpKINode Title="Event.EventType property" Url="html/120744691.htm" />
+  <HelpKINode Title="Event.EventTypeID property" Url="html/773910128.htm" />
+  <HelpKINode Title="Event.Note property" Url="html/1718525337.htm" />
+  <HelpKINode Title="Event1 property" Url="html/1142129022.htm" />
+  <HelpKINode Title="Event2 property" Url="html/1142194558.htm" />
+  <HelpKINode Title="Event3 property" Url="html/1142260094.htm" />
+  <HelpKINode Title="EventDate property" Url="html/2121064121.htm" />
+  <HelpKINode Title="EventID property" Url="html/1879684087.htm" />
+  <HelpKINode Title="Events property">
+    <HelpKINode Title="Events Property " Url="html/1146454398.htm" />
+    <HelpKINode Title="Events Property " Url="html/980428962.htm" />
+    <HelpKINode Title="Events Property " Url="html/2128438615.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EventType class">
+    <HelpKINode Title="EventType Class" Url="html/1335599407.htm" />
+    <HelpKINode Title="EventType Members" Url="html/1225066434.htm" />
+    <HelpKINode Title="about EventType class" Url="html/1335599407.htm" />
+    <HelpKINode Title="all members" Url="html/1225066434.htm" />
+    <HelpKINode Title="constructor" Url="html/26455944.htm" />
+    <HelpKINode Title="methods" Url="html/754452088.htm" />
+    <HelpKINode Title="properties" Url="html/1348867894.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EventType property" Url="html/120744691.htm" />
+  <HelpKINode Title="EventType.Code property" Url="html/1959201465.htm" />
+  <HelpKINode Title="EventType.Description property" Url="html/1813886728.htm" />
+  <HelpKINode Title="EventType.Events property" Url="html/980428962.htm" />
+  <HelpKINode Title="EventType.EventType constructor" Url="html/26455944.htm" />
+  <HelpKINode Title="EventType.EventTypeID property" Url="html/1926504493.htm" />
+  <HelpKINode Title="EventType.Name property" Url="html/890928299.htm" />
+  <HelpKINode Title="EventTypeID property">
+    <HelpKINode Title="EventTypeID Property " Url="html/773910128.htm" />
+    <HelpKINode Title="EventTypeID Property " Url="html/1926504493.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EventTypes property" Url="html/1151192314.htm" />
+  <HelpKINode Title="ExpirationDate property">
+    <HelpKINode Title="ExpirationDate Property " Url="html/1426156234.htm" />
+    <HelpKINode Title="ExpirationDate Property " Url="html/1446748947.htm" />
+  </HelpKINode>
+  <HelpKINode Title="False(Of T) method" Url="html/1389348049.htm" />
+  <HelpKINode Title="False&lt;T&gt; method" Url="html/1389348049.htm" />
+  <HelpKINode Title="Field_Name property" Url="html/1986273196.htm" />
+  <HelpKINode Title="Field_Type property" Url="html/1606551705.htm" />
+  <HelpKINode Title="Field_Updated property" Url="html/2077994688.htm" />
+  <HelpKINode Title="Field_Value property" Url="html/1071575429.htm" />
+  <HelpKINode Title="filterDealResultsByAnalyst method" Url="html/1808356697.htm" />
+  <HelpKINode Title="getAnalyst method">
+    <HelpKINode Title="getAnalyst Method " Url="html/651048575.htm" />
+    <HelpKINode Title="getAnalyst Method " Url="html/1100859122.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getAnalystByName method">
+    <HelpKINode Title="getAnalystByName Method " Url="html/502831712.htm" />
+    <HelpKINode Title="getAnalystByName Method " Url="html/519625122.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getAnalysts method">
+    <HelpKINode Title="getAnalysts Method " Url="html/9014641.htm" />
+    <HelpKINode Title="getAnalysts Method " Url="html/587963000.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getAnnualCompanyStatistic method">
+    <HelpKINode Title="getAnnualCompanyStatistic Method " Url="html/1220436566.htm" />
+    <HelpKINode Title="getAnnualCompanyStatistic Method " Url="html/512047700.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCategories method">
+    <HelpKINode Title="getCategories Method " Url="html/1559814405.htm" />
+    <HelpKINode Title="getCategories Method " Url="html/288641500.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCategoriesByClass method">
+    <HelpKINode Title="getCategoriesByClass Method " Url="html/576007821.htm" />
+    <HelpKINode Title="getCategoriesByClass Method " Url="html/1959864760.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCategoriesByName method">
+    <HelpKINode Title="getCategoriesByName Method " Url="html/986493516.htm" />
+    <HelpKINode Title="getCategoriesByName Method " Url="html/959888022.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCategory method">
+    <HelpKINode Title="getCategory Method " Url="html/612413475.htm" />
+    <HelpKINode Title="getCategory Method " Url="html/65819232.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCategoryClasses method">
+    <HelpKINode Title="getCategoryClasses Method " Url="html/1686602589.htm" />
+    <HelpKINode Title="getCategoryClasses Method " Url="html/1834968354.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCompanies method">
+    <HelpKINode Title="getCompanies Method " Url="html/815091309.htm" />
+    <HelpKINode Title="getCompanies Method " Url="html/248174919.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCompany method">
+    <HelpKINode Title="getCompany Method " Url="html/105098514.htm" />
+    <HelpKINode Title="getCompany Method " Url="html/86781020.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCompanyAssociation method">
+    <HelpKINode Title="getCompanyAssociation Method " Url="html/1528425534.htm" />
+    <HelpKINode Title="getCompanyAssociation Method " Url="html/111982324.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCompanyByName method">
+    <HelpKINode Title="getCompanyByName Method " Url="html/55431221.htm" />
+    <HelpKINode Title="getCompanyByName Method " Url="html/1005186495.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCurrencies method">
+    <HelpKINode Title="getCurrencies Method " Url="html/1173931924.htm" />
+    <HelpKINode Title="getCurrencies Method " Url="html/1734688776.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCurrency method">
+    <HelpKINode Title="getCurrency Method " Url="html/29724617.htm" />
+    <HelpKINode Title="getCurrency Method " Url="html/1625367964.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getCurrencyByCodeOrName method">
+    <HelpKINode Title="getCurrencyByCodeOrName Method " Url="html/274192018.htm" />
+    <HelpKINode Title="getCurrencyByCodeOrName Method " Url="html/1470295555.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetCurrentDate method">
+    <HelpKINode Title="GetCurrentDate Method " Url="html/43885033.htm" />
+    <HelpKINode Title="GetCurrentDate Method " Url="html/826326228.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDeal method">
+    <HelpKINode Title="getDeal Method " Url="html/247364519.htm" />
+    <HelpKINode Title="getDeal Method " Url="html/24197885.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealByAnalyst method">
+    <HelpKINode Title="getDealByAnalyst Method " Url="html/756835518.htm" />
+    <HelpKINode Title="getDealByAnalyst Method " Url="html/1548052503.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealByCompany method">
+    <HelpKINode Title="getDealByCompany Method " Url="html/1898720096.htm" />
+    <HelpKINode Title="getDealByCompany Method " Url="html/672022595.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealByDate method">
+    <HelpKINode Title="getDealByDate Method " Url="html/1366547169.htm" />
+    <HelpKINode Title="getDealByDate Method " Url="html/789505207.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealByStatus method">
+    <HelpKINode Title="getDealByStatus Method " Url="html/1047928816.htm" />
+    <HelpKINode Title="getDealByStatus Method " Url="html/1097501291.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealList method">
+    <HelpKINode Title="getDealList Method " Url="html/645444864.htm" />
+    <HelpKINode Title="getDealList Method " Url="html/573037165.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDeals method">
+    <HelpKINode Title="getDeals Method " Url="html/395001889.htm" />
+    <HelpKINode Title="getDeals Method " Url="html/523602392.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealsByCategory method">
+    <HelpKINode Title="getDealsByCategory Method " Url="html/737217942.htm" />
+    <HelpKINode Title="getDealsByCategory Method " Url="html/602720000.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealsByCategoryClass method">
+    <HelpKINode Title="getDealsByCategoryClass Method " Url="html/778122819.htm" />
+    <HelpKINode Title="getDealsByCategoryClass Method " Url="html/1135313713.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealsByCriteria method">
+    <HelpKINode Title="getDealsByCriteria Method " Url="html/1717271317.htm" />
+    <HelpKINode Title="getDealsByCriteria Method " Url="html/566093999.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealsByDescription method">
+    <HelpKINode Title="getDealsByDescription Method " Url="html/1176903204.htm" />
+    <HelpKINode Title="getDealsByDescription Method " Url="html/929330615.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealStatus method">
+    <HelpKINode Title="getDealStatus Method " Url="html/1261011617.htm" />
+    <HelpKINode Title="getDealStatus Method " Url="html/1326131820.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealStatusByName method">
+    <HelpKINode Title="getDealStatusByName Method " Url="html/1198755560.htm" />
+    <HelpKINode Title="getDealStatusByName Method " Url="html/1353029485.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealStatuses method">
+    <HelpKINode Title="getDealStatuses Method " Url="html/414100879.htm" />
+    <HelpKINode Title="getDealStatuses Method " Url="html/918440326.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealTeam method">
+    <HelpKINode Title="getDealTeam Method " Url="html/2022905343.htm" />
+    <HelpKINode Title="getDealTeam Method " Url="html/1345670071.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDealType method">
+    <HelpKINode Title="getDealType Method " Url="html/526754727.htm" />
+    <HelpKINode Title="getDealType Method " Url="html/1208880498.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDocument method">
+    <HelpKINode Title="getDocument Method " Url="html/1300553277.htm" />
+    <HelpKINode Title="getDocument Method " Url="html/769505375.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDocumentByName method">
+    <HelpKINode Title="getDocumentByName Method " Url="html/2088353907.htm" />
+    <HelpKINode Title="getDocumentByName Method " Url="html/2061065728.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDocumentGroup method">
+    <HelpKINode Title="getDocumentGroup Method " Url="html/272056271.htm" />
+    <HelpKINode Title="getDocumentGroup Method " Url="html/1138612702.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getDocumentsByDeal method">
+    <HelpKINode Title="getDocumentsByDeal Method " Url="html/1000552495.htm" />
+    <HelpKINode Title="getDocumentsByDeal Method " Url="html/273209033.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getEvent method">
+    <HelpKINode Title="getEvent Method " Url="html/286295878.htm" />
+    <HelpKINode Title="getEvent Method " Url="html/662630367.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getEventsByDeal method">
+    <HelpKINode Title="getEventsByDeal Method " Url="html/2087343800.htm" />
+    <HelpKINode Title="getEventsByDeal Method " Url="html/1061166244.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getEventType method">
+    <HelpKINode Title="getEventType Method " Url="html/1630942135.htm" />
+    <HelpKINode Title="getEventType Method " Url="html/966714039.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getEventTypes method">
+    <HelpKINode Title="getEventTypes Method " Url="html/1601830562.htm" />
+    <HelpKINode Title="getEventTypes Method " Url="html/1619365057.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastCompany method">
+    <HelpKINode Title="getLastCompany Method " Url="html/415316776.htm" />
+    <HelpKINode Title="getLastCompany Method " Url="html/611227977.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastCompanyAssociation method">
+    <HelpKINode Title="getLastCompanyAssociation Method " Url="html/1319104622.htm" />
+    <HelpKINode Title="getLastCompanyAssociation Method " Url="html/792041068.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastDeal method">
+    <HelpKINode Title="getLastDeal Method " Url="html/996801043.htm" />
+    <HelpKINode Title="getLastDeal Method " Url="html/684147271.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastDocument method">
+    <HelpKINode Title="getLastDocument Method " Url="html/896060754.htm" />
+    <HelpKINode Title="getLastDocument Method " Url="html/273848531.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastDocumentGroup method">
+    <HelpKINode Title="getLastDocumentGroup Method " Url="html/1110317214.htm" />
+    <HelpKINode Title="getLastDocumentGroup Method " Url="html/699673406.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastEvent method">
+    <HelpKINode Title="getLastEvent Method " Url="html/1197335382.htm" />
+    <HelpKINode Title="getLastEvent Method " Url="html/751318095.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastSecurity method">
+    <HelpKINode Title="getLastSecurity Method " Url="html/1317364810.htm" />
+    <HelpKINode Title="getLastSecurity Method " Url="html/431000002.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getLastSecurityGroup method">
+    <HelpKINode Title="getLastSecurityGroup Method " Url="html/1617883375.htm" />
+    <HelpKINode Title="getLastSecurityGroup Method " Url="html/1930250124.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getMapDealAnalyst method">
+    <HelpKINode Title="getMapDealAnalyst Method " Url="html/1266014292.htm" />
+    <HelpKINode Title="getMapDealAnalyst Method " Url="html/1515742670.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getMergerArb method">
+    <HelpKINode Title="getMergerArb Method " Url="html/297423125.htm" />
+    <HelpKINode Title="getMergerArb Method " Url="html/2102217220.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getMergerArbByDealId method">
+    <HelpKINode Title="getMergerArbByDealId Method " Url="html/968019021.htm" />
+    <HelpKINode Title="getMergerArbByDealId Method " Url="html/1305662805.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getMergerArbNewByDealId method">
+    <HelpKINode Title="getMergerArbNewByDealId Method " Url="html/1398529294.htm" />
+    <HelpKINode Title="getMergerArbNewByDealId Method " Url="html/357633397.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getMergerArbNewByValue method">
+    <HelpKINode Title="getMergerArbNewByValue Method " Url="html/2103637245.htm" />
+    <HelpKINode Title="getMergerArbNewByValue Method " Url="html/131437265.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getPrice method">
+    <HelpKINode Title="getPrice Method " Url="html/188939393.htm" />
+    <HelpKINode Title="getPrice Method " Url="html/1437290272.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getSecurities method">
+    <HelpKINode Title="getSecurities Method " Url="html/50949453.htm" />
+    <HelpKINode Title="getSecurities Method " Url="html/718463698.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getSecurity method">
+    <HelpKINode Title="getSecurity Method " Url="html/1746762297.htm" />
+    <HelpKINode Title="getSecurity Method " Url="html/820234995.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getSecurityByCode method">
+    <HelpKINode Title="getSecurityByCode Method " Url="html/433625154.htm" />
+    <HelpKINode Title="getSecurityByCode Method " Url="html/154995670.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getSecurityGroup method">
+    <HelpKINode Title="getSecurityGroup Method " Url="html/452025787.htm" />
+    <HelpKINode Title="getSecurityGroup Method " Url="html/942358651.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getSecurityGroupBySecurity1 method">
+    <HelpKINode Title="getSecurityGroupBySecurity1 Method " Url="html/713071655.htm" />
+    <HelpKINode Title="getSecurityGroupBySecurity1 Method " Url="html/1352800827.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getSecurityType method">
+    <HelpKINode Title="getSecurityType Method " Url="html/1006600302.htm" />
+    <HelpKINode Title="getSecurityType Method " Url="html/819136381.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getSecurityTypes method">
+    <HelpKINode Title="getSecurityTypes Method " Url="html/1772788806.htm" />
+    <HelpKINode Title="getSecurityTypes Method " Url="html/1418573964.htm" />
+  </HelpKINode>
+  <HelpKINode Title="getStatisticType method">
+    <HelpKINode Title="getStatisticType Method " Url="html/180303012.htm" />
+    <HelpKINode Title="getStatisticType Method " Url="html/1801754999.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAuditable interface">
+    <HelpKINode Title="IAuditable Interface" Url="html/1389675151.htm" />
+    <HelpKINode Title="IAuditable Members" Url="html/183333378.htm" />
+    <HelpKINode Title="about IAuditable interface" Url="html/1389675151.htm" />
+    <HelpKINode Title="all members" Url="html/183333378.htm" />
+    <HelpKINode Title="methods" Url="html/782896084.htm" />
+    <HelpKINode Title="properties" Url="html/1575717532.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAuditable.CreatedById property" Url="html/1764140576.htm" />
+  <HelpKINode Title="IAuditable.CreatedDateTime property" Url="html/1376764232.htm" />
+  <HelpKINode Title="IAuditable.EditedById property" Url="html/463140833.htm" />
+  <HelpKINode Title="IAuditable.EditedDateTime property" Url="html/643392363.htm" />
+  <HelpKINode Title="Id property">
+    <HelpKINode Title="Id Property " Url="html/1852136310.htm" />
+    <HelpKINode Title="Id Property " Url="html/481619176.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ID property">
+    <HelpKINode Title="ID Property " Url="html/554847374.htm" />
+    <HelpKINode Title="ID Property " Url="html/1060578091.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDeletable interface">
+    <HelpKINode Title="IDeletable Interface" Url="html/644067712.htm" />
+    <HelpKINode Title="IDeletable Members" Url="html/1990388294.htm" />
+    <HelpKINode Title="about IDeletable interface" Url="html/644067712.htm" />
+    <HelpKINode Title="all members" Url="html/1990388294.htm" />
+    <HelpKINode Title="methods" Url="html/1565630290.htm" />
+    <HelpKINode Title="properties" Url="html/813600040.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDeletable.IsDeleted property" Url="html/1414399410.htm" />
+  <HelpKINode Title="IId interface">
+    <HelpKINode Title="IId Interface" Url="html/1681855443.htm" />
+    <HelpKINode Title="IId Members" Url="html/1181486677.htm" />
+    <HelpKINode Title="about IId interface" Url="html/1681855443.htm" />
+    <HelpKINode Title="all members" Url="html/1181486677.htm" />
+    <HelpKINode Title="methods" Url="html/287414629.htm" />
+    <HelpKINode Title="properties" Url="html/101102309.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IId.Id property" Url="html/481619176.htm" />
+  <HelpKINode Title="InvestmentThesis property" Url="html/1464252117.htm" />
+  <HelpKINode Title="IsDeleted property">
+    <HelpKINode Title="IsDeleted Property " Url="html/1493949354.htm" />
+    <HelpKINode Title="IsDeleted Property " Url="html/1414399410.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Isin property" Url="html/1555461642.htm" />
+  <HelpKINode Title="IsLeadAnalyst property" Url="html/1067409432.htm" />
+  <HelpKINode Title="IVersionable interface">
+    <HelpKINode Title="IVersionable Interface" Url="html/268933536.htm" />
+    <HelpKINode Title="IVersionable Members" Url="html/1657817596.htm" />
+    <HelpKINode Title="about IVersionable interface" Url="html/268933536.htm" />
+    <HelpKINode Title="all members" Url="html/1657817596.htm" />
+    <HelpKINode Title="methods" Url="html/1332048646.htm" />
+    <HelpKINode Title="properties" Url="html/618581920.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IVersionable.Version property" Url="html/56445039.htm" />
+  <HelpKINode Title="KeyRisks property" Url="html/114712710.htm" />
+  <HelpKINode Title="LastAccessDateTime property" Url="html/1867359089.htm" />
+  <HelpKINode Title="Login property" Url="html/1147645964.htm" />
+  <HelpKINode Title="MachineAddress property" Url="html/1483689850.htm" />
+  <HelpKINode Title="MapDealAnalyst class">
+    <HelpKINode Title="MapDealAnalyst Class" Url="html/1137468672.htm" />
+    <HelpKINode Title="MapDealAnalyst Members" Url="html/1347131064.htm" />
+    <HelpKINode Title="about MapDealAnalyst class" Url="html/1137468672.htm" />
+    <HelpKINode Title="all members" Url="html/1347131064.htm" />
+    <HelpKINode Title="methods" Url="html/843184763.htm" />
+    <HelpKINode Title="properties" Url="html/2068500189.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MapDealAnalyst.Analyst property" Url="html/332979346.htm" />
+  <HelpKINode Title="MapDealAnalyst.AnalystID property" Url="html/1403136637.htm" />
+  <HelpKINode Title="MapDealAnalyst.Deal property" Url="html/1185173025.htm" />
+  <HelpKINode Title="MapDealAnalyst.DealID property" Url="html/1633200480.htm" />
+  <HelpKINode Title="MapDealAnalyst.IsLeadAnalyst property" Url="html/1067409432.htm" />
+  <HelpKINode Title="MapDealAnalyst.MapDealAnalystID property" Url="html/496044815.htm" />
+  <HelpKINode Title="MapDealAnalystID property" Url="html/496044815.htm" />
+  <HelpKINode Title="MapDealAnalysts property">
+    <HelpKINode Title="MapDealAnalysts Property " Url="html/2064946309.htm" />
+    <HelpKINode Title="MapDealAnalysts Property " Url="html/1551268505.htm" />
+    <HelpKINode Title="MapDealAnalysts Property " Url="html/692797092.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MergerAgreementEventID property" Url="html/1768869456.htm" />
+  <HelpKINode Title="MergerArb class">
+    <HelpKINode Title="MergerArb Class" Url="html/2114929159.htm" />
+    <HelpKINode Title="MergerArb Members" Url="html/891505091.htm" />
+    <HelpKINode Title="about MergerArb class" Url="html/2114929159.htm" />
+    <HelpKINode Title="all members" Url="html/891505091.htm" />
+    <HelpKINode Title="methods" Url="html/1369249200.htm" />
+    <HelpKINode Title="properties" Url="html/1246120053.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MergerArb.C000_DealId__Required_ property" Url="html/1632861304.htm" />
+  <HelpKINode Title="MergerArb.C001_Deal_Name__Required_ property" Url="html/1535552636.htm" />
+  <HelpKINode Title="MergerArb.C002_Target_Ticker__Required_ property" Url="html/426972036.htm" />
+  <HelpKINode Title="MergerArb.C003_Target_Name__Required_ property" Url="html/937094679.htm" />
+  <HelpKINode Title="MergerArb.C004_Acquirer_Ticker__Required_ property" Url="html/550598240.htm" />
+  <HelpKINode Title="MergerArb.C005_Acquirer_Name__Required_ property" Url="html/655126004.htm" />
+  <HelpKINode Title="MergerArb.C006_File_Name_Path__Required_ property" Url="html/1699294488.htm" />
+  <HelpKINode Title="MergerArb.C008_Target_Shares_Owned__Required_ property" Url="html/325180566.htm" />
+  <HelpKINode Title="MergerArb.C009_Acquirer_Shares_Owned__Required_ property" Url="html/12206073.htm" />
+  <HelpKINode Title="MergerArb.C011_Key_Notes_1__Required_ property" Url="html/1820606434.htm" />
+  <HelpKINode Title="MergerArb.C012_Key_Notes_2__Required_ property" Url="html/2058753892.htm" />
+  <HelpKINode Title="MergerArb.C013_Key_Notes_3__Required_ property" Url="html/1553266266.htm" />
+  <HelpKINode Title="MergerArb.C014_Pricing_Period__Required_ property" Url="html/1716445227.htm" />
+  <HelpKINode Title="MergerArb.C015_Target_Earnings_Date__Required_ property" Url="html/1176590422.htm" />
+  <HelpKINode Title="MergerArb.C016_Acquirer_Earnings_Date__Required_ property" Url="html/1077579262.htm" />
+  <HelpKINode Title="MergerArb.C017_Key_Dates__Required_ property" Url="html/1989818502.htm" />
+  <HelpKINode Title="MergerArb.C019_Stated_Cash_Terms__Optional_ property" Url="html/657695560.htm" />
+  <HelpKINode Title="MergerArb.C020_Stated_Stock_Exchange_Ratio__Optional_ property" Url="html/2125190039.htm" />
+  <HelpKINode Title="MergerArb.C021_Cash_Prorate__Optional_ property" Url="html/1034916518.htm" />
+  <HelpKINode Title="MergerArb.C022_Stock_Prorate__Optional_ property" Url="html/2117061883.htm" />
+  <HelpKINode Title="MergerArb.C023_Hedge_Ratio__Required_ property" Url="html/329510787.htm" />
+  <HelpKINode Title="MergerArb.C024_Cash_Terms__Required_ property" Url="html/2033532970.htm" />
+  <HelpKINode Title="MergerArb.C025_Stock_Exchange_Ratio__Required_ property" Url="html/1625273995.htm" />
+  <HelpKINode Title="MergerArb.C027_Target_Price_in_Local_Currency__Required_ property" Url="html/1813862644.htm" />
+  <HelpKINode Title="MergerArb.C028_Acquirer_Price_in_Local_Currency__Required_ property" Url="html/1342946643.htm" />
+  <HelpKINode Title="MergerArb.C029_Target_Price_in_Deal_Currency__Required_ property" Url="html/1547091306.htm" />
+  <HelpKINode Title="MergerArb.C030_Acquirer_Price_in_Deal_Currency__Required_ property" Url="html/1345377767.htm" />
+  <HelpKINode Title="MergerArb.C032_Target_Currency__Required_ property" Url="html/1803790849.htm" />
+  <HelpKINode Title="MergerArb.C033_Acquirer_Currency__Required_ property" Url="html/1088853279.htm" />
+  <HelpKINode Title="MergerArb.C034_Deal_Currency__Required_ property" Url="html/654880350.htm" />
+  <HelpKINode Title="MergerArb.C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_ property" Url="html/542889154.htm" />
+  <HelpKINode Title="MergerArb.C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_ property" Url="html/1169235682.htm" />
+  <HelpKINode Title="MergerArb.C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_ property" Url="html/1810084290.htm" />
+  <HelpKINode Title="MergerArb.C039_Today__Optional_ property" Url="html/1918407439.htm" />
+  <HelpKINode Title="MergerArb.C040_Announced_Date__Required_ property" Url="html/1608575829.htm" />
+  <HelpKINode Title="MergerArb.C041_Estimated_Close_Date__Optional_ property" Url="html/867555527.htm" />
+  <HelpKINode Title="MergerArb.C042_Potential_Days_Delayed__Optional_ property" Url="html/305007803.htm" />
+  <HelpKINode Title="MergerArb.C043_Days_to_Close__Optional_ property" Url="html/1412249978.htm" />
+  <HelpKINode Title="MergerArb.C044_Close_Date__Required_ property" Url="html/1630396400.htm" />
+  <HelpKINode Title="MergerArb.C046_Total_Consideration__Optional_ property" Url="html/1072866761.htm" />
+  <HelpKINode Title="MergerArb.C047_Gross_Spread__Required_ property" Url="html/669972967.htm" />
+  <HelpKINode Title="MergerArb.C048_Net_Spread_before_Leverage__Required_ property" Url="html/898421431.htm" />
+  <HelpKINode Title="MergerArb.C049_Cost_of_Leverage__Optional_ property" Url="html/1674385234.htm" />
+  <HelpKINode Title="MergerArb.C050_Net_Dividends__Required_ property" Url="html/17092290.htm" />
+  <HelpKINode Title="MergerArb.C051_Short_Rebates__Optional_ property" Url="html/1526890617.htm" />
+  <HelpKINode Title="MergerArb.C052_Net_Spread__Required_ property" Url="html/2023791012.htm" />
+  <HelpKINode Title="MergerArb.C053_Hypothetical_Targeted_Net_Spread__Required_ property" Url="html/1834217752.htm" />
+  <HelpKINode Title="MergerArb.C054_Hypothetical_Unwind_Net_Spread__Required_ property" Url="html/1671575811.htm" />
+  <HelpKINode Title="MergerArb.C055_Theoretical_Spread_collar__Required_ property" Url="html/176510306.htm" />
+  <HelpKINode Title="MergerArb.C057_Gross_Return__Optional_ property" Url="html/1746944875.htm" />
+  <HelpKINode Title="MergerArb.C058_Annualized_ROR__Required_ property" Url="html/843527020.htm" />
+  <HelpKINode Title="MergerArb.C059_Hypothetical_Targeted_Annualized_Return__Required_ property" Url="html/714240548.htm" />
+  <HelpKINode Title="MergerArb.C060_Hypothetical_Unwind_Annualized_Return__Required_ property" Url="html/165550229.htm" />
+  <HelpKINode Title="MergerArb.C061_Theoretical_Annualized_Return_collar__Required_ property" Url="html/1194367301.htm" />
+  <HelpKINode Title="MergerArb.C063_Commission_Cost_per_Share__Optional_ property" Url="html/1927914079.htm" />
+  <HelpKINode Title="MergerArb.C064_Long_Financing_Rate__Optional_ property" Url="html/458006756.htm" />
+  <HelpKINode Title="MergerArb.C065_Short_Rebate__Optional_ property" Url="html/1943013834.htm" />
+  <HelpKINode Title="MergerArb.C066_Long_Margin_Required__Optional_ property" Url="html/2118128865.htm" />
+  <HelpKINode Title="MergerArb.C067_Short_Margin_Required__Optional_ property" Url="html/940415458.htm" />
+  <HelpKINode Title="MergerArb.C069_Target_Ex_Dividend_Date__Required_ property" Url="html/1129761362.htm" />
+  <HelpKINode Title="MergerArb.C070_Aquirer_Ex_Dividend_Date__Required_ property" Url="html/1742763016.htm" />
+  <HelpKINode Title="MergerArb.C071_Target_Dividend_Projected_or_Declared__Required_ property" Url="html/1570389081.htm" />
+  <HelpKINode Title="MergerArb.C072_Acquirer_Dividend_Projected_or_Declared__Required_ property" Url="html/822803591.htm" />
+  <HelpKINode Title="MergerArb.C073_Number_of_Target_Dividends__Required_ property" Url="html/431037161.htm" />
+  <HelpKINode Title="MergerArb.C074_Number_of_Acquirer_Dividends__Required_ property" Url="html/160042178.htm" />
+  <HelpKINode Title="MergerArb.C075_Target_Dividend_Quarterly_Amount__Required_ property" Url="html/835489721.htm" />
+  <HelpKINode Title="MergerArb.C076_Acquirer_Dividend_Quarterly_Amount__Required_ property" Url="html/1515889998.htm" />
+  <HelpKINode Title="MergerArb.C077_Total_Target_Dividends__Required_ property" Url="html/843374518.htm" />
+  <HelpKINode Title="MergerArb.C078_Total_Acquirer_Dividends__Required_ property" Url="html/2025464271.htm" />
+  <HelpKINode Title="MergerArb.C080_Target_Break_Price__Required_ property" Url="html/205750827.htm" />
+  <HelpKINode Title="MergerArb.C081_Acquirer_Break_Price__Required_ property" Url="html/1487557573.htm" />
+  <HelpKINode Title="MergerArb.C082_Expected_USD_Return_prob_wtd__Required_ property" Url="html/702620771.htm" />
+  <HelpKINode Title="MergerArb.C083_RiskReward__Required_ property" Url="html/1096444567.htm" />
+  <HelpKINode Title="MergerArb.C084_Notional_Long_USD_MV__Required_ property" Url="html/913325665.htm" />
+  <HelpKINode Title="MergerArb.C085_Net_USD_Profit_at_Close__Required_ property" Url="html/2139148131.htm" />
+  <HelpKINode Title="MergerArb.C086_Net_USD_Profit_at_Break__Required_ property" Url="html/1898659682.htm" />
+  <HelpKINode Title="MergerArb.C087_Probability_of_Break__Required_ property" Url="html/85920387.htm" />
+  <HelpKINode Title="MergerArb.C088_Tgt_13D_Num_shs_remaining__Optional_ property" Url="html/212691827.htm" />
+  <HelpKINode Title="MergerArb.C090_Prorate_Value_of_Stock__Optional_ property" Url="html/805160558.htm" />
+  <HelpKINode Title="MergerArb.C091_Prorate_Value_of_Cash__Optional_ property" Url="html/1795008552.htm" />
+  <HelpKINode Title="MergerArb.C092_Prorate_Comment_1__Optional_ property" Url="html/42922605.htm" />
+  <HelpKINode Title="MergerArb.C093_Prorate_Comment_2__Optional_ property" Url="html/501358784.htm" />
+  <HelpKINode Title="MergerArb.C095_Collar_Flag_Yes_No__Optional_ property" Url="html/696233705.htm" />
+  <HelpKINode Title="MergerArb.C096_Collar_Flag_Normal_Inverted__Optional_ property" Url="html/806494441.htm" />
+  <HelpKINode Title="MergerArb.C097_Collar_Num_of_Segments__Optional_ property" Url="html/1464791222.htm" />
+  <HelpKINode Title="MergerArb.C098_Collar_Num_of_Breakpoints__Optional_ property" Url="html/1095005324.htm" />
+  <HelpKINode Title="MergerArb.C099_Collar___Optional_ property" Url="html/1403679404.htm" />
+  <HelpKINode Title="MergerArb.C100_Collar_High_Breakpoint__Optional_ property" Url="html/726837738.htm" />
+  <HelpKINode Title="MergerArb.C101_Collar_Position__Optional_ property" Url="html/1679902477.htm" />
+  <HelpKINode Title="MergerArb.C102_Collar_Walk__Optional_ property" Url="html/840611195.htm" />
+  <HelpKINode Title="MergerArb.C103_Collar_Cure_Low_Breakpoint__Optional_ property" Url="html/406206725.htm" />
+  <HelpKINode Title="MergerArb.C104_Collar_Cure_High_Breakpoint__Optional_ property" Url="html/1106200669.htm" />
+  <HelpKINode Title="MergerArb.C105_Collar_Value_of_Collar__Optional_ property" Url="html/511387050.htm" />
+  <HelpKINode Title="MergerArb.C106_Collar_Note_Description__Optional_ property" Url="html/1209883189.htm" />
+  <HelpKINode Title="MergerArb.C108_Pricing_Period_Start_Date__Optional_ property" Url="html/1802612848.htm" />
+  <HelpKINode Title="MergerArb.C109_Pricing_Period_End_Date__Optional_ property" Url="html/1182394118.htm" />
+  <HelpKINode Title="MergerArb.C110_Pricing_Period_Length_days__Optional_ property" Url="html/1669594214.htm" />
+  <HelpKINode Title="MergerArb.C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_ property" Url="html/1902011796.htm" />
+  <HelpKINode Title="MergerArb.C112_Pricing_Period_Prc_Complete__Optional_ property" Url="html/1551837383.htm" />
+  <HelpKINode Title="MergerArb.C113_Pricing_Period_Prc_Remaining__Optional_ property" Url="html/493278845.htm" />
+  <HelpKINode Title="MergerArb.C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_ property" Url="html/221041048.htm" />
+  <HelpKINode Title="MergerArb.C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_ property" Url="html/1502813553.htm" />
+  <HelpKINode Title="MergerArb.C116_Pricing_Period_Weighted_Price__Optional_ property" Url="html/2014442621.htm" />
+  <HelpKINode Title="MergerArb.C118_Bloomberg_Corporate_Action_ID__Optional_ property" Url="html/1310291946.htm" />
+  <HelpKINode Title="MergerArb.C119_Bloomberg_Target_Company_Description__Optional_ property" Url="html/183383184.htm" />
+  <HelpKINode Title="MergerArb.C120_Bloomberg_Acquirer_Company_Description__Optional_ property" Url="html/1200408789.htm" />
+  <HelpKINode Title="MergerArb.C121_Bloomberg_Deal_Description__Optional_ property" Url="html/2106419364.htm" />
+  <HelpKINode Title="MergerArb.C122_Bloomberg_Target_Legal_Advisors__Optional_ property" Url="html/1271275945.htm" />
+  <HelpKINode Title="MergerArb.C123_Bloomberg_Target_Financial_Advisors__Optional_ property" Url="html/348107724.htm" />
+  <HelpKINode Title="MergerArb.C124_Bloomberg_Acquirer_Legal_Advisors__Optional_ property" Url="html/579535713.htm" />
+  <HelpKINode Title="MergerArb.C125_Bloomberg_Acquirer_Financial_Advisors__Optional_ property" Url="html/752710829.htm" />
+  <HelpKINode Title="MergerArb.C126_Bloomberg_Pending_Approvals__Optional_ property" Url="html/443222507.htm" />
+  <HelpKINode Title="MergerArb.C127_Bloomberg_Approved_Approvals__Optional_ property" Url="html/558912294.htm" />
+  <HelpKINode Title="MergerArb.C128_Bloomberg_Expired_Approvals__Optional_ property" Url="html/1218406917.htm" />
+  <HelpKINode Title="MergerArb.C129_Bloomberg_Entended_Approvals__Optional_ property" Url="html/583627663.htm" />
+  <HelpKINode Title="MergerArb.C130_Bloomberg_Announced_Date__Optional_ property" Url="html/1742484429.htm" />
+  <HelpKINode Title="MergerArb.C131_Bloomberg_Amendment_Date__Optional_ property" Url="html/1602542726.htm" />
+  <HelpKINode Title="MergerArb.C132_Bloomberg_Expected_Completion_Date__Optional_ property" Url="html/2068623181.htm" />
+  <HelpKINode Title="MergerArb.C133_Bloomberg_Completed_Termination_Date__Optional_ property" Url="html/1961432737.htm" />
+  <HelpKINode Title="MergerArb.C134_Bloomberg_Merger_Agreement_Date__Optional_ property" Url="html/1445194464.htm" />
+  <HelpKINode Title="MergerArb.C135_Bloomberg_Drop_Dead_Date__Optional_ property" Url="html/2129860995.htm" />
+  <HelpKINode Title="MergerArb.C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_ property" Url="html/1938279781.htm" />
+  <HelpKINode Title="MergerArb.C137_Bloomberg_Go_Shop_Period_End_Date__Optional_ property" Url="html/290772411.htm" />
+  <HelpKINode Title="MergerArb.MergerArbID property" Url="html/497213798.htm" />
+  <HelpKINode Title="MergerArbID property" Url="html/497213798.htm" />
+  <HelpKINode Title="MergerArbNew class">
+    <HelpKINode Title="MergerArbNew Class" Url="html/709735703.htm" />
+    <HelpKINode Title="MergerArbNew Members" Url="html/23906328.htm" />
+    <HelpKINode Title="about MergerArbNew class" Url="html/709735703.htm" />
+    <HelpKINode Title="all members" Url="html/23906328.htm" />
+    <HelpKINode Title="methods" Url="html/61427595.htm" />
+    <HelpKINode Title="properties" Url="html/41427415.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MergerArbNew.Calendar_Comment property" Url="html/1133380875.htm" />
+  <HelpKINode Title="MergerArbNew.Calendar_Flag property" Url="html/762958405.htm" />
+  <HelpKINode Title="MergerArbNew.Calendar_Time property" Url="html/737839936.htm" />
+  <HelpKINode Title="MergerArbNew.DealId property" Url="html/1959125412.htm" />
+  <HelpKINode Title="MergerArbNew.Field_Name property" Url="html/1986273196.htm" />
+  <HelpKINode Title="MergerArbNew.Field_Type property" Url="html/1606551705.htm" />
+  <HelpKINode Title="MergerArbNew.Field_Updated property" Url="html/2077994688.htm" />
+  <HelpKINode Title="MergerArbNew.Field_Value property" Url="html/1071575429.htm" />
+  <HelpKINode Title="MergerArbNew.ID property" Url="html/1060578091.htm" />
+  <HelpKINode Title="MergerArbNews property" Url="html/1283124191.htm" />
+  <HelpKINode Title="MergerArbs property" Url="html/503361896.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="Name Property " Url="html/460323684.htm" />
+    <HelpKINode Title="Name Property " Url="html/243822010.htm" />
+    <HelpKINode Title="Name Property " Url="html/1521620420.htm" />
+    <HelpKINode Title="Name Property " Url="html/890928299.htm" />
+    <HelpKINode Title="Name Property " Url="html/1014456557.htm" />
+    <HelpKINode Title="Name Property " Url="html/420586397.htm" />
+    <HelpKINode Title="Name Property " Url="html/1647747390.htm" />
+    <HelpKINode Title="Name Property " Url="html/1876684086.htm" />
+    <HelpKINode Title="Name Property " Url="html/1096541222.htm" />
+    <HelpKINode Title="Name Property " Url="html/2095127.htm" />
+    <HelpKINode Title="Name Property " Url="html/1652561002.htm" />
+  </HelpKINode>
+  <HelpKINode Title="name property" Url="html/1092548611.htm" />
+  <HelpKINode Title="Note property" Url="html/1718525337.htm" />
+  <HelpKINode Title="OnModelCreating method">
+    <HelpKINode Title="OnModelCreating Method " Url="html/552899530.htm" />
+    <HelpKINode Title="OnModelCreating Method " Url="html/1315555211.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Or(Of T) method" Url="html/98170646.htm" />
+  <HelpKINode Title="Or&lt;T&gt; method" Url="html/98170646.htm" />
+  <HelpKINode Title="Owner property" Url="html/1850815874.htm" />
+  <HelpKINode Title="OwnerID property" Url="html/281042919.htm" />
+  <HelpKINode Title="Password property" Url="html/1826690504.htm" />
+  <HelpKINode Title="PredicateBuilder class">
+    <HelpKINode Title="PredicateBuilder Class" Url="html/1946948727.htm" />
+    <HelpKINode Title="PredicateBuilder Members" Url="html/1135180468.htm" />
+    <HelpKINode Title="about PredicateBuilder class" Url="html/1946948727.htm" />
+    <HelpKINode Title="all members" Url="html/1135180468.htm" />
+    <HelpKINode Title="methods" Url="html/1173378614.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PredicateBuilder.And(Of T) method" Url="html/1762321477.htm" />
+  <HelpKINode Title="PredicateBuilder.And&lt;T&gt; method" Url="html/1762321477.htm" />
+  <HelpKINode Title="PredicateBuilder.False(Of T) method" Url="html/1389348049.htm" />
+  <HelpKINode Title="PredicateBuilder.False&lt;T&gt; method" Url="html/1389348049.htm" />
+  <HelpKINode Title="PredicateBuilder.Or(Of T) method" Url="html/98170646.htm" />
+  <HelpKINode Title="PredicateBuilder.Or&lt;T&gt; method" Url="html/98170646.htm" />
+  <HelpKINode Title="PredicateBuilder.True(Of T) method" Url="html/1114015278.htm" />
+  <HelpKINode Title="PredicateBuilder.True&lt;T&gt; method" Url="html/1114015278.htm" />
+  <HelpKINode Title="Price class">
+    <HelpKINode Title="Price Class" Url="html/144265166.htm" />
+    <HelpKINode Title="Price Members" Url="html/962943052.htm" />
+    <HelpKINode Title="about Price class" Url="html/144265166.htm" />
+    <HelpKINode Title="all members" Url="html/962943052.htm" />
+    <HelpKINode Title="methods" Url="html/759611517.htm" />
+    <HelpKINode Title="properties" Url="html/117167034.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Price.Price1 property" Url="html/660209545.htm" />
+  <HelpKINode Title="Price.PriceDateTime property" Url="html/1743171707.htm" />
+  <HelpKINode Title="Price.PriceID property" Url="html/1759233873.htm" />
+  <HelpKINode Title="Price.PriceSource property" Url="html/1612511649.htm" />
+  <HelpKINode Title="Price.Security property" Url="html/978951610.htm" />
+  <HelpKINode Title="Price.SecurityID property" Url="html/1577989511.htm" />
+  <HelpKINode Title="Price1 property" Url="html/660209545.htm" />
+  <HelpKINode Title="PriceDateTime property" Url="html/1743171707.htm" />
+  <HelpKINode Title="PriceID property" Url="html/1759233873.htm" />
+  <HelpKINode Title="Prices property">
+    <HelpKINode Title="Prices Property " Url="html/1515202210.htm" />
+    <HelpKINode Title="Prices Property " Url="html/495489593.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PriceSource property" Url="html/1612511649.htm" />
+  <HelpKINode Title="PricSec property" Url="html/2115330017.htm" />
+  <HelpKINode Title="principal_id property" Url="html/570024047.htm" />
+  <HelpKINode Title="Recommendation property" Url="html/608706030.htm" />
+  <HelpKINode Title="removeCompany method">
+    <HelpKINode Title="removeCompany Method " Url="html/465930981.htm" />
+    <HelpKINode Title="removeCompany Method " Url="html/716134989.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeCompanyAssociation method">
+    <HelpKINode Title="removeCompanyAssociation Method " Url="html/42438015.htm" />
+    <HelpKINode Title="removeCompanyAssociation Method " Url="html/416525343.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeDeal method">
+    <HelpKINode Title="removeDeal Method " Url="html/501902930.htm" />
+    <HelpKINode Title="removeDeal Method " Url="html/1180185593.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeDealByDescription method">
+    <HelpKINode Title="removeDealByDescription Method " Url="html/297768868.htm" />
+    <HelpKINode Title="removeDealByDescription Method " Url="html/1181909532.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeDealById method">
+    <HelpKINode Title="removeDealById Method " Url="html/1055810518.htm" />
+    <HelpKINode Title="removeDealById Method " Url="html/1695510228.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeDocument method">
+    <HelpKINode Title="removeDocument Method " Url="html/452205448.htm" />
+    <HelpKINode Title="removeDocument Method " Url="html/602588277.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeEvent method">
+    <HelpKINode Title="removeEvent Method " Url="html/236300245.htm" />
+    <HelpKINode Title="removeEvent Method " Url="html/259311219.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeMapDealAnalyst method">
+    <HelpKINode Title="removeMapDealAnalyst Method " Url="html/1228944067.htm" />
+    <HelpKINode Title="removeMapDealAnalyst Method " Url="html/12072226.htm" />
+  </HelpKINode>
+  <HelpKINode Title="removeSecurity method">
+    <HelpKINode Title="removeSecurity Method " Url="html/704676735.htm" />
+    <HelpKINode Title="removeSecurity Method " Url="html/1665877141.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecGrp property" Url="html/1378672801.htm" />
+  <HelpKINode Title="Securities property">
+    <HelpKINode Title="Securities Property " Url="html/1332261347.htm" />
+    <HelpKINode Title="Securities Property " Url="html/1447016399.htm" />
+    <HelpKINode Title="Securities Property " Url="html/658043762.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Security class">
+    <HelpKINode Title="Security Class" Url="html/329134919.htm" />
+    <HelpKINode Title="Security Members" Url="html/650847076.htm" />
+    <HelpKINode Title="about Security class" Url="html/329134919.htm" />
+    <HelpKINode Title="all members" Url="html/650847076.htm" />
+    <HelpKINode Title="constructor" Url="html/120121920.htm" />
+    <HelpKINode Title="methods" Url="html/338481756.htm" />
+    <HelpKINode Title="properties" Url="html/1133683737.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Security property">
+    <HelpKINode Title="Security Property " Url="html/978951610.htm" />
+    <HelpKINode Title="Security Property " Url="html/1928130624.htm" />
+    <HelpKINode Title="Security Property " Url="html/620297783.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Security.Code property" Url="html/1952984107.htm" />
+  <HelpKINode Title="Security.Companies property" Url="html/574455305.htm" />
+  <HelpKINode Title="Security.Currency property" Url="html/2083486421.htm" />
+  <HelpKINode Title="Security.CurrencyID property" Url="html/188457458.htm" />
+  <HelpKINode Title="Security.Cusip property" Url="html/1900387154.htm" />
+  <HelpKINode Title="Security.Description property" Url="html/1928667223.htm" />
+  <HelpKINode Title="Security.Isin property" Url="html/1555461642.htm" />
+  <HelpKINode Title="Security.Name property" Url="html/420586397.htm" />
+  <HelpKINode Title="Security.Prices property" Url="html/1515202210.htm" />
+  <HelpKINode Title="Security.Security constructor" Url="html/120121920.htm" />
+  <HelpKINode Title="Security.SecurityGroups property" Url="html/625737279.htm" />
+  <HelpKINode Title="Security.SecurityGroups1 property" Url="html/1038451380.htm" />
+  <HelpKINode Title="Security.SecurityGroups2 property" Url="html/635166853.htm" />
+  <HelpKINode Title="Security.SecurityGroups3 property" Url="html/2093716502.htm" />
+  <HelpKINode Title="Security.SecurityGroups4 property" Url="html/1441735907.htm" />
+  <HelpKINode Title="Security.SecurityID property" Url="html/104467855.htm" />
+  <HelpKINode Title="Security.SecurityType property" Url="html/791739175.htm" />
+  <HelpKINode Title="Security.SecurityTypeID property" Url="html/1324231750.htm" />
+  <HelpKINode Title="Security.Sedol property" Url="html/1834517597.htm" />
+  <HelpKINode Title="Security.Ticker property" Url="html/2106793544.htm" />
+  <HelpKINode Title="Security1 property" Url="html/1925050432.htm" />
+  <HelpKINode Title="Security2 property" Url="html/1924853824.htm" />
+  <HelpKINode Title="Security3 property" Url="html/1924919360.htm" />
+  <HelpKINode Title="Security4 property" Url="html/1925247040.htm" />
+  <HelpKINode Title="SecurityGroup class">
+    <HelpKINode Title="SecurityGroup Class" Url="html/166249075.htm" />
+    <HelpKINode Title="SecurityGroup Members" Url="html/775175538.htm" />
+    <HelpKINode Title="about SecurityGroup class" Url="html/166249075.htm" />
+    <HelpKINode Title="all members" Url="html/775175538.htm" />
+    <HelpKINode Title="constructor" Url="html/773695549.htm" />
+    <HelpKINode Title="methods" Url="html/1913177438.htm" />
+    <HelpKINode Title="properties" Url="html/2014843483.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityGroup property" Url="html/1340242546.htm" />
+  <HelpKINode Title="SecurityGroup.Deals property" Url="html/1345204390.htm" />
+  <HelpKINode Title="SecurityGroup.Security property" Url="html/1928130624.htm" />
+  <HelpKINode Title="SecurityGroup.Security1 property" Url="html/1925050432.htm" />
+  <HelpKINode Title="SecurityGroup.Security2 property" Url="html/1924853824.htm" />
+  <HelpKINode Title="SecurityGroup.Security3 property" Url="html/1924919360.htm" />
+  <HelpKINode Title="SecurityGroup.Security4 property" Url="html/1925247040.htm" />
+  <HelpKINode Title="SecurityGroup.SecurityGroup constructor" Url="html/773695549.htm" />
+  <HelpKINode Title="SecurityGroup.SecurityGroupID property" Url="html/1051615682.htm" />
+  <HelpKINode Title="SecurityGroup.SecurityID1 property" Url="html/1563282567.htm" />
+  <HelpKINode Title="SecurityGroup.SecurityID2 property" Url="html/393032569.htm" />
+  <HelpKINode Title="SecurityGroup.SecurityID3 property" Url="html/1945619591.htm" />
+  <HelpKINode Title="SecurityGroup.SecurityID4 property" Url="html/1540043641.htm" />
+  <HelpKINode Title="SecurityGroup.SecurityID5 property" Url="html/798608519.htm" />
+  <HelpKINode Title="SecurityGroupID property">
+    <HelpKINode Title="SecurityGroupID Property " Url="html/1051615682.htm" />
+    <HelpKINode Title="SecurityGroupID Property " Url="html/1421391203.htm" />
+    <HelpKINode Title="SecurityGroupID Property " Url="html/1377936959.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityGroups property">
+    <HelpKINode Title="SecurityGroups Property " Url="html/343544805.htm" />
+    <HelpKINode Title="SecurityGroups Property " Url="html/625737279.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityGroups1 property" Url="html/1038451380.htm" />
+  <HelpKINode Title="SecurityGroups2 property" Url="html/635166853.htm" />
+  <HelpKINode Title="SecurityGroups3 property" Url="html/2093716502.htm" />
+  <HelpKINode Title="SecurityGroups4 property" Url="html/1441735907.htm" />
+  <HelpKINode Title="SecurityID property">
+    <HelpKINode Title="SecurityID Property " Url="html/768879237.htm" />
+    <HelpKINode Title="SecurityID Property " Url="html/104467855.htm" />
+    <HelpKINode Title="SecurityID Property " Url="html/1101481028.htm" />
+    <HelpKINode Title="SecurityID Property " Url="html/1577989511.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityID1 property">
+    <HelpKINode Title="SecurityID1 Property " Url="html/1563282567.htm" />
+    <HelpKINode Title="SecurityID1 Property " Url="html/771959429.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityID2 property" Url="html/393032569.htm" />
+  <HelpKINode Title="SecurityID3 property" Url="html/1945619591.htm" />
+  <HelpKINode Title="SecurityID4 property" Url="html/1540043641.htm" />
+  <HelpKINode Title="SecurityID5 property" Url="html/798608519.htm" />
+  <HelpKINode Title="SecurityType class">
+    <HelpKINode Title="SecurityType Class" Url="html/1059096386.htm" />
+    <HelpKINode Title="SecurityType Members" Url="html/1012873647.htm" />
+    <HelpKINode Title="about SecurityType class" Url="html/1059096386.htm" />
+    <HelpKINode Title="all members" Url="html/1012873647.htm" />
+    <HelpKINode Title="constructor" Url="html/1884198568.htm" />
+    <HelpKINode Title="methods" Url="html/285085461.htm" />
+    <HelpKINode Title="properties" Url="html/500153713.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityType property" Url="html/791739175.htm" />
+  <HelpKINode Title="SecurityType.Code property" Url="html/725036672.htm" />
+  <HelpKINode Title="SecurityType.Description property" Url="html/1171165228.htm" />
+  <HelpKINode Title="SecurityType.Name property" Url="html/1647747390.htm" />
+  <HelpKINode Title="SecurityType.Securities property" Url="html/1447016399.htm" />
+  <HelpKINode Title="SecurityType.SecurityType constructor" Url="html/1884198568.htm" />
+  <HelpKINode Title="SecurityType.SecurityTypeID property" Url="html/1834009833.htm" />
+  <HelpKINode Title="SecurityTypeID property">
+    <HelpKINode Title="SecurityTypeID Property " Url="html/1834009833.htm" />
+    <HelpKINode Title="SecurityTypeID Property " Url="html/1324231750.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityTypes property" Url="html/1721092688.htm" />
+  <HelpKINode Title="Sedol property" Url="html/1834517597.htm" />
+  <HelpKINode Title="Settings class">
+    <HelpKINode Title="Settings Class" Url="html/1854441034.htm" />
+    <HelpKINode Title="Settings Members" Url="html/116480935.htm" />
+    <HelpKINode Title="about Settings class" Url="html/1854441034.htm" />
+    <HelpKINode Title="all members" Url="html/116480935.htm" />
+    <HelpKINode Title="events" Url="html/1240036559.htm" />
+    <HelpKINode Title="fields" Url="html/1320999369.htm" />
+    <HelpKINode Title="methods" Url="html/721401461.htm" />
+    <HelpKINode Title="properties" Url="html/631463996.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings.Default property" Url="html/1918607317.htm" />
+  <HelpKINode Title="Settings.defaultInstance field" Url="html/391971750.htm" />
+  <HelpKINode Title="Settings.SQLConnection property" Url="html/79127704.htm" />
+  <HelpKINode Title="Source property" Url="html/1482236337.htm" />
+  <HelpKINode Title="sp_alterdiagram method" Url="html/706046639.htm" />
+  <HelpKINode Title="sp_creatediagram method" Url="html/335680659.htm" />
+  <HelpKINode Title="sp_dropdiagram method" Url="html/367867136.htm" />
+  <HelpKINode Title="sp_helpdiagramdefinition method" Url="html/1184690377.htm" />
+  <HelpKINode Title="sp_helpdiagramdefinition_Result class">
+    <HelpKINode Title="sp_helpdiagramdefinition_Result Class" Url="html/1262855410.htm" />
+    <HelpKINode Title="sp_helpdiagramdefinition_Result Members" Url="html/325823618.htm" />
+    <HelpKINode Title="about sp_helpdiagramdefinition_Result class" Url="html/1262855410.htm" />
+    <HelpKINode Title="all members" Url="html/325823618.htm" />
+    <HelpKINode Title="methods" Url="html/378867059.htm" />
+    <HelpKINode Title="properties" Url="html/820730720.htm" />
+  </HelpKINode>
+  <HelpKINode Title="sp_helpdiagramdefinition_Result.definition property" Url="html/544956381.htm" />
+  <HelpKINode Title="sp_helpdiagramdefinition_Result.version property" Url="html/1641341824.htm" />
+  <HelpKINode Title="sp_helpdiagrams method" Url="html/361120421.htm" />
+  <HelpKINode Title="sp_helpdiagrams_Result class">
+    <HelpKINode Title="sp_helpdiagrams_Result Class" Url="html/1886394563.htm" />
+    <HelpKINode Title="sp_helpdiagrams_Result Members" Url="html/1512113042.htm" />
+    <HelpKINode Title="about sp_helpdiagrams_Result class" Url="html/1886394563.htm" />
+    <HelpKINode Title="all members" Url="html/1512113042.htm" />
+    <HelpKINode Title="methods" Url="html/2116508038.htm" />
+    <HelpKINode Title="properties" Url="html/1809409865.htm" />
+  </HelpKINode>
+  <HelpKINode Title="sp_helpdiagrams_Result.Database property" Url="html/1598277727.htm" />
+  <HelpKINode Title="sp_helpdiagrams_Result.ID property" Url="html/554847374.htm" />
+  <HelpKINode Title="sp_helpdiagrams_Result.Name property" Url="html/1876684086.htm" />
+  <HelpKINode Title="sp_helpdiagrams_Result.Owner property" Url="html/1850815874.htm" />
+  <HelpKINode Title="sp_helpdiagrams_Result.OwnerID property" Url="html/281042919.htm" />
+  <HelpKINode Title="sp_renamediagram method" Url="html/488818644.htm" />
+  <HelpKINode Title="sp_upgraddiagrams method" Url="html/1854135376.htm" />
+  <HelpKINode Title="SQLConnection property" Url="html/79127704.htm" />
+  <HelpKINode Title="StatisticType class">
+    <HelpKINode Title="StatisticType Class" Url="html/1361914458.htm" />
+    <HelpKINode Title="StatisticType Members" Url="html/1371690150.htm" />
+    <HelpKINode Title="about StatisticType class" Url="html/1361914458.htm" />
+    <HelpKINode Title="all members" Url="html/1371690150.htm" />
+    <HelpKINode Title="constructor" Url="html/181925637.htm" />
+    <HelpKINode Title="methods" Url="html/452960427.htm" />
+    <HelpKINode Title="properties" Url="html/2136819752.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StatisticType property" Url="html/1627037035.htm" />
+  <HelpKINode Title="StatisticType.AnnualCompanyStatistics property" Url="html/1063017328.htm" />
+  <HelpKINode Title="StatisticType.Code property" Url="html/1761102371.htm" />
+  <HelpKINode Title="StatisticType.Name property" Url="html/1014456557.htm" />
+  <HelpKINode Title="StatisticType.StatisticType constructor" Url="html/181925637.htm" />
+  <HelpKINode Title="StatisticType.StatisticTypeID property" Url="html/626863344.htm" />
+  <HelpKINode Title="StatisticTypeID property">
+    <HelpKINode Title="StatisticTypeID Property " Url="html/626863344.htm" />
+    <HelpKINode Title="StatisticTypeID Property " Url="html/1320831457.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StatisticTypes property" Url="html/1874310239.htm" />
+  <HelpKINode Title="sysdiagram class">
+    <HelpKINode Title="sysdiagram Class" Url="html/1131608497.htm" />
+    <HelpKINode Title="sysdiagram Members" Url="html/1872860755.htm" />
+    <HelpKINode Title="about sysdiagram class" Url="html/1131608497.htm" />
+    <HelpKINode Title="all members" Url="html/1872860755.htm" />
+    <HelpKINode Title="methods" Url="html/750158040.htm" />
+    <HelpKINode Title="properties" Url="html/274293335.htm" />
+  </HelpKINode>
+  <HelpKINode Title="sysdiagram.definition property" Url="html/183168331.htm" />
+  <HelpKINode Title="sysdiagram.diagram_id property" Url="html/1438172190.htm" />
+  <HelpKINode Title="sysdiagram.name property" Url="html/1092548611.htm" />
+  <HelpKINode Title="sysdiagram.principal_id property" Url="html/570024047.htm" />
+  <HelpKINode Title="sysdiagram.version property" Url="html/1851837992.htm" />
+  <HelpKINode Title="sysdiagrams property" Url="html/1469200415.htm" />
+  <HelpKINode Title="TargetPrice property">
+    <HelpKINode Title="TargetPrice Property " Url="html/1509425295.htm" />
+    <HelpKINode Title="TargetPrice Property " Url="html/892728430.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TargetPriceValuation property" Url="html/2063766446.htm" />
+  <HelpKINode Title="TargetShareholderMeetingEventID property" Url="html/503216488.htm" />
+  <HelpKINode Title="Ticker property" Url="html/2106793544.htm" />
+  <HelpKINode Title="True(Of T) method" Url="html/1114015278.htm" />
+  <HelpKINode Title="True&lt;T&gt; method" Url="html/1114015278.htm" />
+  <HelpKINode Title="updateCompany method">
+    <HelpKINode Title="updateCompany Method " Url="html/319871046.htm" />
+    <HelpKINode Title="updateCompany Method " Url="html/83716713.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateCompanyAssociation method">
+    <HelpKINode Title="updateCompanyAssociation Method " Url="html/496382678.htm" />
+    <HelpKINode Title="updateCompanyAssociation Method " Url="html/1078123073.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateDeal method">
+    <HelpKINode Title="updateDeal Method " Url="html/43306352.htm" />
+    <HelpKINode Title="updateDeal Method " Url="html/1074313461.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateDocument method">
+    <HelpKINode Title="updateDocument Method " Url="html/1884292879.htm" />
+    <HelpKINode Title="updateDocument Method " Url="html/1112432386.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateDocumentGroup method">
+    <HelpKINode Title="updateDocumentGroup Method " Url="html/1917614652.htm" />
+    <HelpKINode Title="updateDocumentGroup Method " Url="html/459508610.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateMapDealAnalyst method">
+    <HelpKINode Title="updateMapDealAnalyst Method " Url="html/112107141.htm" />
+    <HelpKINode Title="updateMapDealAnalyst Method " Url="html/503181288.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateMergerArb method">
+    <HelpKINode Title="updateMergerArb Method " Url="html/1323848062.htm" />
+    <HelpKINode Title="updateMergerArb Method " Url="html/222578372.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateMergerArbNew method">
+    <HelpKINode Title="updateMergerArbNew Method " Url="html/2056879617.htm" />
+    <HelpKINode Title="updateMergerArbNew Method " Url="html/1063590310.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateSecurity method">
+    <HelpKINode Title="updateSecurity Method " Url="html/110092464.htm" />
+    <HelpKINode Title="updateSecurity Method " Url="html/2027850581.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updateSecurityGroup method">
+    <HelpKINode Title="updateSecurityGroup Method " Url="html/230160956.htm" />
+    <HelpKINode Title="updateSecurityGroup Method " Url="html/504728626.htm" />
+  </HelpKINode>
+  <HelpKINode Title="URI property" Url="html/493484025.htm" />
+  <HelpKINode Title="ValuationMethodology property" Url="html/108611931.htm" />
+  <HelpKINode Title="Value property" Url="html/926532953.htm" />
+  <HelpKINode Title="Version property">
+    <HelpKINode Title="Version Property " Url="html/56445039.htm" />
+    <HelpKINode Title="Version Property " Url="html/1534430062.htm" />
+  </HelpKINode>
+  <HelpKINode Title="version property">
+    <HelpKINode Title="version Property " Url="html/1641341824.htm" />
+    <HelpKINode Title="version Property " Url="html/1851837992.htm" />
+  </HelpKINode>
+  <HelpKINode Title="vw_DealSecPrice class">
+    <HelpKINode Title="vw_DealSecPrice Class" Url="html/1715755232.htm" />
+    <HelpKINode Title="vw_DealSecPrice Members" Url="html/2048083446.htm" />
+    <HelpKINode Title="about vw_DealSecPrice class" Url="html/1715755232.htm" />
+    <HelpKINode Title="all members" Url="html/2048083446.htm" />
+    <HelpKINode Title="methods" Url="html/1181078682.htm" />
+    <HelpKINode Title="properties" Url="html/214622909.htm" />
+  </HelpKINode>
+  <HelpKINode Title="vw_DealSecPrice property" Url="html/188436895.htm" />
+  <HelpKINode Title="vw_DealSecPrice.Code property" Url="html/823605069.htm" />
+  <HelpKINode Title="vw_DealSecPrice.Comps property" Url="html/1165375484.htm" />
+  <HelpKINode Title="vw_DealSecPrice.CurrentPrice property" Url="html/757033310.htm" />
+  <HelpKINode Title="vw_DealSecPrice.DealID property" Url="html/486718172.htm" />
+  <HelpKINode Title="vw_DealSecPrice.Description property" Url="html/1193488995.htm" />
+  <HelpKINode Title="vw_DealSecPrice.DownsidePrice property" Url="html/1238815493.htm" />
+  <HelpKINode Title="vw_DealSecPrice.ExpirationDate property" Url="html/1446748947.htm" />
+  <HelpKINode Title="vw_DealSecPrice.PricSec property" Url="html/2115330017.htm" />
+  <HelpKINode Title="vw_DealSecPrice.SecGrp property" Url="html/1378672801.htm" />
+  <HelpKINode Title="vw_DealSecPrice.SecurityGroupID property" Url="html/1377936959.htm" />
+  <HelpKINode Title="vw_DealSecPrice.SecurityID property" Url="html/768879237.htm" />
+  <HelpKINode Title="vw_DealSecPrice.SecurityID1 property" Url="html/771959429.htm" />
+  <HelpKINode Title="vw_DealSecPrice.TargetPrice property" Url="html/1509425295.htm" />
+  <HelpKINode Title="Year property" Url="html/824769065.htm" />
+</HelpKI>
